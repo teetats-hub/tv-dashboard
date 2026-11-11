@@ -411,7 +411,7 @@ function renderAI(now){
 }
 function renderPL(){
   var rows=(LIVE.pl||DATA.pl||[]).slice(0,6), html='<div class="pl-wrap"><div class="pl"><div class="pl-row hd"><span class="pp">#</span><span class="t">Team</span><span class="n">P</span><span class="n">GD</span><span class="pts">Pts</span></div>';
-  rows.forEach(function(r){html+='<div class="pl-row'+(/Arsenal/.test(r.t)?' ars':'')+'"><span class="p">'+r.pos+'</span><span class="t">'+esc(r.t)+'</span><span class="n">'+r.p+'</span><span class="n">'+(r.gd>0?"+":"")+r.gd+'</span><span class="pts">'+r.pts+'</span></div>'});
+  rows.forEach(function(r){html+='<div class="pl-row'+(/Arsenal/.test(r.t)?' ars':'')+'"><span class="pp">'+r.pos+'</span><span class="t">'+esc(r.t)+'</span><span class="n">'+r.p+'</span><span class="n">'+(r.gd>0?"+":"")+r.gd+'</span><span class="pts">'+r.pts+'</span></div>'});
   html+='</div><div class="pl-side">';
   var ars=null, rest=[]; rows.forEach(function(r){if(/Arsenal/.test(r.t))ars=r;else rest.push(r)});
   if(ars&&ars.pos===1&&rest.length) html+='<div class="big-stat">+'+(ars.pts-rest[0].pts)+'<small>points clear at the top</small></div>';
