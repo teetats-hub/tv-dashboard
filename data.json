@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-11T14:30:00Z",
+ "asOf": "2026-11-11T17:00:00Z",
  "weather": [
   {
    "city": "London",
@@ -285,5 +285,324 @@
    "mins": 115,
    "comp": "Premier League · Tavaziva’s Brentford"
   }
- ]
+ ],
+ "pl": [
+  {
+   "pos": 1,
+   "t": "Arsenal",
+   "p": 10,
+   "gd": 10,
+   "pts": 27
+  },
+  {
+   "pos": 2,
+   "t": "Brighton",
+   "p": 10,
+   "gd": 19,
+   "pts": 22
+  },
+  {
+   "pos": 3,
+   "t": "Man City",
+   "p": 10,
+   "gd": 8,
+   "pts": 21
+  },
+  {
+   "pos": 4,
+   "t": "Liverpool",
+   "p": 10,
+   "gd": 4,
+   "pts": 18
+  },
+  {
+   "pos": 5,
+   "t": "Chelsea",
+   "p": 10,
+   "gd": 3,
+   "pts": 16
+  },
+  {
+   "pos": 6,
+   "t": "Everton",
+   "p": 10,
+   "gd": 2,
+   "pts": 16
+  }
+ ],
+ "feature": {
+  "africa": {
+   "title": "Africa tech · funding this week",
+   "items": [
+    {
+     "tag": "AI fund",
+     "ph": "fund",
+     "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-7.png",
+     "h": "Enza Capital hits a $21m first close for a fund backing African AI",
+     "s": "African AI rounds have a median size of just $1.9m",
+     "m": "Launch Base Africa · 11 Nov"
+    },
+    {
+     "tag": "South Africa",
+     "ph": "fund",
+     "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-6.png",
+     "h": "Cape Town fintech Lumepay raises a $6m pre-seed",
+     "s": "Building cross-border B2B payment rails, plus a $10m liquidity float",
+     "m": "Launch Base Africa · 10 Nov"
+    },
+    {
+     "tag": "South Africa",
+     "ph": "fund",
+     "mark": "Yoco",
+     "h": "Yoco lands a $100m private credit facility",
+     "s": "To scale lending to South African small businesses",
+     "m": "Launch Base Africa · 9 Nov"
+    },
+    {
+     "tag": "Healthtech",
+     "ph": "tech",
+     "mark": "EASE",
+     "h": "EASE Holdings raises $9.5m for pay-per-use MRI, CT and surgical robots",
+     "s": "Live in Ghana and South Africa; $24m raised in total",
+     "m": "Techloy · 6 Nov"
+    },
+    {
+     "tag": "Nigeria",
+     "ph": "tech",
+     "mark": "HH",
+     "h": "Helium Health wins a $2.5m Google.org grant",
+     "s": "AI tools to spot pregnancy complications early, starting in Lagos",
+     "m": "Launch Base Africa deal tracker · 10 Nov"
+    },
+    {
+     "tag": "Kenya",
+     "ph": "tech",
+     "mark": "9MW",
+     "h": "Miale Solar secures a $5.5m credit facility",
+     "s": "Adding 9MW of solar for Kenyan clinics and labs",
+     "m": "Launch Base Africa deal tracker · 10 Nov"
+    }
+   ]
+  },
+  "zimf": {
+   "title": "Zimbabwean founders in the news",
+   "items": [
+    {
+     "tag": "AI",
+     "ph": "zim",
+     "mark": "Ocular",
+     "h": "Louis Murerwa’s Ocular AI raises a $2m pre-seed",
+     "s": "Led by Drive Capital with Y Combinator; builds voice data for frontier AI labs",
+     "m": "Business Tech Africa · Oct"
+    },
+    {
+     "tag": "Trade",
+     "ph": "zim",
+     "mark": "YALI",
+     "h": "Zim YALI alumni turn US–Africa Commercial Forum contacts into deal leads",
+     "s": "Chasing investment, technology and export partners",
+     "m": "NewsDay · 9 Nov"
+    },
+    {
+     "tag": "Agritech",
+     "ph": "zim",
+     "mark": "Maminda",
+     "h": "Edward Gandanzara’s Maminda pairs AI advice with finance for smallholders",
+     "s": "Showed at VivaTech; expanding into Zambia and Malawi",
+     "m": "We Are Tech Africa · founder to watch"
+    }
+   ]
+  },
+  "ai": {
+   "title": "AI today",
+   "stories": [
+    {
+     "h": "Anthropic ships Claude Fable 5.2 and Mythos 5.2",
+     "s": "AI Weekly · 10 Nov"
+    },
+    {
+     "h": "Google unveils TPU 8tx and 8i Max, chips for secure long-context inference",
+     "s": "AI Weekly · 10 Nov"
+    },
+    {
+     "h": "SoftBank posts a $7bn quarterly loss on AI data-centre power costs",
+     "s": "AI Weekly · 10 Nov · OpenAI stake gain softened the hit"
+    }
+   ],
+   "tactics": [
+    "Before a first call, find one public sign of change at the account, such as a new hire, a raise or a launch. Open with that, not your product.",
+    "Ask AI to turn a prospect’s last three posts or earnings calls into three likely pains. Lead with the one you can actually solve.",
+    "Let AI draft, never send. Rewrite the first line yourself so it sounds like you.",
+    "Give every opportunity a clear “why now”. No why now, no forecast.",
+    "Send the recap within 10 minutes of the call. Have AI turn your notes into the email; speed beats polish.",
+    "Score last quarter’s wins against your ideal customer profile. Prospect only where three or more traits match.",
+    "Multi-thread early: have a second named contact in every deal by the second meeting."
+   ],
+   "tips": [
+    "Pick partners by who already owns the customer relationship, not by logo size.",
+    "Land one co-sold deal with a new partner within 90 days. Momentum beats enablement decks.",
+    "Make deal registration take under five minutes. If it’s slow, partners stop registering.",
+    "Track partner-sourced pipeline, not just partner-influenced. It keeps the programme honest."
+   ]
+  },
+  "london": {
+   "title": "London this week · tech, Zim and Afrobeats",
+   "items": [
+    {
+     "tag": "Afrobeats",
+     "ph": "afro",
+     "img": "https://ents24.imgix.net/image/000/383/026/4dcfee6b480352198027004c86ea92d396709f5b.png",
+     "h": "The Afrobeats Brunch with KoyeSax and The Fortune Collective",
+     "s": "Soul Mama, Islington",
+     "m": "Sat 14 Nov · 12:00–16:00"
+    },
+    {
+     "tag": "Zim",
+     "ph": "zim",
+     "mark": "ZIM",
+     "h": "Sables v Uruguay, World Rugby Nations Cup",
+     "s": "Trailfinders Sports Ground, Ealing",
+     "m": "Sat 14 Nov · 15:00"
+    },
+    {
+     "tag": "Tech",
+     "ph": "tech",
+     "mark": "Olympia",
+     "h": "Solana Breakpoint 2026",
+     "s": "Keynotes, workshops and networking at Olympia",
+     "m": "15–17 Nov"
+    },
+    {
+     "tag": "Tech",
+     "ph": "tech",
+     "mark": "AI",
+     "h": "AI in Business Conference London",
+     "s": "Enterprise leaders turning AI strategy into results",
+     "m": "Thu 19 Nov"
+    },
+    {
+     "tag": "Afrobeats",
+     "ph": "afro",
+     "mark": "Live",
+     "h": "The Love & Afrobeats Orchestra",
+     "s": "Soul Mama, Stratford",
+     "m": "Fri 20 Nov · 18:30"
+    },
+    {
+     "tag": "Zim",
+     "ph": "zim",
+     "mark": "BZS",
+     "h": "Britain Zimbabwe Society Research Day",
+     "s": "Theme: everyday life in Zimbabwe and its diaspora",
+     "m": "Sat 28 Nov"
+    }
+   ]
+  },
+  "collector": {
+   "title": "Collector · watches and fragrance",
+   "items": [
+    {
+     "tag": "Record",
+     "ph": "auction",
+     "img": "https://dist.phillips.com/content/web/press/images/image_19f39a90-c4c9-43c0-a4fa-cc2f20f2e38c.png",
+     "h": "Phillips Geneva XXIV makes $112.3m, the first live watch sale past $100m",
+     "s": "217 lots, 100% sold",
+     "m": "Phillips · 7–8 Nov"
+    },
+    {
+     "tag": "Top lot",
+     "ph": "watch",
+     "mark": "FPJ",
+     "h": "F.P. Journe Résonance “Régence” in platinum sells for CHF 8.68m",
+     "s": "A new high for Journe at auction",
+     "m": "Phillips Geneva · 7 Nov"
+    },
+    {
+     "tag": "Next",
+     "ph": "watch",
+     "mark": "HK",
+     "h": "The Hong Kong Watch Auction: XXIII",
+     "s": "Phillips’ next live watch sale",
+     "m": "21–22 Nov"
+    },
+    {
+     "tag": "Fragrance",
+     "ph": "fragrance",
+     "img": "https://cdn.mos.cms.futurecdn.net/3muXiE4TqZioSbDAnoPZaP-1280-80.jpg",
+     "h": "Dior Sauvage Extrait",
+     "s": "Lavender, bergamot, patchouli, vetiver, cedarwood and oud",
+     "m": "T3 pick of the autumn launches"
+    },
+    {
+     "tag": "Fragrance",
+     "ph": "fragrance",
+     "mark": "Byredo",
+     "h": "Byredo Havana Tonka (Night Veils)",
+     "s": "Roasted tonka, tobacco, violet and rum",
+     "m": "£310 · 70ml"
+    },
+    {
+     "tag": "Fragrance",
+     "ph": "fragrance",
+     "mark": "TF",
+     "h": "Tom Ford Ombré Leather Reserve",
+     "s": "Juniper, black leather, sandalwood and violet leaf",
+     "m": "New this autumn"
+    }
+   ]
+  },
+  "weekend": {
+   "title": "Weekend · coffee and plans",
+   "items": [
+    {
+     "tag": "Free",
+     "ph": "event",
+     "img": "https://assets.londonist.com/uploads/2026/11/i730/things-to-do-london-weekend-lord-mayor-show-2026.jpg",
+     "h": "The Lord Mayor’s Show",
+     "s": "Parade through the City, near your office",
+     "m": "Sat 14 Nov · morning"
+    },
+    {
+     "tag": "New",
+     "ph": "event",
+     "img": "https://assets.londonist.com/uploads/2026/11/i875/things-to-do-london-weekend-alice-immersive-wonderland.png",
+     "h": "Alice Immersive Wonderland opens",
+     "s": "New immersive attraction",
+     "m": "From this weekend"
+    },
+    {
+     "tag": "Last chance",
+     "ph": "event",
+     "img": "https://assets.londonist.com/uploads/2026/11/i730/things-to-do-london-this-weekend-inside-aardman-closing.jpg",
+     "h": "Inside Aardman exhibition",
+     "s": "Closing this weekend",
+     "m": "Until Sun 15 Nov"
+    },
+    {
+     "tag": "Coffee",
+     "ph": "coffee",
+     "img": "https://media.timeout.com/images/106225772/750/422/image.jpg",
+     "h": "Catalyst, Holborn",
+     "s": "Scandi-style café on the Best Coffee Shops UK 2026 list",
+     "m": "Time Out pick"
+    },
+    {
+     "tag": "Coffee",
+     "ph": "coffee",
+     "mark": "Coffee",
+     "h": "Moonstruck, Stockwell",
+     "s": "South London entry on the same list, on your side of the river",
+     "m": "Best Coffee Shops UK 2026"
+    },
+    {
+     "tag": "Coffee",
+     "ph": "coffee",
+     "mark": "Coffee",
+     "h": "Saint Nine Coffee, Southwark",
+     "s": "Small coffee bar near Bankside",
+     "m": "Best Coffee Shops UK 2026"
+    }
+   ]
+  }
+ }
 }

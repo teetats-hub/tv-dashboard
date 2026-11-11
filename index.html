@@ -48,16 +48,73 @@ body{font-size:1.05vw;line-height:1.35}
 .p h2 span{color:var(--faint);letter-spacing:.04em;text-transform:none;font-weight:500}
 .hidden{display:none !important}
 
-/* mode layouts */
-body.morning .grid{grid-template-areas:"standard markets fx" "news rates sport"}
-body.day .grid{grid-template-areas:"news markets fx" "radar rates sport"}
-body.evening .grid{grid-template-areas:"sport ars lal" "news zim radar"}
-body.morning #p-radar, body.morning #p-ars, body.morning #p-lal, body.morning #p-zim{display:none}
-body.day #p-standard, body.day #p-ars, body.day #p-lal, body.day #p-zim{display:none}
-body.evening #p-standard, body.evening #p-markets, body.evening #p-fx, body.evening #p-rates{display:none}
+/* mode layouts: the feature panel spans two columns on the bottom row */
+body.morning .grid{grid-template-areas:"standard markets fx" "feature feature news"}
+body.day .grid{grid-template-areas:"news markets fx" "feature feature radar"}
+body.evening .grid{grid-template-areas:"sport ars lal" "feature feature zim"}
+#p-rates{display:none}
+body.morning #p-radar, body.morning #p-ars, body.morning #p-lal, body.morning #p-zim, body.morning #p-sport{display:none}
+body.day #p-standard, body.day #p-ars, body.day #p-lal, body.day #p-zim, body.day #p-sport{display:none}
+body.evening #p-standard, body.evening #p-markets, body.evening #p-fx, body.evening #p-news, body.evening #p-radar{display:none}
 #p-standard{grid-area:standard} #p-news{grid-area:news} #p-radar{grid-area:radar}
-#p-markets{grid-area:markets} #p-fx{grid-area:fx} #p-rates{grid-area:rates}
+#p-markets{grid-area:markets} #p-fx{grid-area:fx} #p-feature{grid-area:feature}
 #p-sport{grid-area:sport} #p-ars{grid-area:ars} #p-lal{grid-area:lal} #p-zim{grid-area:zim}
+
+/* feature panel */
+#p-feature{display:flex;flex-direction:column}
+.ftabs{display:flex;align-items:center}
+.p h2 .ftab{font-size:.78vw;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-left:.9vw;white-space:nowrap}
+.p h2 .ftab.on{color:var(--text)}
+.p h2 .ftab.on:before{content:"";display:inline-block;width:.45vw;height:.45vw;border-radius:50%;background:var(--gold);margin-right:.35vw;vertical-align:.1vw}
+#feature{flex:1;min-height:0;display:flex}
+.cards{display:flex;flex:1;min-width:0}
+.card{flex:1;min-width:0;margin-right:1vw;background:var(--panel2);border:1px solid var(--line);border-radius:.7vw;overflow:hidden;display:flex;flex-direction:column}
+.card:last-child{margin-right:0}
+.card .im{height:9.2vw;flex:none;position:relative;background:#1b2531;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;display:block}
+.card .im .ph{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;font-size:2.6vw;font-weight:700;color:rgba(255,255,255,.85);letter-spacing:-.02em}
+.card .tx{padding:.6vw .75vw;min-height:0;overflow:hidden}
+.card .h{font-size:1.02vw;font-weight:600;line-height:1.28;max-height:3.9vw;overflow:hidden}
+.card .s{font-size:.82vw;color:var(--muted);margin-top:.3vw;line-height:1.3;max-height:2.2vw;overflow:hidden}
+.card .m{font-size:.8vw;color:var(--gold);margin-top:.3vw;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctag{position:absolute;left:.5vw;top:.5vw;font-size:.7vw;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.1vw .45vw;border-radius:.25vw;background:rgba(6,9,13,.78);color:#fff}
+.ai-wrap{display:flex;flex:1;min-width:0}
+.ai-list{flex:1.35;margin-right:1.2vw;min-width:0}
+.ai-item{padding:.55vw 0;border-bottom:1px solid var(--line);display:flex}
+.ai-item:last-child{border-bottom:0}
+.ai-n{font-size:1.6vw;font-weight:700;color:var(--blue);width:2.2vw;flex:none;line-height:1}
+.ai-item .h{font-size:1.08vw;font-weight:500;line-height:1.3}
+.ai-item .s{font-size:.8vw;color:var(--faint);margin-top:.15vw}
+.ai-side{flex:1;display:flex;flex-direction:column;min-width:0}
+.tip{flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:.7vw;padding:.7vw .9vw;margin-bottom:.8vw;overflow:hidden}
+.tip:last-child{margin-bottom:0}
+.tip b{display:block;font-size:.75vw;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.35vw}
+.tip.ch b{color:var(--blue)}
+.tip span{font-size:1.08vw;line-height:1.35}
+.pl-wrap{display:flex;flex:1;min-width:0}
+.pl{flex:1.5;margin-right:1.2vw}
+.pl-row{display:flex;align-items:center;padding:.38vw .6vw;border-bottom:1px solid var(--line);font-size:1.12vw;font-variant-numeric:tabular-nums}
+.pl-row.hd{font-size:.75vw;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line)}
+.pl-row.ars{background:rgba(239,1,7,.18);border-radius:.4vw;border-bottom-color:transparent;font-weight:700}
+.pl-row .p{width:2.2vw;color:var(--muted)}
+.pl-row .t{flex:1}
+.pl-row .n{width:3.6vw;text-align:right}
+.pl-row .pts{width:4vw;text-align:right;font-weight:700}
+.pl-side{flex:1;display:flex;flex-direction:column;justify-content:center}
+.big-stat{font-size:3.4vw;font-weight:700;line-height:1;color:var(--text)}
+.big-stat small{font-size:1.1vw;color:var(--muted);font-weight:500;display:block;margin-top:.4vw}
+
+/* rates strip and TfL strip */
+.strip{display:flex;align-items:center;font-size:.95vw;color:var(--muted);margin-top:.8vw;white-space:nowrap;overflow:hidden}
+.strip b{color:var(--text);font-weight:600;margin-right:.35vw}
+.strip .sep{color:var(--faint);margin:0 .9vw}
+.strip .lbl{font-size:.75vw;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);margin-right:1vw;font-weight:600}
+.tfl{display:flex;align-items:center;background:#0f1722;border:1px solid var(--line);border-radius:.6vw;padding:.45vw .9vw;margin-bottom:.4vw;font-size:1vw}
+.tfl .lbl{font-size:.75vw;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700;margin-right:1vw}
+.tl{display:inline-flex;align-items:center;margin-right:1.3vw;white-space:nowrap}
+.tl i{display:inline-block;width:.7vw;height:.7vw;border-radius:.15vw;margin-right:.4vw}
+.tl.ok em{color:var(--up);font-style:normal;margin-left:.35vw}
+.tl.bad em{color:var(--amber);font-style:normal;margin-left:.35vw;font-weight:600}
 
 /* standard */
 .std-title{font-size:2vw;font-weight:600;line-height:1.15;margin-bottom:.6vw}
@@ -176,15 +233,17 @@ body.night .nightnext{display:block}
     <section class="p" id="p-ars"><h2>Arsenal</h2><div id="ars"></div></section>
     <section class="p" id="p-lal"><h2>LA Lakers</h2><div id="lal"></div></section>
     <section class="p" id="p-zim"><h2>Zimbabwe <span>national teams and players abroad</span></h2><div id="zim"></div></section>
+    <section class="p" id="p-feature"><h2><span id="fTitle" style="color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:600"></span><span class="ftabs" id="fTabs"></span></h2><div id="feature" class="fade"></div></section>
   </div>
+  <div class="strip" id="strip"></div>
 
-  <div class="foot"><span id="asof"></span><span>Weather: Open-Meteo · FX: ECB via Frankfurter · ZiG: RBZ interbank · Scores: ESPN</span></div>
+  <div class="foot"><span id="asof"></span><span>Weather: Open-Meteo · FX: ECB via Frankfurter · ZiG: RBZ · Scores and table: ESPN · Travel: TfL · Images: each item's source</span></div>
 </div>
 <div class="takeover hidden" id="takeover"></div>
 
 <script>
 /* ===== DATA (replaced by each refresh) ===== */
-var DATA = {"asOf": "2026-11-11T14:30:00Z", "weather": [{"city": "London", "tz": "Europe/London", "now": 9, "hi": 9, "lo": 4, "cond": "Cloudy", "rain": 55}, {"city": "Johannesburg", "tz": "Africa/Johannesburg", "now": 29, "hi": 31, "lo": 17, "cond": "Sunny", "rain": 0}, {"city": "Harare", "tz": "Africa/Harare", "now": 26, "hi": 28, "lo": 14, "cond": "Cloudy", "rain": 10}], "standard": {"date": "Tue 10 Nov", "title": "Leave people better off", "quote": "“Leave people better than you met them.”"}, "news": [{"k": "air", "h": "Air Zimbabwe plans three weekly Harare–Johannesburg flights from December", "s": "AeroRoutes · 4 Nov"}, {"k": "zim", "h": "Zimbabwe courts Indian tech investment after the India–Africa Tech Summit in Harare", "s": "Business Tech Africa · 9 Nov"}, {"k": "sa", "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants", "s": "Business Tech Africa · 10 Nov"}, {"k": "sa", "h": "Cape Town fintech Lumepay discloses a $6m pre-seed round", "s": "Business Tech Africa · 11 Nov"}, {"k": "zim", "h": "GSM Zimbabwe launches a WhatsApp IMEI checker to spot stolen phones", "s": "Techzim · 28 Oct"}, {"k": "sa", "h": "South Africa leads African AI funding this year, about $55m disclosed against Egypt’s $22m", "s": "Launch Base Africa · 3 Nov"}, {"k": "air", "h": "Air Zimbabwe showcases at WTM London and eyes Dubai, Beijing and Guangzhou routes", "s": "The Herald · Nov"}, {"k": "sa", "h": "Johannesburg healthtech Ease Holdings raises $9.5m from AAFC Group", "s": "Techloy · 6 Nov"}, {"k": "world", "h": "Bank of England raises Bank Rate to 4%, its first rise since 2023", "s": "Bank of England · 5 Nov"}, {"k": "world", "h": "Hotter US inflation lifts rate-hike bets; Brent slips below $92 on US–Iran peace hopes", "s": "Kitco · 10 Nov"}], "radar": [{"h": "Takura Makadzange reaches the quarter-finals of the Best Sommelier of the World contest", "s": "NewZimbabwe · 6 Nov"}, {"h": "Brendan Taylor hits a Test century as Zimbabwe start strongly against Afghanistan", "s": "263Chat · 5 Nov"}, {"h": "Ten-year-old Ayanda Ndlovu wins in Zambia with a record-low opening 62", "s": "Business Times · 5 Nov"}, {"h": "Air Zimbabwe plans to resume Harare–Johannesburg flights in December", "s": "AeroRoutes · 4 Nov"}, {"h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion", "s": "NewZimbabwe (from IOL) · 2 Nov"}, {"h": "Robots for chickens: 335 pupils take on Robotek’s challenge", "s": "263Chat · 31 Oct"}, {"h": "Amalgamated Brands Group opens a US$20m VFEX listing, closing 30 November", "s": "Business Times · 31 Oct"}, {"h": "Sikandar Raza, 40, becomes the oldest Full Member batter to hit a T20I hundred", "s": "Yahoo Sports · 31 Oct"}], "markets": {"date": "10 Nov close", "rows": [{"n": "FTSE 100", "v": "10,751.59", "c": -0.29}, {"n": "S&P 500", "v": "7,520.93", "c": -0.38}, {"n": "JSE All Share", "v": "114,693", "c": -0.3}, {"n": "Gold $/oz", "v": "4,032.80", "c": -2.6}, {"n": "Brent $/bbl", "v": "91.49", "c": -1.17}]}, "fx": {"date": "10 Nov", "rows": [{"p": "GBP → ZAR", "r": "22.02", "c": 0.07}, {"p": "GBP → USD", "r": "1.3344", "c": -0.01}, {"p": "USD → ZAR", "r": "16.54", "c": 1.0}, {"p": "USD → ZiG", "r": "26.55", "c": null}]}, "rates": [{"b": "Bank of England", "d": "Up 0.25 on 5 Nov", "v": "4.00%", "next": "2026-12-17T12:00:00Z", "nextLabel": "17 Dec"}, {"b": "SARB repo", "d": "Prime 10.75%", "v": "7.25%", "next": "2026-11-19T13:00:00Z", "nextLabel": "19 Nov"}, {"b": "US Fed", "d": "Held on 28 Oct", "v": "3.75–4.00%", "next": "2026-12-09T19:00:00Z", "nextLabel": "9 Dec"}], "arsenal": {"pos": "1st", "pts": 27, "rec": "9 won, 1 lost", "form": ["W", "W", "W", "W", "W"], "last": "Arsenal 1–0 Hull City", "next": {"opp": "Newcastle (away)", "when": "2026-11-21T17:30:00Z"}, "after": "Arsenal v Man City · Sun 29 Nov"}, "lakers": {"pos": "1st in the West", "rec": "10–2", "last": "Hawks 114–124 Lakers", "next": {"opp": "at Milwaukee Bucks", "when": "2026-11-12T01:00:00Z"}, "after": "at Phoenix Suns · Sun 15 Nov"}, "zim": [{"t": "Chevrons", "s": "1st Test v Afghanistan drawn, Craig Ervine 206*", "n": "2nd Test", "w": "13–17 Nov"}, {"t": "Sables", "s": "Lost 43–7 to Samoa in Wakefield", "n": "v Uruguay, Ealing", "w": "Sat 14 Nov"}, {"t": "Warriors U23", "s": "U23 AFCON qualifiers v Mali", "n": "Two legs", "w": "11 & 17 Nov"}, {"t": "Zim players abroad", "s": "Nakamba, Zemura, Munetsi, Tavaziva, Maswanhise, Sigauke", "n": "club games resume", "w": "21 Nov"}], "fixtures": [{"label": "Lakers", "a": "Milwaukee Bucks", "b": "LA Lakers", "start": "2026-11-12T01:00:00Z", "mins": 150, "comp": "NBA"}, {"label": "Arsenal", "a": "Newcastle", "b": "Arsenal", "start": "2026-11-21T17:30:00Z", "mins": 115, "comp": "Premier League · St James’ Park"}, {"label": "Arsenal", "a": "Arsenal", "b": "Man City", "start": "2026-11-29T16:30:00Z", "mins": 115, "comp": "Premier League · Emirates"}, {"label": "Arsenal", "a": "Brentford", "b": "Arsenal", "start": "2026-12-02T20:15:00Z", "mins": 115, "comp": "Premier League · Tavaziva’s Brentford"}]};
+var DATA = {"asOf": "2026-11-11T17:00:00Z", "weather": [{"city": "London", "tz": "Europe/London", "now": 9, "hi": 9, "lo": 4, "cond": "Cloudy", "rain": 55}, {"city": "Johannesburg", "tz": "Africa/Johannesburg", "now": 29, "hi": 31, "lo": 17, "cond": "Sunny", "rain": 0}, {"city": "Harare", "tz": "Africa/Harare", "now": 26, "hi": 28, "lo": 14, "cond": "Cloudy", "rain": 10}], "standard": {"date": "Tue 10 Nov", "title": "Leave people better off", "quote": "“Leave people better than you met them.”"}, "news": [{"k": "air", "h": "Air Zimbabwe plans three weekly Harare–Johannesburg flights from December", "s": "AeroRoutes · 4 Nov"}, {"k": "zim", "h": "Zimbabwe courts Indian tech investment after the India–Africa Tech Summit in Harare", "s": "Business Tech Africa · 9 Nov"}, {"k": "sa", "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants", "s": "Business Tech Africa · 10 Nov"}, {"k": "sa", "h": "Cape Town fintech Lumepay discloses a $6m pre-seed round", "s": "Business Tech Africa · 11 Nov"}, {"k": "zim", "h": "GSM Zimbabwe launches a WhatsApp IMEI checker to spot stolen phones", "s": "Techzim · 28 Oct"}, {"k": "sa", "h": "South Africa leads African AI funding this year, about $55m disclosed against Egypt’s $22m", "s": "Launch Base Africa · 3 Nov"}, {"k": "air", "h": "Air Zimbabwe showcases at WTM London and eyes Dubai, Beijing and Guangzhou routes", "s": "The Herald · Nov"}, {"k": "sa", "h": "Johannesburg healthtech Ease Holdings raises $9.5m from AAFC Group", "s": "Techloy · 6 Nov"}, {"k": "world", "h": "Bank of England raises Bank Rate to 4%, its first rise since 2023", "s": "Bank of England · 5 Nov"}, {"k": "world", "h": "Hotter US inflation lifts rate-hike bets; Brent slips below $92 on US–Iran peace hopes", "s": "Kitco · 10 Nov"}], "radar": [{"h": "Takura Makadzange reaches the quarter-finals of the Best Sommelier of the World contest", "s": "NewZimbabwe · 6 Nov"}, {"h": "Brendan Taylor hits a Test century as Zimbabwe start strongly against Afghanistan", "s": "263Chat · 5 Nov"}, {"h": "Ten-year-old Ayanda Ndlovu wins in Zambia with a record-low opening 62", "s": "Business Times · 5 Nov"}, {"h": "Air Zimbabwe plans to resume Harare–Johannesburg flights in December", "s": "AeroRoutes · 4 Nov"}, {"h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion", "s": "NewZimbabwe (from IOL) · 2 Nov"}, {"h": "Robots for chickens: 335 pupils take on Robotek’s challenge", "s": "263Chat · 31 Oct"}, {"h": "Amalgamated Brands Group opens a US$20m VFEX listing, closing 30 November", "s": "Business Times · 31 Oct"}, {"h": "Sikandar Raza, 40, becomes the oldest Full Member batter to hit a T20I hundred", "s": "Yahoo Sports · 31 Oct"}], "markets": {"date": "10 Nov close", "rows": [{"n": "FTSE 100", "v": "10,751.59", "c": -0.29}, {"n": "S&P 500", "v": "7,520.93", "c": -0.38}, {"n": "JSE All Share", "v": "114,693", "c": -0.3}, {"n": "Gold $/oz", "v": "4,032.80", "c": -2.6}, {"n": "Brent $/bbl", "v": "91.49", "c": -1.17}]}, "fx": {"date": "10 Nov", "rows": [{"p": "GBP → ZAR", "r": "22.02", "c": 0.07}, {"p": "GBP → USD", "r": "1.3344", "c": -0.01}, {"p": "USD → ZAR", "r": "16.54", "c": 1.0}, {"p": "USD → ZiG", "r": "26.55", "c": null}]}, "rates": [{"b": "Bank of England", "d": "Up 0.25 on 5 Nov", "v": "4.00%", "next": "2026-12-17T12:00:00Z", "nextLabel": "17 Dec"}, {"b": "SARB repo", "d": "Prime 10.75%", "v": "7.25%", "next": "2026-11-19T13:00:00Z", "nextLabel": "19 Nov"}, {"b": "US Fed", "d": "Held on 28 Oct", "v": "3.75–4.00%", "next": "2026-12-09T19:00:00Z", "nextLabel": "9 Dec"}], "arsenal": {"pos": "1st", "pts": 27, "rec": "9 won, 1 lost", "form": ["W", "W", "W", "W", "W"], "last": "Arsenal 1–0 Hull City", "next": {"opp": "Newcastle (away)", "when": "2026-11-21T17:30:00Z"}, "after": "Arsenal v Man City · Sun 29 Nov"}, "lakers": {"pos": "1st in the West", "rec": "10–2", "last": "Hawks 114–124 Lakers", "next": {"opp": "at Milwaukee Bucks", "when": "2026-11-12T01:00:00Z"}, "after": "at Phoenix Suns · Sun 15 Nov"}, "zim": [{"t": "Chevrons", "s": "1st Test v Afghanistan drawn, Craig Ervine 206*", "n": "2nd Test", "w": "13–17 Nov"}, {"t": "Sables", "s": "Lost 43–7 to Samoa in Wakefield", "n": "v Uruguay, Ealing", "w": "Sat 14 Nov"}, {"t": "Warriors U23", "s": "U23 AFCON qualifiers v Mali", "n": "Two legs", "w": "11 & 17 Nov"}, {"t": "Zim players abroad", "s": "Nakamba, Zemura, Munetsi, Tavaziva, Maswanhise, Sigauke", "n": "club games resume", "w": "21 Nov"}], "fixtures": [{"label": "Lakers", "a": "Milwaukee Bucks", "b": "LA Lakers", "start": "2026-11-12T01:00:00Z", "mins": 150, "comp": "NBA"}, {"label": "Arsenal", "a": "Newcastle", "b": "Arsenal", "start": "2026-11-21T17:30:00Z", "mins": 115, "comp": "Premier League · St James’ Park"}, {"label": "Arsenal", "a": "Arsenal", "b": "Man City", "start": "2026-11-29T16:30:00Z", "mins": 115, "comp": "Premier League · Emirates"}, {"label": "Arsenal", "a": "Brentford", "b": "Arsenal", "start": "2026-12-02T20:15:00Z", "mins": 115, "comp": "Premier League · Tavaziva’s Brentford"}], "pl": [{"pos": 1, "t": "Arsenal", "p": 10, "gd": 10, "pts": 27}, {"pos": 2, "t": "Brighton", "p": 10, "gd": 19, "pts": 22}, {"pos": 3, "t": "Man City", "p": 10, "gd": 8, "pts": 21}, {"pos": 4, "t": "Liverpool", "p": 10, "gd": 4, "pts": 18}, {"pos": 5, "t": "Chelsea", "p": 10, "gd": 3, "pts": 16}, {"pos": 6, "t": "Everton", "p": 10, "gd": 2, "pts": 16}], "feature": {"africa": {"title": "Africa tech · funding this week", "items": [{"tag": "AI fund", "ph": "fund", "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-7.png", "h": "Enza Capital hits a $21m first close for a fund backing African AI", "s": "African AI rounds have a median size of just $1.9m", "m": "Launch Base Africa · 11 Nov"}, {"tag": "South Africa", "ph": "fund", "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-6.png", "h": "Cape Town fintech Lumepay raises a $6m pre-seed", "s": "Building cross-border B2B payment rails, plus a $10m liquidity float", "m": "Launch Base Africa · 10 Nov"}, {"tag": "South Africa", "ph": "fund", "mark": "Yoco", "h": "Yoco lands a $100m private credit facility", "s": "To scale lending to South African small businesses", "m": "Launch Base Africa · 9 Nov"}, {"tag": "Healthtech", "ph": "tech", "mark": "EASE", "h": "EASE Holdings raises $9.5m for pay-per-use MRI, CT and surgical robots", "s": "Live in Ghana and South Africa; $24m raised in total", "m": "Techloy · 6 Nov"}, {"tag": "Nigeria", "ph": "tech", "mark": "HH", "h": "Helium Health wins a $2.5m Google.org grant", "s": "AI tools to spot pregnancy complications early, starting in Lagos", "m": "Launch Base Africa deal tracker · 10 Nov"}, {"tag": "Kenya", "ph": "tech", "mark": "9MW", "h": "Miale Solar secures a $5.5m credit facility", "s": "Adding 9MW of solar for Kenyan clinics and labs", "m": "Launch Base Africa deal tracker · 10 Nov"}]}, "zimf": {"title": "Zimbabwean founders in the news", "items": [{"tag": "AI", "ph": "zim", "mark": "Ocular", "h": "Louis Murerwa’s Ocular AI raises a $2m pre-seed", "s": "Led by Drive Capital with Y Combinator; builds voice data for frontier AI labs", "m": "Business Tech Africa · Oct"}, {"tag": "Trade", "ph": "zim", "mark": "YALI", "h": "Zim YALI alumni turn US–Africa Commercial Forum contacts into deal leads", "s": "Chasing investment, technology and export partners", "m": "NewsDay · 9 Nov"}, {"tag": "Agritech", "ph": "zim", "mark": "Maminda", "h": "Edward Gandanzara’s Maminda pairs AI advice with finance for smallholders", "s": "Showed at VivaTech; expanding into Zambia and Malawi", "m": "We Are Tech Africa · founder to watch"}]}, "ai": {"title": "AI today", "stories": [{"h": "Anthropic ships Claude Fable 5.2 and Mythos 5.2", "s": "AI Weekly · 10 Nov"}, {"h": "Google unveils TPU 8tx and 8i Max, chips for secure long-context inference", "s": "AI Weekly · 10 Nov"}, {"h": "SoftBank posts a $7bn quarterly loss on AI data-centre power costs", "s": "AI Weekly · 10 Nov · OpenAI stake gain softened the hit"}], "tactics": ["Before a first call, find one public sign of change at the account, such as a new hire, a raise or a launch. Open with that, not your product.", "Ask AI to turn a prospect’s last three posts or earnings calls into three likely pains. Lead with the one you can actually solve.", "Let AI draft, never send. Rewrite the first line yourself so it sounds like you.", "Give every opportunity a clear “why now”. No why now, no forecast.", "Send the recap within 10 minutes of the call. Have AI turn your notes into the email; speed beats polish.", "Score last quarter’s wins against your ideal customer profile. Prospect only where three or more traits match.", "Multi-thread early: have a second named contact in every deal by the second meeting."], "tips": ["Pick partners by who already owns the customer relationship, not by logo size.", "Land one co-sold deal with a new partner within 90 days. Momentum beats enablement decks.", "Make deal registration take under five minutes. If it’s slow, partners stop registering.", "Track partner-sourced pipeline, not just partner-influenced. It keeps the programme honest."]}, "london": {"title": "London this week · tech, Zim and Afrobeats", "items": [{"tag": "Afrobeats", "ph": "afro", "img": "https://ents24.imgix.net/image/000/383/026/4dcfee6b480352198027004c86ea92d396709f5b.png", "h": "The Afrobeats Brunch with KoyeSax and The Fortune Collective", "s": "Soul Mama, Islington", "m": "Sat 14 Nov · 12:00–16:00"}, {"tag": "Zim", "ph": "zim", "mark": "🇿🇼", "h": "Sables v Uruguay, World Rugby Nations Cup", "s": "Trailfinders Sports Ground, Ealing", "m": "Sat 14 Nov · 15:00"}, {"tag": "Tech", "ph": "tech", "mark": "Olympia", "h": "Solana Breakpoint 2026", "s": "Keynotes, workshops and networking at Olympia", "m": "15–17 Nov"}, {"tag": "Tech", "ph": "tech", "mark": "AI", "h": "AI in Business Conference London", "s": "Enterprise leaders turning AI strategy into results", "m": "Thu 19 Nov"}, {"tag": "Afrobeats", "ph": "afro", "mark": "Live", "h": "The Love & Afrobeats Orchestra", "s": "Soul Mama, Stratford", "m": "Fri 20 Nov · 18:30"}, {"tag": "Zim", "ph": "zim", "mark": "BZS", "h": "Britain Zimbabwe Society Research Day", "s": "Theme: everyday life in Zimbabwe and its diaspora", "m": "Sat 28 Nov"}]}, "collector": {"title": "Collector · watches and fragrance", "items": [{"tag": "Record", "ph": "auction", "img": "https://dist.phillips.com/content/web/press/images/image_19f39a90-c4c9-43c0-a4fa-cc2f20f2e38c.png", "h": "Phillips Geneva XXIV makes $112.3m, the first live watch sale past $100m", "s": "217 lots, 100% sold", "m": "Phillips · 7–8 Nov"}, {"tag": "Top lot", "ph": "watch", "mark": "FPJ", "h": "F.P. Journe Résonance “Régence” in platinum sells for CHF 8.68m", "s": "A new high for Journe at auction", "m": "Phillips Geneva · 7 Nov"}, {"tag": "Next", "ph": "watch", "mark": "HK", "h": "The Hong Kong Watch Auction: XXIII", "s": "Phillips’ next live watch sale", "m": "21–22 Nov"}, {"tag": "Fragrance", "ph": "fragrance", "img": "https://cdn.mos.cms.futurecdn.net/3muXiE4TqZioSbDAnoPZaP-1280-80.jpg", "h": "Dior Sauvage Extrait", "s": "Lavender, bergamot, patchouli, vetiver, cedarwood and oud", "m": "T3 pick of the autumn launches"}, {"tag": "Fragrance", "ph": "fragrance", "mark": "Byredo", "h": "Byredo Havana Tonka (Night Veils)", "s": "Roasted tonka, tobacco, violet and rum", "m": "£310 · 70ml"}, {"tag": "Fragrance", "ph": "fragrance", "mark": "TF", "h": "Tom Ford Ombré Leather Reserve", "s": "Juniper, black leather, sandalwood and violet leaf", "m": "New this autumn"}]}, "weekend": {"title": "Weekend · coffee and plans", "items": [{"tag": "Free", "ph": "event", "img": "https://assets.londonist.com/uploads/2026/11/i730/things-to-do-london-weekend-lord-mayor-show-2026.jpg", "h": "The Lord Mayor’s Show", "s": "Parade through the City, near your office", "m": "Sat 14 Nov · morning"}, {"tag": "New", "ph": "event", "img": "https://assets.londonist.com/uploads/2026/11/i875/things-to-do-london-weekend-alice-immersive-wonderland.png", "h": "Alice Immersive Wonderland opens", "s": "New immersive attraction", "m": "From this weekend"}, {"tag": "Last chance", "ph": "event", "img": "https://assets.londonist.com/uploads/2026/11/i730/things-to-do-london-this-weekend-inside-aardman-closing.jpg", "h": "Inside Aardman exhibition", "s": "Closing this weekend", "m": "Until Sun 15 Nov"}, {"tag": "Coffee", "ph": "coffee", "img": "https://media.timeout.com/images/106225772/750/422/image.jpg", "h": "Catalyst, Holborn", "s": "Scandi-style café on the Best Coffee Shops UK 2026 list", "m": "Time Out pick"}, {"tag": "Coffee", "ph": "coffee", "mark": "☕", "h": "Moonstruck, Stockwell", "s": "South London entry on the same list, on your side of the river", "m": "Best Coffee Shops UK 2026"}, {"tag": "Coffee", "ph": "coffee", "mark": "☕", "h": "Saint Nine Coffee, Southwark", "s": "Small coffee bar near Bankside", "m": "Best Coffee Shops UK 2026"}]}}};
 
 
 /* ===== helpers ===== */
@@ -201,7 +260,7 @@ var forced = (location.hash||"").replace("#","");
 
 /* ===== modes ===== */
 function currentMode(now){
-  if(["morning","day","evening","night","live"].indexOf(forced)>=0) return forced;
+  var fm=forced.split("-")[0]; if(["morning","day","evening","night","live"].indexOf(fm)>=0) return fm;
   var h=ukHour(now);
   if(h>=5&&h<12) return "morning";
   if(h>=12&&h<18) return "day";
@@ -296,6 +355,111 @@ function renderZim(){
   $("zim").innerHTML=html;
 }
 
+/* ===== rates strip (replaces the rates panel) ===== */
+function renderStrip(now){
+  var parts=DATA.rates.map(function(r){
+    var d=daysTo(r.next,now), when=d<=0?"today":(d===1?"tomorrow":"in "+d+"d");
+    return '<b>'+esc(r.b.replace(" repo",""))+'</b>'+esc(r.v)+' <span style="color:var(--faint)">· next '+esc(r.nextLabel)+' ('+when+')</span>';
+  });
+  $("strip").innerHTML='<span class="lbl">Rates</span>'+parts.join('<span class="sep">|</span>');
+}
+
+/* ===== feature panel: rotating tabs ===== */
+var TABS={
+  africa:{name:"Africa tech"}, zimf:{name:"Zim founders"}, ai:{name:"AI and GTM"},
+  pl:{name:"Premier League"}, london:{name:"London"}, collector:{name:"Collector"}, weekend:{name:"Weekend"}
+};
+function ukDay(now){try{return now.toLocaleDateString("en-GB",{weekday:"short",timeZone:"Europe/London"})}catch(e){return ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][now.getDay()]}}
+function tabOrder(mode,now){
+  var d=ukDay(now), wk=(d==="Fri"||d==="Sat"||forced.indexOf("fri")>=0);
+  var o={morning:["ai","africa","zimf","london","collector"],
+         day:["africa","pl","ai","zimf","collector","london"],
+         evening:["pl","london","collector","africa","zimf"]}[mode]||["africa","ai"];
+  if(wk) o=["weekend"].concat(o);
+  return o.filter(function(t){return t==="pl"||t==="ai"||(DATA.feature&&DATA.feature[t]&&DATA.feature[t].items&&DATA.feature[t].items.length)});
+}
+function pagesFor(t){
+  if(t==="pl"||t==="ai") return 1;
+  return Math.ceil(DATA.feature[t].items.length/3);
+}
+var slides=[], slideIx=0, slideKey="";
+function buildSlides(mode,now){
+  var key=mode+ukDay(now)+(DATA.asOf||"");
+  if(key===slideKey) return false;
+  slideKey=key; slides=[]; slideIx=0;
+  tabOrder(mode,now).forEach(function(t){for(var p=0;p<pagesFor(t);p++) slides.push({t:t,p:p})});
+  return true;
+}
+var PH={zim:"#1f6e45",tech:"#1f4f86",fund:"#7a5a12",afro:"#7a2f6b",auction:"#5a4a2a",watch:"#3d4a5c",fragrance:"#6b3a4a",coffee:"#5b3d24",event:"#2f4f5f",ai:"#24406b"};
+function initials(s){var w=String(s).replace(/[^A-Za-z0-9 ]/g,"").split(" ").filter(Boolean);return (w[0]?w[0][0]:"")+(w[1]?w[1][0]:"")}
+function cardHTML(it){
+  var col=PH[(it.ph||"event")]||"#2f4f5f";
+  var ph='<div class="ph" style="background:linear-gradient(135deg,'+col+',#121820)">'+esc(it.mark||initials(it.h))+'</div>';
+  var img=it.img?'<img src="'+esc(it.img)+'" referrerpolicy="no-referrer" alt="" onerror="this.style.display=\'none\'">':'';
+  return '<div class="card"><div class="im">'+ph+img+(it.tag?'<span class="ctag">'+esc(it.tag)+'</span>':'')+'</div>'+
+    '<div class="tx"><div class="h">'+esc(it.h)+'</div>'+(it.s?'<div class="s">'+esc(it.s)+'</div>':'')+(it.m?'<div class="m">'+esc(it.m)+'</div>':'')+'</div></div>';
+}
+function dayOfYear(now){var s=new Date(now.getFullYear(),0,0);return Math.floor((now-s)/86400000)}
+function renderAI(now){
+  var f=DATA.feature.ai||{}, st=f.stories||[], tac=f.tactics||[], tip=f.tips||[];
+  var html='<div class="ai-wrap"><div class="ai-list">';
+  st.slice(0,3).forEach(function(x,i){html+='<div class="ai-item"><div class="ai-n">'+(i+1)+'</div><div><div class="h">'+esc(x.h)+'</div><div class="s">'+esc(x.s)+'</div></div></div>'});
+  html+='</div><div class="ai-side">';
+  if(tac.length) html+='<div class="tip"><b>Today’s sales tactic</b><span>'+esc(tac[dayOfYear(now)%tac.length])+'</span></div>';
+  if(tip.length) html+='<div class="tip ch"><b>Channel tip of the week</b><span>'+esc(tip[Math.floor(dayOfYear(now)/7)%tip.length])+'</span></div>';
+  $("feature").innerHTML=html+'</div></div>';
+}
+function renderPL(){
+  var rows=(LIVE.pl||DATA.pl||[]).slice(0,6), html='<div class="pl-wrap"><div class="pl"><div class="pl-row hd"><span class="p">#</span><span class="t">Team</span><span class="n">P</span><span class="n">GD</span><span class="pts">Pts</span></div>';
+  rows.forEach(function(r){html+='<div class="pl-row'+(/Arsenal/.test(r.t)?' ars':'')+'"><span class="p">'+r.pos+'</span><span class="t">'+esc(r.t)+'</span><span class="n">'+r.p+'</span><span class="n">'+(r.gd>0?"+":"")+r.gd+'</span><span class="pts">'+r.pts+'</span></div>'});
+  html+='</div><div class="pl-side">';
+  var ars=null, rest=[]; rows.forEach(function(r){if(/Arsenal/.test(r.t))ars=r;else rest.push(r)});
+  if(ars&&ars.pos===1&&rest.length) html+='<div class="big-stat">+'+(ars.pts-rest[0].pts)+'<small>points clear at the top</small></div>';
+  else if(ars) html+='<div class="big-stat">'+ars.pos+(ars.pos===1?"st":ars.pos===2?"nd":ars.pos===3?"rd":"th")+'<small>Arsenal, '+ars.pts+' pts</small></div>';
+  var a=DATA.arsenal; if(a&&a.next) html+='<div style="margin-top:1.6vw;font-size:1vw;color:var(--muted)">Next: <b style="color:var(--text)">'+esc(a.next.opp)+'</b><br>'+nextWhen(a.next.when,new Date())+' UK</div>';
+  $("feature").innerHTML=html+(LIVE.pl?'<div style="margin-top:1vw;font-size:.75vw;color:var(--faint)">Live table from ESPN</div>':'')+'</div></div>';
+}
+function renderFeature(now){
+  if(!slides.length){$("p-feature").style.visibility="hidden";return}
+  $("p-feature").style.visibility="visible";
+  var sl=slides[slideIx%slides.length], t=sl.t;
+  var seen={}, tabs="";
+  slides.forEach(function(s){if(seen[s.t])return;seen[s.t]=1;tabs+='<span class="ftab'+(s.t===t?' on':'')+'">'+TABS[s.t].name+'</span>'});
+  $("fTabs").innerHTML=tabs;
+  if(t==="ai"){$("fTitle").textContent=(DATA.feature.ai&&DATA.feature.ai.title)||"AI today";renderAI(now);return}
+  if(t==="pl"){$("fTitle").textContent="Premier League · top 6";renderPL();return}
+  var f=DATA.feature[t], pages=pagesFor(t), items=f.items.slice(sl.p*3,sl.p*3+3);
+  $("fTitle").textContent=f.title+(pages>1?"  ·  "+(sl.p+1)+" of "+pages:"");
+  $("feature").innerHTML='<div class="cards">'+items.map(cardHTML).join("")+'</div>';
+}
+function nextSlide(){
+  if(slides.length<2) return;
+  $("feature").style.opacity=0;
+  setTimeout(function(){slideIx=(slideIx+1)%slides.length;renderFeature(new Date());$("feature").style.opacity=1},600);
+}
+
+/* ===== TfL strip: office days (Tue and Thu), commute hours ===== */
+var TFL_LINES=[["southern","Southern","#8cc63e"],["thameslink","Thameslink","#e5418c"],["northern","Northern","#000000"],["district","District","#00782a"],["circle","Circle","#ffd329"]];
+function tflActive(now){
+  if(forced.indexOf("tfl")>=0) return true;
+  var d=ukDay(now), h=ukHour(now);
+  return (d==="Tue"||d==="Thu") && ((h>=6&&h<10)||(h>=16&&h<19));
+}
+function liveTfl(){
+  if(!tflActive(new Date())){LIVE.tfl=null;return}
+  getJSON("https://api.tfl.gov.uk/Line/"+TFL_LINES.map(function(l){return l[0]}).join(",")+"/Status").then(function(d){
+    var m={}; d.forEach(function(l){var s=l.lineStatuses&&l.lineStatuses[0]; m[l.id]={sev:s?s.statusSeverity:10,txt:s?s.statusSeverityDescription:"Unknown"}});
+    LIVE.tfl={at:new Date(),lines:m}; renderAlerts(new Date());
+  }).catch(function(){});
+}
+function tflHTML(now){
+  if(!tflActive(now)||!LIVE.tfl) return "";
+  var html='<div class="tfl"><span class="lbl">Office day · your routes</span>';
+  TFL_LINES.forEach(function(l){var s=LIVE.tfl.lines[l[0]]; if(!s) return;
+    var ok=s.sev===10; html+='<span class="tl '+(ok?'ok':'bad')+'"><i style="background:'+l[2]+(l[0]==="northern"?';border:1px solid #888':'')+'"></i>'+l[1]+'<em>'+(ok?'Good':esc(s.txt))+'</em></span>'});
+  return html+'<span style="margin-left:auto;font-size:.8vw;color:var(--faint)">TfL · '+fmtTime(LIVE.tfl.at,"Europe/London")+'</span></div>';
+}
+
 /* ===== takeovers and alerts ===== */
 function liveFixture(now){
   if(forced==="live") return DATA.fixtures[0];
@@ -324,7 +488,7 @@ function renderAlerts(now){
   DATA.markets.rows.forEach(function(m){if(Math.abs(m.c)>=2) a.push({t:"warn",m:m.n+" moved "+pct(m.c)+" at the last close"});});
   var age=(now-new Date(DATA.asOf))/3600000;
   if(age>30) a.push({t:"warn",m:"Data last refreshed "+fmtDay(new Date(DATA.asOf))+". Waiting for the next update."});
-  $("alerts").innerHTML=a.slice(0,2).map(function(x){return '<div class="alert'+(x.t==="info"?" info":"")+'"><span class="dot"></span>'+esc(x.m)+'</div>'}).join("");
+  $("alerts").innerHTML=tflHTML(now)+a.slice(0,2).map(function(x){return '<div class="alert'+(x.t==="info"?" info":"")+'"><span class="dot"></span>'+esc(x.m)+'</div>'}).join("");
 }
 
 /* ===== live data (runs on the TV) ===== */
@@ -373,15 +537,26 @@ function liveScores(){
     }).catch(function(){});
   });
 }
+function livePL(){
+  getJSON("https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings").then(function(d){
+    var e=d.children[0].standings.entries, rows=[];
+    e.forEach(function(x){var st={};x.stats.forEach(function(s){st[s.name]=s.value});
+      rows.push({pos:st.rank,t:x.team.shortDisplayName||x.team.displayName,p:st.gamesPlayed,gd:st.pointDifferential,pts:st.points})});
+    rows.sort(function(a,b){return a.pos-b.pos});
+    if(rows.length) LIVE.pl=rows;
+  }).catch(function(){});
+}
 function loadData(){
   getJSON("data.json?t="+Date.now()).then(function(d){
     DATA=d; renderAll(); liveWeather(); liveFx();
   }).catch(function(){ liveWeather(); liveFx(); });
+  livePL();
 }
 function renderAll(){
+  DATA.feature=DATA.feature||{};
   renderStandard(); renderNews(); renderRadar(); renderMarkets(); renderFx(); renderZim();
   $("asof").textContent="Data as of "+fmtDay(new Date(DATA.asOf))+", "+fmtTime(new Date(DATA.asOf),"Europe/London")+" UK. Markets are last closes; weather and exchange rates update live.";
-  lastMode=""; tick();
+  lastMode=""; slideKey=""; $("feature").innerHTML=""; tick();
 }
 
 /* ===== loop ===== */
@@ -393,7 +568,8 @@ function tick(){
     $("modeTag").textContent={morning:"Morning",day:"Day",evening:"Evening",night:"Night"}[showMode];}
   $("clock").textContent=fmtTime(now,"Europe/London");
   try{$("date").textContent=now.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/London"})}catch(e){$("date").textContent=now.toDateString()}
-  renderCities(now); renderRates(now); renderSport(now); renderAlerts(now); renderTakeover(now);
+  renderCities(now); renderStrip(now); renderSport(now); renderAlerts(now); renderTakeover(now);
+  if(buildSlides(showMode,now)||!$("feature").innerHTML) renderFeature(now);
   renderTeam("ars",DATA.arsenal,"ARS","var(--ars)","#fff",now);
   renderTeam("lal",DATA.lakers,"LAL","#552583","var(--lal)",now);
   var nf=null; DATA.fixtures.forEach(function(f){if(!nf && new Date(f.start)>now) nf=f});
@@ -405,12 +581,13 @@ function rotate(){
 }
 function init(){
   renderAll();
-  setInterval(tick,5000); setInterval(rotate,15000);
+  setInterval(tick,5000); setInterval(rotate,15000); setInterval(nextSlide,20000);
+  liveTfl(); setInterval(liveTfl,3*60*1000); setInterval(livePL,30*60*1000);
   loadData();
   setInterval(loadData,15*60*1000);
   setInterval(function(){ if(liveFixture(new Date())) liveScores(); },60*1000);
   setTimeout(function(){location.reload()},6*60*60*1000);
-  window.addEventListener("hashchange",function(){forced=(location.hash||"").replace("#","");lastMode="";tick()});
+  window.addEventListener("hashchange",function(){forced=(location.hash||"").replace("#","");lastMode="";slideKey="";$("feature").innerHTML="";liveTfl();tick()});
 }
 init();
 </script>
