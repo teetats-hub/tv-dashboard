@@ -426,23 +426,23 @@
     },
     {
      "h": "SoftBank posts a $7bn quarterly loss on AI data-centre power costs",
-     "s": "AI Weekly · 10 Nov · OpenAI stake gain softened the hit"
+     "s": "AI Weekly · 10 Nov"
     }
    ],
    "tactics": [
-    "Before a first call, find one public sign of change at the account, such as a new hire, a raise or a launch. Open with that, not your product.",
-    "Ask AI to turn a prospect’s last three posts or earnings calls into three likely pains. Lead with the one you can actually solve.",
-    "Let AI draft, never send. Rewrite the first line yourself so it sounds like you.",
-    "Give every opportunity a clear “why now”. No why now, no forecast.",
-    "Send the recap within 10 minutes of the call. Have AI turn your notes into the email; speed beats polish.",
-    "Score last quarter’s wins against your ideal customer profile. Prospect only where three or more traits match.",
-    "Multi-thread early: have a second named contact in every deal by the second meeting."
+    "Open with a recent change at the account, like a new hire or raise. Not your product.",
+    "Ask AI for a prospect’s three likely pains. Lead with the one you can solve.",
+    "Let AI draft, never send. Rewrite the first line so it sounds like you.",
+    "Give every deal a clear “why now”. No why now, no forecast.",
+    "Send the call recap within 10 minutes. Speed beats polish.",
+    "Prospect only where three or more traits match your best recent wins.",
+    "Have a second named contact in every deal by the second meeting."
    ],
    "tips": [
-    "Pick partners by who already owns the customer relationship, not by logo size.",
-    "Land one co-sold deal with a new partner within 90 days. Momentum beats enablement decks.",
-    "Make deal registration take under five minutes. If it’s slow, partners stop registering.",
-    "Track partner-sourced pipeline, not just partner-influenced. It keeps the programme honest."
+    "Pick partners who already own the customer relationship, not the biggest logos.",
+    "Land one co-sold deal with a new partner inside 90 days.",
+    "Keep deal registration under five minutes or partners stop doing it.",
+    "Track partner-sourced pipeline, not just partner-influenced."
    ]
   },
   "london": {
@@ -552,7 +552,7 @@
    ]
   },
   "weekend": {
-   "title": "Coffee and weekend plans",
+   "title": "Weekend plans",
    "items": [
     {
      "tag": "Free",
