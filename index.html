@@ -93,10 +93,10 @@ body.evening #p-standard, body.evening #p-markets, body.evening #p-fx, body.even
 .tip span{font-size:1.08vw;line-height:1.35}
 .pl-wrap{display:flex;flex:1;min-width:0}
 .pl{flex:1.5;margin-right:1.2vw}
-.pl-row{display:flex;align-items:center;padding:.38vw .6vw;border-bottom:1px solid var(--line);font-size:1.12vw;font-variant-numeric:tabular-nums}
+.pl-row{display:flex;align-items:center;padding:.22vw .6vw;border-bottom:1px solid var(--line);font-size:1vw;font-variant-numeric:tabular-nums}
 .pl-row.hd{font-size:.75vw;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line)}
 .pl-row.ars{background:rgba(239,1,7,.18);border-radius:.4vw;border-bottom-color:transparent;font-weight:700}
-.pl-row .p{width:2.2vw;color:var(--muted)}
+.pl-row .pp{width:2.2vw;color:var(--muted)}
 .pl-row .t{flex:1}
 .pl-row .n{width:3.6vw;text-align:right}
 .pl-row .pts{width:4vw;text-align:right;font-weight:700}
@@ -410,7 +410,7 @@ function renderAI(now){
   $("feature").innerHTML=html+'</div></div>';
 }
 function renderPL(){
-  var rows=(LIVE.pl||DATA.pl||[]).slice(0,6), html='<div class="pl-wrap"><div class="pl"><div class="pl-row hd"><span class="p">#</span><span class="t">Team</span><span class="n">P</span><span class="n">GD</span><span class="pts">Pts</span></div>';
+  var rows=(LIVE.pl||DATA.pl||[]).slice(0,6), html='<div class="pl-wrap"><div class="pl"><div class="pl-row hd"><span class="pp">#</span><span class="t">Team</span><span class="n">P</span><span class="n">GD</span><span class="pts">Pts</span></div>';
   rows.forEach(function(r){html+='<div class="pl-row'+(/Arsenal/.test(r.t)?' ars':'')+'"><span class="p">'+r.pos+'</span><span class="t">'+esc(r.t)+'</span><span class="n">'+r.p+'</span><span class="n">'+(r.gd>0?"+":"")+r.gd+'</span><span class="pts">'+r.pts+'</span></div>'});
   html+='</div><div class="pl-side">';
   var ars=null, rest=[]; rows.forEach(function(r){if(/Arsenal/.test(r.t))ars=r;else rest.push(r)});
