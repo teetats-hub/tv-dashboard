@@ -332,7 +332,7 @@
  ],
  "feature": {
   "africa": {
-   "title": "Africa tech · funding this week",
+   "title": "Funding this week",
    "items": [
     {
      "tag": "AI fund",
@@ -385,7 +385,7 @@
    ]
   },
   "zimf": {
-   "title": "Zimbabwean founders in the news",
+   "title": "Zim founders",
    "items": [
     {
      "tag": "AI",
@@ -414,7 +414,7 @@
    ]
   },
   "ai": {
-   "title": "AI today",
+   "title": "AI and go-to-market",
    "stories": [
     {
      "h": "Anthropic ships Claude Fable 5.2 and Mythos 5.2",
@@ -446,7 +446,7 @@
    ]
   },
   "london": {
-   "title": "London this week · tech, Zim and Afrobeats",
+   "title": "London this week",
    "items": [
     {
      "tag": "Afrobeats",
@@ -499,7 +499,7 @@
    ]
   },
   "collector": {
-   "title": "Collector · watches and fragrance",
+   "title": "Watches and fragrance",
    "items": [
     {
      "tag": "Record",
@@ -552,7 +552,7 @@
    ]
   },
   "weekend": {
-   "title": "Weekend · coffee and plans",
+   "title": "Coffee and weekend plans",
    "items": [
     {
      "tag": "Free",
