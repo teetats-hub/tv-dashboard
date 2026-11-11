@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TV Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e13; --panel:#121820; --panel2:#18202a; --line:#232d39;
+  --text:#eef2f6; --muted:#8c99a8; --faint:#55616f;
+  --up:#3ddc84; --down:#ff6b6b; --amber:#ffb547; --blue:#6aaeff; --gold:#e9c46a;
+  --ars:#ef0107; --lal:#fdb927; --zim:#2e9e5b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text);
+  font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif;overflow:hidden}
+body{font-size:1.05vw;line-height:1.35}
+.wrap{position:absolute;top:0;left:0;right:0;bottom:0;padding:1.6vw 1.8vw 1.2vw;display:flex;flex-direction:column}
+
+/* header */
+.top{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:1.1vw}
+.clock{font-size:5.2vw;font-weight:600;letter-spacing:-0.03em;line-height:1}
+.date{font-size:1.25vw;color:var(--muted);margin-top:.35vw}
+.mode{display:inline-block;font-size:.85vw;text-transform:uppercase;letter-spacing:.12em;color:var(--bg);
+  background:var(--muted);border-radius:.3vw;padding:.15vw .55vw;margin-left:.6vw;vertical-align:middle;font-weight:600}
+.cities{display:flex}
+.city{background:var(--panel);border:1px solid var(--line);border-radius:.8vw;padding:.7vw 1.1vw;margin-left:.8vw;min-width:11.5vw}
+.city .n{font-size:.9vw;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.city .t{font-size:2.1vw;font-weight:600;line-height:1.1}
+.city .w{font-size:1vw;color:var(--muted)}
+.city .w b{color:var(--text);font-weight:600}
+
+/* alert strip */
+.alerts{margin-bottom:.9vw;min-height:0}
+.alert{display:flex;align-items:center;background:#2a1f0c;border:1px solid #5c4316;color:var(--amber);
+  border-radius:.6vw;padding:.45vw .9vw;margin-bottom:.4vw;font-size:1.05vw}
+.alert .dot{width:.6vw;height:.6vw;border-radius:50%;background:var(--amber);margin-right:.7vw;flex:none}
+.alert.info{background:#0f1d2e;border-color:#1f3b5e;color:var(--blue)}
+.alert.info .dot{background:var(--blue)}
+
+/* grid */
+.grid{flex:1;display:grid;grid-gap:1vw;min-height:0;
+  grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:1fr 1fr}
+.p{background:var(--panel);border:1px solid var(--line);border-radius:1vw;padding:1.1vw 1.2vw;overflow:hidden;position:relative;min-height:0}
+.p h2{font-size:.9vw;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.7vw;display:flex;justify-content:space-between}
+.p h2 span{color:var(--faint);letter-spacing:.04em;text-transform:none;font-weight:500}
+.hidden{display:none !important}
+
+/* mode layouts */
+body.morning .grid{grid-template-areas:"standard markets fx" "news rates sport"}
+body.day .grid{grid-template-areas:"news markets fx" "radar rates sport"}
+body.evening .grid{grid-template-areas:"sport ars lal" "news zim radar"}
+body.morning #p-radar, body.morning #p-ars, body.morning #p-lal, body.morning #p-zim{display:none}
+body.day #p-standard, body.day #p-ars, body.day #p-lal, body.day #p-zim{display:none}
+body.evening #p-standard, body.evening #p-markets, body.evening #p-fx, body.evening #p-rates{display:none}
+#p-standard{grid-area:standard} #p-news{grid-area:news} #p-radar{grid-area:radar}
+#p-markets{grid-area:markets} #p-fx{grid-area:fx} #p-rates{grid-area:rates}
+#p-sport{grid-area:sport} #p-ars{grid-area:ars} #p-lal{grid-area:lal} #p-zim{grid-area:zim}
+
+/* standard */
+.std-title{font-size:2vw;font-weight:600;line-height:1.15;margin-bottom:.6vw}
+.std-quote{font-size:1.2vw;color:var(--muted);font-style:italic;margin-bottom:1vw}
+.std-row{display:flex;align-items:flex-start;margin-bottom:.7vw}
+.std-tag{flex:none;font-size:.8vw;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--bg);
+  background:var(--gold);border-radius:.3vw;padding:.15vw .5vw;margin-right:.8vw;margin-top:.2vw;min-width:5.2vw;text-align:center}
+.std-tag.b{background:var(--blue)}
+.std-tag.g{background:var(--muted)}
+.std-txt{font-size:1.25vw}
+
+/* news */
+.news-item{padding:.5vw 0;border-bottom:1px solid var(--line)}
+.news-item:last-child{border-bottom:0}
+.news-item .h{font-size:1.12vw;font-weight:500;line-height:1.3}
+.news-item .s{font-size:.9vw;color:var(--faint);margin-top:.2vw}
+.tagk{display:inline-block;font-size:.75vw;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:.25vw;padding:.05vw .4vw;margin-right:.5vw;vertical-align:.1vw}
+.k-zim{background:#123d27;color:#7fe0a6}.k-air{background:#3a2a0d;color:var(--amber)}
+.k-sa{background:#122a45;color:var(--blue)}.k-world{background:#2b2f36;color:#c3ccd6}
+.fade{transition:opacity .6s}
+
+/* markets */
+.mk{display:flex;align-items:center;padding:.42vw 0;border-bottom:1px solid var(--line)}
+.mk:last-child{border-bottom:0}
+.mk .nm{flex:1.2;font-size:1.05vw;white-space:nowrap}
+.mk .v{flex:1;text-align:right;font-size:1.25vw;font-weight:600;font-variant-numeric:tabular-nums}
+.mk .bar{flex:1.1;height:1.6vw;position:relative;margin:0 .8vw}
+.mk .bar .axis{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line)}
+.mk .bar .fill{position:absolute;top:.35vw;height:.9vw;border-radius:.2vw}
+.mk .c{width:5.2vw;text-align:right;font-size:1.05vw;font-weight:600;font-variant-numeric:tabular-nums}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+
+/* fx */
+.fx{display:flex;align-items:baseline;justify-content:space-between;padding:.7vw 0;border-bottom:1px solid var(--line)}
+.fx:last-child{border-bottom:0}
+.fx .pair{font-size:1.15vw;color:var(--muted)}
+.fx .rate{font-size:2vw;font-weight:600;font-variant-numeric:tabular-nums}
+.fx .ch{font-size:.95vw;margin-left:.7vw}
+
+/* rates */
+.rt{display:flex;align-items:center;padding:.5vw 0;border-bottom:1px solid var(--line)}
+.rt:last-child{border-bottom:0}
+.rt .bk{flex:1}
+.rt .bk b{font-size:1.15vw;font-weight:600;display:block;white-space:nowrap}
+.rt .bk small{font-size:.85vw;color:var(--muted);white-space:nowrap}
+.rt .val{font-size:1.7vw;font-weight:600;width:9vw;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.rt .nx{width:6.5vw;text-align:right;font-size:.95vw;color:var(--muted)}
+.rt .nx b{display:block;color:var(--text);font-size:1.25vw}
+
+/* sport */
+.sp{display:flex;align-items:center;padding:.45vw 0;border-bottom:1px solid var(--line)}
+.sp:last-child{border-bottom:0}
+.crest{width:2.6vw;height:2.6vw;border-radius:50%;flex:none;margin-right:.9vw;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85vw;color:#fff}
+.sp .info{flex:1;min-width:0;margin-right:.6vw}
+.sp .info b{font-size:1.1vw;font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp .info small{font-size:.85vw;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp .rgt{text-align:right;font-size:.85vw;color:var(--muted);white-space:nowrap}
+.sp .rgt b{display:block;font-size:1.1vw;color:var(--text)}
+.big-team{display:flex;align-items:center;margin-bottom:.6vw}
+.big-team .crest{width:4vw;height:4vw;font-size:1.2vw}
+.big-team .nm{font-size:1.9vw;font-weight:600}
+.big-team .pos{font-size:1.05vw;color:var(--muted)}
+.kv{display:flex;justify-content:space-between;padding:.42vw 0;border-bottom:1px solid var(--line);font-size:1.15vw}
+.kv:last-child{border-bottom:0}
+.kv span{color:var(--muted)}
+.res{display:inline-block;width:1.7vw;height:1.7vw;line-height:1.7vw;text-align:center;border-radius:.3vw;font-size:.85vw;font-weight:700;margin-left:.3vw;color:var(--bg)}
+.res.W{background:var(--up)}.res.L{background:var(--down)}.res.D{background:var(--muted)}
+
+/* radar */
+.rd{padding:.6vw 0;border-bottom:1px solid var(--line)}
+.rd:last-child{border-bottom:0}
+.rd .h{font-size:1.15vw;font-weight:500}
+.rd .s{font-size:.85vw;color:var(--faint);margin-top:.15vw}
+
+/* takeover */
+.takeover{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(6,9,13,.96);display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:20;text-align:center}
+.takeover .live{font-size:1.2vw;letter-spacing:.3em;font-weight:700;color:var(--down);margin-bottom:1.4vw}
+.takeover .live:before{content:"";display:inline-block;width:1vw;height:1vw;border-radius:50%;background:var(--down);margin-right:.8vw;vertical-align:-.1vw;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{opacity:1}50%{opacity:.25}100%{opacity:1}}
+.takeover .teams{font-size:5vw;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.takeover .meta{font-size:1.5vw;color:var(--muted);margin-top:1.2vw}
+.takeover .note{font-size:1vw;color:var(--faint);margin-top:2.5vw}
+
+/* night */
+body.night .grid, body.night .alerts, body.night .cities{display:none}
+body.night .top{flex:1;justify-content:center;align-items:center;flex-direction:column;text-align:center}
+body.night .clock{font-size:12vw;color:#5d6875}
+body.night .date{font-size:1.6vw;color:#3d4651}
+.nightnext{display:none;font-size:1.3vw;color:#3d4651;margin-top:2vw}
+body.night .nightnext{display:block}
+
+.foot{display:flex;justify-content:space-between;font-size:.8vw;color:var(--faint);margin-top:.8vw}
+</style>
+</head>
+<body class="morning">
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="clock" id="clock">--:--</div>
+      <div class="date"><span id="date"></span><span class="mode" id="modeTag">Morning</span></div>
+      <div class="nightnext" id="nightNext"></div>
+    </div>
+    <div class="cities" id="cities"></div>
+  </div>
+
+  <div class="alerts" id="alerts"></div>
+
+  <div class="grid">
+    <section class="p" id="p-standard"><h2>The Standard <span id="stdDate"></span></h2><div id="std"></div></section>
+    <section class="p" id="p-news"><h2>Headlines <span id="newsPage"></span></h2><div id="news" class="fade"></div></section>
+    <section class="p" id="p-radar"><h2>NXT:ZIM radar <span>latest Link Bank finds</span></h2><div id="radar" class="fade"></div></section>
+    <section class="p" id="p-markets"><h2>Markets <span id="mkDate"></span></h2><div id="markets"></div></section>
+    <section class="p" id="p-fx"><h2>Exchange rates <span id="fxDate"></span></h2><div id="fx"></div></section>
+    <section class="p" id="p-rates"><h2>Interest rates <span>next decision</span></h2><div id="rates"></div></section>
+    <section class="p" id="p-sport"><h2>Sport <span>UK time</span></h2><div id="sport"></div></section>
+    <section class="p" id="p-ars"><h2>Arsenal</h2><div id="ars"></div></section>
+    <section class="p" id="p-lal"><h2>LA Lakers</h2><div id="lal"></div></section>
+    <section class="p" id="p-zim"><h2>Zimbabwe <span>national teams and players abroad</span></h2><div id="zim"></div></section>
+  </div>
+
+  <div class="foot"><span id="asof"></span><span>Weather: Open-Meteo · FX: ECB via Frankfurter · ZiG: RBZ interbank · Scores: ESPN</span></div>
+</div>
+<div class="takeover hidden" id="takeover"></div>
+
+<script>
+/* ===== DATA (replaced by each refresh) ===== */
+var DATA = {"asOf": "2026-11-11T14:30:00Z", "weather": [{"city": "London", "tz": "Europe/London", "now": 9, "hi": 9, "lo": 4, "cond": "Cloudy", "rain": 55}, {"city": "Johannesburg", "tz": "Africa/Johannesburg", "now": 29, "hi": 31, "lo": 17, "cond": "Sunny", "rain": 0}, {"city": "Harare", "tz": "Africa/Harare", "now": 26, "hi": 28, "lo": 14, "cond": "Cloudy", "rain": 10}], "standard": {"date": "Tue 10 Nov", "title": "Leave people better off", "quote": "“Leave people better than you met them.”"}, "news": [{"k": "air", "h": "Air Zimbabwe plans three weekly Harare–Johannesburg flights from December", "s": "AeroRoutes · 4 Nov"}, {"k": "zim", "h": "Zimbabwe courts Indian tech investment after the India–Africa Tech Summit in Harare", "s": "Business Tech Africa · 9 Nov"}, {"k": "sa", "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants", "s": "Business Tech Africa · 10 Nov"}, {"k": "sa", "h": "Cape Town fintech Lumepay discloses a $6m pre-seed round", "s": "Business Tech Africa · 11 Nov"}, {"k": "zim", "h": "GSM Zimbabwe launches a WhatsApp IMEI checker to spot stolen phones", "s": "Techzim · 28 Oct"}, {"k": "sa", "h": "South Africa leads African AI funding this year, about $55m disclosed against Egypt’s $22m", "s": "Launch Base Africa · 3 Nov"}, {"k": "air", "h": "Air Zimbabwe showcases at WTM London and eyes Dubai, Beijing and Guangzhou routes", "s": "The Herald · Nov"}, {"k": "sa", "h": "Johannesburg healthtech Ease Holdings raises $9.5m from AAFC Group", "s": "Techloy · 6 Nov"}, {"k": "world", "h": "Bank of England raises Bank Rate to 4%, its first rise since 2023", "s": "Bank of England · 5 Nov"}, {"k": "world", "h": "Hotter US inflation lifts rate-hike bets; Brent slips below $92 on US–Iran peace hopes", "s": "Kitco · 10 Nov"}], "radar": [{"h": "Takura Makadzange reaches the quarter-finals of the Best Sommelier of the World contest", "s": "NewZimbabwe · 6 Nov"}, {"h": "Brendan Taylor hits a Test century as Zimbabwe start strongly against Afghanistan", "s": "263Chat · 5 Nov"}, {"h": "Ten-year-old Ayanda Ndlovu wins in Zambia with a record-low opening 62", "s": "Business Times · 5 Nov"}, {"h": "Air Zimbabwe plans to resume Harare–Johannesburg flights in December", "s": "AeroRoutes · 4 Nov"}, {"h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion", "s": "NewZimbabwe (from IOL) · 2 Nov"}, {"h": "Robots for chickens: 335 pupils take on Robotek’s challenge", "s": "263Chat · 31 Oct"}, {"h": "Amalgamated Brands Group opens a US$20m VFEX listing, closing 30 November", "s": "Business Times · 31 Oct"}, {"h": "Sikandar Raza, 40, becomes the oldest Full Member batter to hit a T20I hundred", "s": "Yahoo Sports · 31 Oct"}], "markets": {"date": "10 Nov close", "rows": [{"n": "FTSE 100", "v": "10,751.59", "c": -0.29}, {"n": "S&P 500", "v": "7,520.93", "c": -0.38}, {"n": "JSE All Share", "v": "114,693", "c": -0.3}, {"n": "Gold $/oz", "v": "4,032.80", "c": -2.6}, {"n": "Brent $/bbl", "v": "91.49", "c": -1.17}]}, "fx": {"date": "10 Nov", "rows": [{"p": "GBP → ZAR", "r": "22.02", "c": 0.07}, {"p": "GBP → USD", "r": "1.3344", "c": -0.01}, {"p": "USD → ZAR", "r": "16.54", "c": 1.0}, {"p": "USD → ZiG", "r": "26.55", "c": null}]}, "rates": [{"b": "Bank of England", "d": "Up 0.25 on 5 Nov", "v": "4.00%", "next": "2026-12-17T12:00:00Z", "nextLabel": "17 Dec"}, {"b": "SARB repo", "d": "Prime 10.75%", "v": "7.25%", "next": "2026-11-19T13:00:00Z", "nextLabel": "19 Nov"}, {"b": "US Fed", "d": "Held on 28 Oct", "v": "3.75–4.00%", "next": "2026-12-09T19:00:00Z", "nextLabel": "9 Dec"}], "arsenal": {"pos": "1st", "pts": 27, "rec": "9 won, 1 lost", "form": ["W", "W", "W", "W", "W"], "last": "Arsenal 1–0 Hull City", "next": {"opp": "Newcastle (away)", "when": "2026-11-21T17:30:00Z"}, "after": "Arsenal v Man City · Sun 29 Nov"}, "lakers": {"pos": "1st in the West", "rec": "10–2", "last": "Hawks 114–124 Lakers", "next": {"opp": "at Milwaukee Bucks", "when": "2026-11-12T01:00:00Z"}, "after": "at Phoenix Suns · Sun 15 Nov"}, "zim": [{"t": "Chevrons", "s": "1st Test v Afghanistan drawn, Craig Ervine 206*", "n": "2nd Test", "w": "13–17 Nov"}, {"t": "Sables", "s": "Lost 43–7 to Samoa in Wakefield", "n": "v Uruguay, Ealing", "w": "Sat 14 Nov"}, {"t": "Warriors U23", "s": "U23 AFCON qualifiers v Mali", "n": "Two legs", "w": "11 & 17 Nov"}, {"t": "Zim players abroad", "s": "Nakamba, Zemura, Munetsi, Tavaziva, Maswanhise, Sigauke", "n": "club games resume", "w": "21 Nov"}], "fixtures": [{"label": "Lakers", "a": "Milwaukee Bucks", "b": "LA Lakers", "start": "2026-11-12T01:00:00Z", "mins": 150, "comp": "NBA"}, {"label": "Arsenal", "a": "Newcastle", "b": "Arsenal", "start": "2026-11-21T17:30:00Z", "mins": 115, "comp": "Premier League · St James’ Park"}, {"label": "Arsenal", "a": "Arsenal", "b": "Man City", "start": "2026-11-29T16:30:00Z", "mins": 115, "comp": "Premier League · Emirates"}, {"label": "Arsenal", "a": "Brentford", "b": "Arsenal", "start": "2026-12-02T20:15:00Z", "mins": 115, "comp": "Premier League · Tavaziva’s Brentford"}]};
+
+
+/* ===== helpers ===== */
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}
+function fmtTime(d,tz){try{return d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:tz})}catch(e){return d.toTimeString().slice(0,5)}}
+function fmtDay(d){try{return d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",timeZone:"Europe/London"})}catch(e){return d.toDateString()}}
+function ukHour(d){try{return parseInt(d.toLocaleTimeString("en-GB",{hour:"2-digit",hour12:false,timeZone:"Europe/London"}),10)}catch(e){return d.getHours()}}
+function cls(c){return c===null?"flat":(c>0.005?"up":(c<-0.005?"down":"flat"))}
+function pct(c){return c===null?"":(c>0?"+":"")+c.toFixed(2)+"%"}
+function daysTo(iso,now){var ms=new Date(iso)-now;return Math.ceil(ms/86400000)}
+
+var forced = (location.hash||"").replace("#","");
+
+/* ===== modes ===== */
+function currentMode(now){
+  if(["morning","day","evening","night","live"].indexOf(forced)>=0) return forced;
+  var h=ukHour(now);
+  if(h>=5&&h<12) return "morning";
+  if(h>=12&&h<18) return "day";
+  if(h>=18&&h<23) return "evening";
+  return "night";
+}
+
+/* ===== renderers ===== */
+function renderCities(now){
+  var html="";
+  DATA.weather.forEach(function(w){
+    html+='<div class="city"><div class="n">'+esc(w.city)+'</div><div class="t">'+fmtTime(now,w.tz)+'</div>'+
+      '<div class="w"><b>'+w.now+'°</b> '+esc(w.cond)+' · '+w.hi+'°/'+w.lo+'°'+(w.rain>=40?' · <span style="color:var(--amber)">'+w.rain+'% rain</span>':'')+'</div></div>';
+  });
+  $("cities").innerHTML=html;
+}
+function renderStandard(){
+  var s=DATA.standard;
+  $("stdDate").textContent=s.date+" edition";
+  $("std").innerHTML='<div class="std-title" style="font-size:2.6vw;margin-top:1vw">'+esc(s.title)+'</div><div class="std-quote" style="font-size:1.5vw">'+esc(s.quote)+'</div>'+
+    '<div class="std-row" style="margin-top:2vw"><span class="std-tag g">Full brief</span><span class="std-txt" style="color:var(--muted)">In your inbox</span></div>';
+}
+var KLAB={zim:"Zim",air:"Air Zim",sa:"Africa tech",world:"World"};
+var newsPage=0, radarPage=0;
+function renderNews(){
+  var per=3, pages=Math.ceil(DATA.news.length/per), start=(newsPage%pages)*per;
+  var html="";
+  DATA.news.slice(start,start+per).forEach(function(n){
+    html+='<div class="news-item"><div class="h"><span class="tagk k-'+n.k+'">'+KLAB[n.k]+'</span>'+esc(n.h)+'</div><div class="s">'+esc(n.s)+'</div></div>';
+  });
+  $("news").innerHTML=html; $("newsPage").textContent=(newsPage%pages+1)+" of "+pages;
+}
+function renderRadar(){
+  var per=3, pages=Math.ceil(DATA.radar.length/per), start=(radarPage%pages)*per, html="";
+  DATA.radar.slice(start,start+per).forEach(function(r){html+='<div class="rd"><div class="h">'+esc(r.h)+'</div><div class="s">'+esc(r.s)+'</div></div>'});
+  $("radar").innerHTML=html;
+}
+function renderMarkets(){
+  $("mkDate").textContent=DATA.markets.date;
+  var max=3, html="";
+  DATA.markets.rows.forEach(function(m){
+    var w=Math.min(Math.abs(m.c),max)/max*50, col=m.c>=0?"var(--up)":"var(--down)";
+    var pos=m.c>=0?'left:50%;width:'+w+'%':'right:50%;width:'+w+'%';
+    html+='<div class="mk"><div class="nm">'+esc(m.n)+'</div><div class="bar"><div class="axis"></div><div class="fill" style="'+pos+';background:'+col+'"></div></div>'+
+      '<div class="v">'+esc(m.v)+'</div><div class="c '+cls(m.c)+'">'+pct(m.c)+'</div></div>';
+  });
+  $("markets").innerHTML=html;
+}
+function renderFx(){
+  $("fxDate").textContent=DATA.fx.date;
+  var html="";
+  DATA.fx.rows.forEach(function(f){
+    html+='<div class="fx"><span class="pair">'+esc(f.p)+'</span><span><span class="rate">'+esc(f.r)+'</span><span class="ch '+cls(f.c)+'">'+pct(f.c)+'</span></span></div>';
+  });
+  $("fx").innerHTML=html;
+}
+function renderRates(now){
+  var html="";
+  DATA.rates.forEach(function(r){
+    var d=daysTo(r.next,now), when=d<=0?"today":(d===1?"tomorrow":"in "+d+" days");
+    html+='<div class="rt"><div class="bk"><b>'+esc(r.b)+'</b><small>'+esc(r.d)+'</small></div><div class="val">'+esc(r.v)+'</div><div class="nx"><b>'+esc(r.nextLabel)+'</b>'+when+'</div></div>';
+  });
+  $("rates").innerHTML=html;
+}
+function nextWhen(iso,now){
+  var d=new Date(iso);
+  return fmtDay(d)+" · "+fmtTime(d,"Europe/London");
+}
+function renderSport(now){
+  var a=DATA.arsenal, l=DATA.lakers, html="";
+  html+='<div class="sp"><div class="crest" style="background:var(--ars)">ARS</div><div class="info"><b>Arsenal · '+a.pos+', '+a.pts+' pts</b><small>Next: '+esc(a.next.opp)+'</small></div><div class="rgt"><b>'+nextWhen(a.next.when,now)+'</b>'+esc(a.last)+'</div></div>';
+  html+='<div class="sp"><div class="crest" style="background:#552583;color:var(--lal)">LAL</div><div class="info"><b>Lakers · '+l.rec+'</b><small>Next: '+esc(l.next.opp)+'</small></div><div class="rgt"><b>'+nextWhen(l.next.when,now)+'</b>'+esc(l.last)+'</div></div>';
+  DATA.zim.slice(0,2).forEach(function(z){
+    html+='<div class="sp"><div class="crest" style="background:var(--zim)">ZIM</div><div class="info"><b>'+esc(z.t)+'</b><small>'+esc(z.s)+'</small></div><div class="rgt"><b>'+esc(z.w)+'</b>'+esc(z.n)+'</div></div>';
+  });
+  $("sport").innerHTML=html;
+}
+function renderTeam(id,t,crest,bg,fg,now){
+  var form=t.form?t.form.map(function(r){return '<span class="res '+r+'">'+r+'</span>'}).join(""):"";
+  $(id).innerHTML='<div class="big-team"><div class="crest" style="background:'+bg+';color:'+fg+'">'+crest+'</div><div><div class="nm">'+esc(t.pos)+'</div><div class="pos">'+esc(t.rec)+(t.pts?' · '+t.pts+' pts':'')+'</div></div></div>'+
+    '<div class="kv"><span>Next</span>'+esc(t.next.opp)+'</div>'+
+    '<div class="kv"><span>When</span>'+nextWhen(t.next.when,now)+'</div>'+
+    '<div class="kv"><span>Last</span>'+esc(t.last)+'</div>'+
+    '<div class="kv"><span>Then</span>'+esc(t.after)+'</div>'+
+    (form?'<div class="kv"><span>Form</span><span>'+form+'</span></div>':'');
+}
+function renderZim(){
+  var html="";
+  DATA.zim.forEach(function(z){
+    html+='<div class="sp"><div class="crest" style="background:var(--zim)">ZIM</div><div class="info"><b>'+esc(z.t)+'</b><small>'+esc(z.s)+'</small></div><div class="rgt"><b>'+esc(z.w)+'</b>'+esc(z.n)+'</div></div>';
+  });
+  $("zim").innerHTML=html;
+}
+
+/* ===== takeovers and alerts ===== */
+function liveFixture(now){
+  if(forced==="live") return DATA.fixtures[0];
+  for(var i=0;i<DATA.fixtures.length;i++){
+    var f=DATA.fixtures[i], s=new Date(f.start), e=new Date(s.getTime()+f.mins*60000);
+    if(now>=new Date(s.getTime()-10*60000) && now<=e) return f;
+  }
+  return null;
+}
+function renderTakeover(now){
+  var f=liveFixture(now), el=$("takeover");
+  if(!f){el.className="takeover hidden";return}
+  var s=new Date(f.start), started=now>=s;
+  el.className="takeover";
+  el.innerHTML='<div class="live">'+(started?"LIVE NOW":"STARTING SOON")+'</div><div class="teams">'+esc(f.a)+'<br><span style="color:var(--muted);font-weight:500">v</span> '+esc(f.b)+'</div>'+
+    '<div class="meta">'+esc(f.comp)+' · '+(started?"started ":"starts ")+fmtTime(s,"Europe/London")+' UK</div>'+
+    (LIVE.scores[f.label]&&LIVE.scores[f.label].state==="in"?'<div class="teams" style="font-size:4vw;margin-top:1.5vw;color:var(--up)">'+esc(LIVE.scores[f.label].line)+'</div><div class="meta">'+esc(LIVE.scores[f.label].detail)+'</div>':'<div class="note">Score appears here once the match is under way.</div>');
+}
+function renderAlerts(now){
+  var a=[];
+  var nf=null;
+  DATA.fixtures.forEach(function(f){var s=new Date(f.start); if(!nf && s>now) nf=f;});
+  if(nf){var mins=Math.round((new Date(nf.start)-now)/60000);
+    if(mins<=180) a.push({t:"info",m:nf.label+": "+nf.a+" v "+nf.b+" starts at "+fmtTime(new Date(nf.start),"Europe/London")+" UK ("+(mins<60?mins+" min":Math.round(mins/60)+" h")+")"});}
+  DATA.rates.forEach(function(r){var d=daysTo(r.next,now); if(d===0) a.push({t:"warn",m:r.b+" decision today at "+fmtTime(new Date(r.next),"Europe/London")+" UK"}); else if(d===1) a.push({t:"info",m:r.b+" decision tomorrow"});});
+  DATA.markets.rows.forEach(function(m){if(Math.abs(m.c)>=2) a.push({t:"warn",m:m.n+" moved "+pct(m.c)+" at the last close"});});
+  var age=(now-new Date(DATA.asOf))/3600000;
+  if(age>30) a.push({t:"warn",m:"Data last refreshed "+fmtDay(new Date(DATA.asOf))+". Waiting for the next update."});
+  $("alerts").innerHTML=a.slice(0,2).map(function(x){return '<div class="alert'+(x.t==="info"?" info":"")+'"><span class="dot"></span>'+esc(x.m)+'</div>'}).join("");
+}
+
+/* ===== live data (runs on the TV) ===== */
+var LIVE={scores:{}};
+var WMO={0:"Clear",1:"Mostly clear",2:"Partly cloudy",3:"Cloudy",45:"Fog",48:"Fog",51:"Drizzle",53:"Drizzle",55:"Drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Light snow",73:"Snow",75:"Heavy snow",80:"Showers",81:"Showers",82:"Heavy showers",95:"Thunderstorm",96:"Thunderstorm",99:"Thunderstorm"};
+var COORDS={"London":[51.5074,-0.1278],"Johannesburg":[-26.2041,28.0473],"Harare":[-17.8292,31.0522]};
+function getJSON(url){return fetch(url,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})}
+function liveWeather(){
+  DATA.weather.forEach(function(w){
+    var c=COORDS[w.city]; if(!c) return;
+    getJSON("https://api.open-meteo.com/v1/forecast?latitude="+c[0]+"&longitude="+c[1]+"&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&forecast_days=1&timezone=auto")
+    .then(function(d){
+      w.now=Math.round(d.current.temperature_2m); w.cond=WMO[d.current.weather_code]||w.cond;
+      w.hi=Math.round(d.daily.temperature_2m_max[0]); w.lo=Math.round(d.daily.temperature_2m_min[0]);
+      if(d.daily.precipitation_probability_max) w.rain=d.daily.precipitation_probability_max[0]||0;
+      renderCities(new Date());
+    }).catch(function(){});
+  });
+}
+function liveFx(){
+  function apply(gbp,usd){
+    var map={"GBP → ZAR":gbp.ZAR,"GBP → USD":gbp.USD,"USD → ZAR":usd.ZAR};
+    DATA.fx.rows.forEach(function(r){ if(map[r.p]){ r.r=map[r.p].toFixed(r.p==="GBP → USD"?4:2); r.c=null; } });
+    DATA.fx.date="live (ECB daily)"; renderFx();
+  }
+  function tryHost(h){
+    return Promise.all([getJSON(h+"?from=GBP&to=ZAR,USD"),getJSON(h+"?from=USD&to=ZAR")])
+      .then(function(a){apply(a[0].rates,a[1].rates)});
+  }
+  tryHost("https://api.frankfurter.app/latest").catch(function(){return tryHost("https://api.frankfurter.dev/v1/latest")}).catch(function(){});
+}
+function liveScores(){
+  var feeds=[["https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard","Arsenal"],
+             ["https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard","Lakers"]];
+  feeds.forEach(function(f){
+    getJSON(f[0]).then(function(d){
+      (d.events||[]).forEach(function(ev){
+        if(ev.name.indexOf(f[1])<0) return;
+        var comp=ev.competitions&&ev.competitions[0]; if(!comp) return;
+        var st=ev.status&&ev.status.type;
+        var teams=comp.competitors.map(function(c){return {n:c.team.shortDisplayName||c.team.displayName,s:c.score,h:c.homeAway}});
+        teams.sort(function(a,b){return (a.h==="home"?0:1)-(b.h==="home"?0:1)});
+        LIVE.scores[f[1]]={state:st?st.state:"",detail:st?st.shortDetail:"",line:teams[0].n+" "+teams[0].s+" – "+teams[1].s+" "+teams[1].n};
+      });
+      renderTakeover(new Date());
+    }).catch(function(){});
+  });
+}
+function loadData(){
+  getJSON("data.json?t="+Date.now()).then(function(d){
+    DATA=d; renderAll(); liveWeather(); liveFx();
+  }).catch(function(){ liveWeather(); liveFx(); });
+}
+function renderAll(){
+  renderStandard(); renderNews(); renderRadar(); renderMarkets(); renderFx(); renderZim();
+  $("asof").textContent="Data as of "+fmtDay(new Date(DATA.asOf))+", "+fmtTime(new Date(DATA.asOf),"Europe/London")+" UK. Markets are last closes; weather and exchange rates update live.";
+  lastMode=""; tick();
+}
+
+/* ===== loop ===== */
+var lastMode="";
+function tick(){
+  var now=new Date(), mode=currentMode(now);
+  var showMode = mode==="live" ? "evening" : mode;
+  if(showMode!==lastMode){document.body.className=showMode; lastMode=showMode;
+    $("modeTag").textContent={morning:"Morning",day:"Day",evening:"Evening",night:"Night"}[showMode];}
+  $("clock").textContent=fmtTime(now,"Europe/London");
+  try{$("date").textContent=now.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/London"})}catch(e){$("date").textContent=now.toDateString()}
+  renderCities(now); renderRates(now); renderSport(now); renderAlerts(now); renderTakeover(now);
+  renderTeam("ars",DATA.arsenal,"ARS","var(--ars)","#fff",now);
+  renderTeam("lal",DATA.lakers,"LAL","#552583","var(--lal)",now);
+  var nf=null; DATA.fixtures.forEach(function(f){if(!nf && new Date(f.start)>now) nf=f});
+  $("nightNext").textContent=nf?("Next: "+nf.a+" v "+nf.b+" · "+nextWhen(nf.start,now)):"";
+}
+function rotate(){
+  ["news","radar"].forEach(function(id){$(id).style.opacity=0});
+  setTimeout(function(){newsPage++;radarPage++;renderNews();renderRadar();["news","radar"].forEach(function(id){$(id).style.opacity=1})},600);
+}
+function init(){
+  renderAll();
+  setInterval(tick,5000); setInterval(rotate,15000);
+  loadData();
+  setInterval(loadData,15*60*1000);
+  setInterval(function(){ if(liveFixture(new Date())) liveScores(); },60*1000);
+  setTimeout(function(){location.reload()},6*60*60*1000);
+  window.addEventListener("hashchange",function(){forced=(location.hash||"").replace("#","");lastMode="";tick()});
+}
+init();
+</script>
+</body>
+</html>

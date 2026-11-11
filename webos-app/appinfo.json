@@ -1,0 +1,13 @@
+{
+  "id": "com.teetats.dashboard",
+  "version": "1.0.0",
+  "vendor": "Tatenda",
+  "type": "web",
+  "main": "index.html",
+  "title": "Dashboard",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "bgColor": "#0a0e13",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true
+}

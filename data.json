@@ -1,0 +1,289 @@
+{
+ "asOf": "2026-11-11T14:30:00Z",
+ "weather": [
+  {
+   "city": "London",
+   "tz": "Europe/London",
+   "now": 9,
+   "hi": 9,
+   "lo": 4,
+   "cond": "Cloudy",
+   "rain": 55
+  },
+  {
+   "city": "Johannesburg",
+   "tz": "Africa/Johannesburg",
+   "now": 29,
+   "hi": 31,
+   "lo": 17,
+   "cond": "Sunny",
+   "rain": 0
+  },
+  {
+   "city": "Harare",
+   "tz": "Africa/Harare",
+   "now": 26,
+   "hi": 28,
+   "lo": 14,
+   "cond": "Cloudy",
+   "rain": 10
+  }
+ ],
+ "standard": {
+  "date": "Tue 10 Nov",
+  "title": "Leave people better off",
+  "quote": "“Leave people better than you met them.”"
+ },
+ "news": [
+  {
+   "k": "air",
+   "h": "Air Zimbabwe plans three weekly Harare–Johannesburg flights from December",
+   "s": "AeroRoutes · 4 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "Zimbabwe courts Indian tech investment after the India–Africa Tech Summit in Harare",
+   "s": "Business Tech Africa · 9 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants",
+   "s": "Business Tech Africa · 10 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Cape Town fintech Lumepay discloses a $6m pre-seed round",
+   "s": "Business Tech Africa · 11 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "GSM Zimbabwe launches a WhatsApp IMEI checker to spot stolen phones",
+   "s": "Techzim · 28 Oct"
+  },
+  {
+   "k": "sa",
+   "h": "South Africa leads African AI funding this year, about $55m disclosed against Egypt’s $22m",
+   "s": "Launch Base Africa · 3 Nov"
+  },
+  {
+   "k": "air",
+   "h": "Air Zimbabwe showcases at WTM London and eyes Dubai, Beijing and Guangzhou routes",
+   "s": "The Herald · Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Johannesburg healthtech Ease Holdings raises $9.5m from AAFC Group",
+   "s": "Techloy · 6 Nov"
+  },
+  {
+   "k": "world",
+   "h": "Bank of England raises Bank Rate to 4%, its first rise since 2023",
+   "s": "Bank of England · 5 Nov"
+  },
+  {
+   "k": "world",
+   "h": "Hotter US inflation lifts rate-hike bets; Brent slips below $92 on US–Iran peace hopes",
+   "s": "Kitco · 10 Nov"
+  }
+ ],
+ "radar": [
+  {
+   "h": "Takura Makadzange reaches the quarter-finals of the Best Sommelier of the World contest",
+   "s": "NewZimbabwe · 6 Nov"
+  },
+  {
+   "h": "Brendan Taylor hits a Test century as Zimbabwe start strongly against Afghanistan",
+   "s": "263Chat · 5 Nov"
+  },
+  {
+   "h": "Ten-year-old Ayanda Ndlovu wins in Zambia with a record-low opening 62",
+   "s": "Business Times · 5 Nov"
+  },
+  {
+   "h": "Air Zimbabwe plans to resume Harare–Johannesburg flights in December",
+   "s": "AeroRoutes · 4 Nov"
+  },
+  {
+   "h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion",
+   "s": "NewZimbabwe (from IOL) · 2 Nov"
+  },
+  {
+   "h": "Robots for chickens: 335 pupils take on Robotek’s challenge",
+   "s": "263Chat · 31 Oct"
+  },
+  {
+   "h": "Amalgamated Brands Group opens a US$20m VFEX listing, closing 30 November",
+   "s": "Business Times · 31 Oct"
+  },
+  {
+   "h": "Sikandar Raza, 40, becomes the oldest Full Member batter to hit a T20I hundred",
+   "s": "Yahoo Sports · 31 Oct"
+  }
+ ],
+ "markets": {
+  "date": "10 Nov close",
+  "rows": [
+   {
+    "n": "FTSE 100",
+    "v": "10,751.59",
+    "c": -0.29
+   },
+   {
+    "n": "S&P 500",
+    "v": "7,520.93",
+    "c": -0.38
+   },
+   {
+    "n": "JSE All Share",
+    "v": "114,693",
+    "c": -0.3
+   },
+   {
+    "n": "Gold $/oz",
+    "v": "4,032.80",
+    "c": -2.6
+   },
+   {
+    "n": "Brent $/bbl",
+    "v": "91.49",
+    "c": -1.17
+   }
+  ]
+ },
+ "fx": {
+  "date": "10 Nov",
+  "rows": [
+   {
+    "p": "GBP → ZAR",
+    "r": "22.02",
+    "c": 0.07
+   },
+   {
+    "p": "GBP → USD",
+    "r": "1.3344",
+    "c": -0.01
+   },
+   {
+    "p": "USD → ZAR",
+    "r": "16.54",
+    "c": 1.0
+   },
+   {
+    "p": "USD → ZiG",
+    "r": "26.55",
+    "c": null
+   }
+  ]
+ },
+ "rates": [
+  {
+   "b": "Bank of England",
+   "d": "Up 0.25 on 5 Nov",
+   "v": "4.00%",
+   "next": "2026-12-17T12:00:00Z",
+   "nextLabel": "17 Dec"
+  },
+  {
+   "b": "SARB repo",
+   "d": "Prime 10.75%",
+   "v": "7.25%",
+   "next": "2026-11-19T13:00:00Z",
+   "nextLabel": "19 Nov"
+  },
+  {
+   "b": "US Fed",
+   "d": "Held on 28 Oct",
+   "v": "3.75–4.00%",
+   "next": "2026-12-09T19:00:00Z",
+   "nextLabel": "9 Dec"
+  }
+ ],
+ "arsenal": {
+  "pos": "1st",
+  "pts": 27,
+  "rec": "9 won, 1 lost",
+  "form": [
+   "W",
+   "W",
+   "W",
+   "W",
+   "W"
+  ],
+  "last": "Arsenal 1–0 Hull City",
+  "next": {
+   "opp": "Newcastle (away)",
+   "when": "2026-11-21T17:30:00Z"
+  },
+  "after": "Arsenal v Man City · Sun 29 Nov"
+ },
+ "lakers": {
+  "pos": "1st in the West",
+  "rec": "10–2",
+  "last": "Hawks 114–124 Lakers",
+  "next": {
+   "opp": "at Milwaukee Bucks",
+   "when": "2026-11-12T01:00:00Z"
+  },
+  "after": "at Phoenix Suns · Sun 15 Nov"
+ },
+ "zim": [
+  {
+   "t": "Chevrons",
+   "s": "1st Test v Afghanistan drawn, Craig Ervine 206*",
+   "n": "2nd Test",
+   "w": "13–17 Nov"
+  },
+  {
+   "t": "Sables",
+   "s": "Lost 43–7 to Samoa in Wakefield",
+   "n": "v Uruguay, Ealing",
+   "w": "Sat 14 Nov"
+  },
+  {
+   "t": "Warriors U23",
+   "s": "U23 AFCON qualifiers v Mali",
+   "n": "Two legs",
+   "w": "11 & 17 Nov"
+  },
+  {
+   "t": "Zim players abroad",
+   "s": "Nakamba, Zemura, Munetsi, Tavaziva, Maswanhise, Sigauke",
+   "n": "club games resume",
+   "w": "21 Nov"
+  }
+ ],
+ "fixtures": [
+  {
+   "label": "Lakers",
+   "a": "Milwaukee Bucks",
+   "b": "LA Lakers",
+   "start": "2026-11-12T01:00:00Z",
+   "mins": 150,
+   "comp": "NBA"
+  },
+  {
+   "label": "Arsenal",
+   "a": "Newcastle",
+   "b": "Arsenal",
+   "start": "2026-11-21T17:30:00Z",
+   "mins": 115,
+   "comp": "Premier League · St James’ Park"
+  },
+  {
+   "label": "Arsenal",
+   "a": "Arsenal",
+   "b": "Man City",
+   "start": "2026-11-29T16:30:00Z",
+   "mins": 115,
+   "comp": "Premier League · Emirates"
+  },
+  {
+   "label": "Arsenal",
+   "a": "Brentford",
+   "b": "Arsenal",
+   "start": "2026-12-02T20:15:00Z",
+   "mins": 115,
+   "comp": "Premier League · Tavaziva’s Brentford"
+  }
+ ]
+}
