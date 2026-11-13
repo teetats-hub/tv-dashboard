@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-13T12:15:40Z",
+ "asOf": "2026-11-13T18:12:16Z",
  "weather": [
   {
    "city": "London",
@@ -36,6 +36,11 @@
  },
  "news": [
   {
+   "k": "zim",
+   "h": "Zimbabwe asks MSCI to add VFEX dollar stocks to its frontier markets index",
+   "s": "NewZimbabwe · 13 Nov"
+  },
+  {
    "k": "air",
    "h": "Airlink starts Lanseria to Harare flights on 15 Nov, three a week on E190s",
    "s": "AeroRoutes · from 15 Nov"
@@ -47,18 +52,18 @@
   },
   {
    "k": "world",
+   "h": "Gold steadies near $3,890 after a 13-month low as markets price in a Fed hike",
+   "s": "Yahoo Finance · 13 Nov"
+  },
+  {
+   "k": "world",
    "h": "UK economy grows 0.7% in Q3, its fastest quarter in over two years",
    "s": "City AM · 12 Nov"
   },
   {
-   "k": "world",
-   "h": "Brent jumps 3.3% to $95.82 after attacks on Saudi energy sites; gold falls 2.9%",
-   "s": "Nation Thailand · 12 Nov"
-  },
-  {
    "k": "sa",
-   "h": "EasyEquities owner Purple Group lifts pre-tax profit 36% to R150m",
-   "s": "Business Tech Africa · 12 Nov"
+   "h": "Google picks 10 African startups, including Smile ID and Termii, for its Applied AI Lab",
+   "s": "TechMoran · 11 Nov"
   },
   {
    "k": "zim",
@@ -74,11 +79,6 @@
    "k": "sa",
    "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants",
    "s": "Business Tech Africa · 10 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "OK Zimbabwe shareholders back a ZSE delisting under its rescue plan",
-   "s": "NewsDay · 6 Nov"
   },
   {
    "k": "air",
@@ -229,7 +229,7 @@
  "zim": [
   {
    "t": "Chevrons",
-   "s": "1st Test drawn; 2nd Test day 1: Kaia 53* and Curran 44* in Sharjah",
+   "s": "2nd Test day 1: 250/5, Kaia 96 and Taylor 96* in Sharjah",
    "n": "2nd Test, Sharjah",
    "w": "to 17 Nov"
   },
