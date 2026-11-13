@@ -1,14 +1,14 @@
 {
- "asOf": "2026-11-11T17:00:00Z",
+ "asOf": "2026-11-13T11:33:09Z",
  "weather": [
   {
    "city": "London",
    "tz": "Europe/London",
-   "now": 9,
-   "hi": 9,
-   "lo": 4,
-   "cond": "Cloudy",
-   "rain": 55
+   "now": 6,
+   "hi": 8,
+   "lo": 1,
+   "cond": "Sunny",
+   "rain": 0
   },
   {
    "city": "Johannesburg",
@@ -30,20 +30,45 @@
   }
  ],
  "standard": {
-  "date": "Tue 10 Nov",
-  "title": "Leave people better off",
-  "quote": "“Leave people better than you met them.”"
+  "date": "Fri 13 Nov",
+  "title": "Hopeful when you lose",
+  "quote": "“Stay humble when you win and hopeful when you lose.”"
  },
  "news": [
   {
    "k": "air",
-   "h": "Air Zimbabwe plans three weekly Harare–Johannesburg flights from December",
-   "s": "AeroRoutes · 4 Nov"
+   "h": "Airlink starts Lanseria to Harare flights on 15 Nov, three a week on E190s",
+   "s": "AeroRoutes · from 15 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Enza Capital reaches a $21m first close for its AI Africa fund",
+   "s": "Disrupt Africa · 13 Nov"
+  },
+  {
+   "k": "world",
+   "h": "UK economy grows 0.7% in Q3, its fastest quarter in over two years",
+   "s": "City AM · 12 Nov"
+  },
+  {
+   "k": "world",
+   "h": "Brent jumps 3.3% to $95.82 after attacks on Saudi energy sites; gold falls 2.9%",
+   "s": "Nation Thailand · 12 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "EasyEquities owner Purple Group lifts pre-tax profit 36% to R150m",
+   "s": "Business Tech Africa · 12 Nov"
   },
   {
    "k": "zim",
-   "h": "Zimbabwe courts Indian tech investment after the India–Africa Tech Summit in Harare",
-   "s": "Business Tech Africa · 9 Nov"
+   "h": "Econet says its Shona 2.0 AI now handles 80% of customer queries",
+   "s": "Techzim · 11 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "Draft rules for inDrive and Bolt cap commission at 18% and add a per-trip ZINARA fee",
+   "s": "Techzim · 11 Nov"
   },
   {
    "k": "sa",
@@ -51,42 +76,29 @@
    "s": "Business Tech Africa · 10 Nov"
   },
   {
-   "k": "sa",
-   "h": "Cape Town fintech Lumepay discloses a $6m pre-seed round",
-   "s": "Business Tech Africa · 11 Nov"
-  },
-  {
    "k": "zim",
-   "h": "GSM Zimbabwe launches a WhatsApp IMEI checker to spot stolen phones",
-   "s": "Techzim · 28 Oct"
-  },
-  {
-   "k": "sa",
-   "h": "South Africa leads African AI funding this year, about $55m disclosed against Egypt’s $22m",
-   "s": "Launch Base Africa · 3 Nov"
+   "h": "OK Zimbabwe shareholders back a ZSE delisting under its rescue plan",
+   "s": "NewsDay · 6 Nov"
   },
   {
    "k": "air",
-   "h": "Air Zimbabwe showcases at WTM London and eyes Dubai, Beijing and Guangzhou routes",
-   "s": "The Herald · Nov"
-  },
-  {
-   "k": "sa",
-   "h": "Johannesburg healthtech Ease Holdings raises $9.5m from AAFC Group",
-   "s": "Techloy · 6 Nov"
-  },
-  {
-   "k": "world",
-   "h": "Bank of England raises Bank Rate to 4%, its first rise since 2023",
-   "s": "Bank of England · 5 Nov"
-  },
-  {
-   "k": "world",
-   "h": "Hotter US inflation lifts rate-hike bets; Brent slips below $92 on US–Iran peace hopes",
-   "s": "Kitco · 10 Nov"
+   "h": "Air Zimbabwe plans three weekly Harare to Johannesburg flights from December",
+   "s": "AeroRoutes · 4 Nov"
   }
  ],
  "radar": [
+  {
+   "h": "Caine Prize confirms Simbarashe Kundizeza as 2026 winner after an AI review clears him",
+   "s": "Brittle Paper · 11 Nov"
+  },
+  {
+   "h": "Ropafadzo Mzondo wins 200m gold, Zimbabwe’s first Youth Olympic gold medal",
+   "s": "NewZimbabwe · 10 Nov"
+  },
+  {
+   "h": "Kadewere scores twice to beat Nakamba’s Panetolikos",
+   "s": "NewZimbabwe · 8 Nov"
+  },
   {
    "h": "Takura Makadzange reaches the quarter-finals of the Best Sommelier of the World contest",
    "s": "NewZimbabwe · 6 Nov"
@@ -100,77 +112,65 @@
    "s": "Business Times · 5 Nov"
   },
   {
-   "h": "Air Zimbabwe plans to resume Harare–Johannesburg flights in December",
-   "s": "AeroRoutes · 4 Nov"
-  },
-  {
    "h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion",
    "s": "NewZimbabwe (from IOL) · 2 Nov"
   },
   {
    "h": "Robots for chickens: 335 pupils take on Robotek’s challenge",
    "s": "263Chat · 31 Oct"
-  },
-  {
-   "h": "Amalgamated Brands Group opens a US$20m VFEX listing, closing 30 November",
-   "s": "Business Times · 31 Oct"
-  },
-  {
-   "h": "Sikandar Raza, 40, becomes the oldest Full Member batter to hit a T20I hundred",
-   "s": "Yahoo Sports · 31 Oct"
   }
  ],
  "markets": {
-  "date": "10 Nov close",
+  "date": "12 Nov close (JSE 11 Nov)",
   "rows": [
    {
     "n": "FTSE 100",
-    "v": "10,751.59",
-    "c": -0.29
+    "v": "10,863.09",
+    "c": 0.25
    },
    {
     "n": "S&P 500",
-    "v": "7,520.93",
-    "c": -0.38
+    "v": "7,592.40",
+    "c": -0.35
    },
    {
     "n": "JSE All Share",
-    "v": "114,693",
-    "c": -0.3
+    "v": "113,450",
+    "c": -1.08
    },
    {
     "n": "Gold $/oz",
-    "v": "4,032.80",
-    "c": -2.6
+    "v": "3,885.30",
+    "c": -2.88
    },
    {
     "n": "Brent $/bbl",
-    "v": "91.49",
-    "c": -1.17
+    "v": "95.82",
+    "c": 3.3
    }
   ]
  },
  "fx": {
-  "date": "10 Nov",
+  "date": "12 Nov",
   "rows": [
    {
     "p": "GBP → ZAR",
-    "r": "22.02",
-    "c": 0.07
+    "r": "22.04",
+    "c": null
    },
    {
     "p": "GBP → USD",
-    "r": "1.3344",
-    "c": -0.01
+    "r": "1.3232",
+    "c": -0.36
    },
    {
     "p": "USD → ZAR",
-    "r": "16.54",
-    "c": 1.0
+    "r": "16.59",
+    "c": null
    },
    {
     "p": "USD → ZiG",
-    "r": "26.55",
+    "r": "26.54",
     "c": null
    }
   ]
@@ -218,48 +218,72 @@
  },
  "lakers": {
   "pos": "1st in the West",
-  "rec": "10–2",
-  "last": "Hawks 114–124 Lakers",
+  "rec": "11–2",
+  "last": "Bucks 112–123 Lakers",
   "next": {
-   "opp": "at Milwaukee Bucks",
-   "when": "2026-11-12T01:00:00Z"
+   "opp": "at Phoenix Suns",
+   "when": "2026-11-15T21:00:00Z"
   },
-  "after": "at Phoenix Suns · Sun 15 Nov"
+  "after": "v Charlotte Hornets · Tue 17 Nov"
  },
  "zim": [
   {
    "t": "Chevrons",
-   "s": "1st Test v Afghanistan drawn, Craig Ervine 206*",
-   "n": "2nd Test",
-   "w": "13–17 Nov"
+   "s": "1st Test drawn; 2nd Test v Afghanistan began 13 Nov",
+   "n": "2nd Test, Sharjah",
+   "w": "to 17 Nov"
   },
   {
    "t": "Sables",
    "s": "Lost 43–7 to Samoa in Wakefield",
    "n": "v Uruguay, Ealing",
-   "w": "Sat 14 Nov"
+   "w": "Sat 14 Nov · 15:00"
   },
   {
-   "t": "Warriors U23",
-   "s": "U23 AFCON qualifiers v Mali",
-   "n": "Two legs",
-   "w": "11 & 17 Nov"
+   "t": "Warriors",
+   "s": "Drew 0–0 with Equatorial Guinea in Yaoundé (AFCON qualifier)",
+   "n": "v Equatorial Guinea, Harare",
+   "w": "Mon 16 Nov"
   },
   {
    "t": "Zim players abroad",
-   "s": "Nakamba, Zemura, Munetsi, Tavaziva, Maswanhise, Sigauke",
+   "s": "Kadewere brace beat Nakamba’s Panetolikos; Young Warriors lost 3–0 to Mali",
    "n": "club games resume",
    "w": "21 Nov"
   }
  ],
  "fixtures": [
   {
+   "label": "Harlequins",
+   "a": "Newcastle Red Bulls",
+   "b": "Harlequins",
+   "start": "2026-11-14T14:30:00Z",
+   "mins": 100,
+   "comp": "Premiership Rugby Cup"
+  },
+  {
+   "label": "Zimbabwe",
+   "a": "Zimbabwe",
+   "b": "Uruguay",
+   "start": "2026-11-14T15:00:00Z",
+   "mins": 100,
+   "comp": "World Rugby Nations Cup · Ealing"
+  },
+  {
    "label": "Lakers",
-   "a": "Milwaukee Bucks",
+   "a": "Phoenix Suns",
    "b": "LA Lakers",
-   "start": "2026-11-12T01:00:00Z",
+   "start": "2026-11-15T21:00:00Z",
    "mins": 150,
    "comp": "NBA"
+  },
+  {
+   "label": "Harlequins",
+   "a": "Saracens",
+   "b": "Harlequins",
+   "start": "2026-11-21T12:00:00Z",
+   "mins": 100,
+   "comp": "Premiership Rugby Cup"
   },
   {
    "label": "Arsenal",
@@ -276,14 +300,6 @@
    "start": "2026-11-29T16:30:00Z",
    "mins": 115,
    "comp": "Premier League · Emirates"
-  },
-  {
-   "label": "Arsenal",
-   "a": "Brentford",
-   "b": "Arsenal",
-   "start": "2026-12-02T20:15:00Z",
-   "mins": 115,
-   "comp": "Premier League · Tavaziva’s Brentford"
   }
  ],
  "pl": [
