@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-14T06:19:00Z",
+ "asOf": "2026-11-14T12:30:00Z",
  "weather": [
   {
    "city": "London",
@@ -30,9 +30,9 @@
   }
  ],
  "standard": {
-  "date": "Fri 13 Nov",
-  "title": "Hopeful when you lose",
-  "quote": "“Stay humble when you win and hopeful when you lose.”"
+  "date": "Sat 14 Nov",
+  "title": "Work for what you want",
+  "quote": "“You don’t get what you want. You get what you work for.”"
  },
  "news": [
   {
@@ -66,6 +66,11 @@
    "s": "Disrupt Africa · 13 Nov"
   },
   {
+   "k": "sa",
+   "h": "Yoco secures a $100m credit facility from Victory Park Capital for merchant cash advances",
+   "s": "Techloy · 13 Nov"
+  },
+  {
    "k": "air",
    "h": "Airlink starts Lanseria to Harare flights on 15 Nov, three a week on E190s",
    "s": "AeroRoutes · from 15 Nov"
@@ -79,14 +84,13 @@
    "k": "world",
    "h": "UK economy grows 0.7% in Q3, its fastest quarter in over two years",
    "s": "City AM · 12 Nov"
-  },
-  {
-   "k": "air",
-   "h": "Air Zimbabwe plans three weekly Harare to Johannesburg flights from December",
-   "s": "AeroRoutes · 4 Nov"
   }
  ],
  "radar": [
+  {
+   "h": "Brendan Taylor makes 119 as Zimbabwe reach 336/9 against Afghanistan in Sharjah",
+   "s": "Sports Tak · 14 Nov"
+  },
   {
    "h": "Young Zimbabwean artists use music, poetry and drama in a campaign against GBV",
    "s": "allAfrica · 13 Nov"
@@ -114,10 +118,6 @@
   {
    "h": "Ten-year-old Ayanda Ndlovu wins in Zambia with a record-low opening 62",
    "s": "Business Times · 5 Nov"
-  },
-  {
-   "h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion",
-   "s": "NewZimbabwe (from IOL) · 2 Nov"
   }
  ],
  "markets": {
@@ -229,7 +229,7 @@
  "zim": [
   {
    "t": "Chevrons",
-   "s": "2nd Test day 1: 250/5, Kaia 96 and Taylor 96* in Sharjah",
+   "s": "2nd Test day 2: 336/9, Taylor 119 and Kaia 96 in Sharjah",
    "n": "2nd Test, Sharjah",
    "w": "to 17 Nov"
   },
