@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-13T18:12:16Z",
+ "asOf": "2026-11-14T06:40:00Z",
  "weather": [
   {
    "city": "London",
@@ -37,8 +37,33 @@
  "news": [
   {
    "k": "zim",
+   "h": "Zimbabwe prepares to submit its formal application papers to join BRICS",
+   "s": "NewZimbabwe · 13 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "CBZ Holdings reports a ZWG1.1bn profit after tax",
+   "s": "NewZimbabwe · 13 Nov"
+  },
+  {
+   "k": "zim",
    "h": "Zimbabwe asks MSCI to add VFEX dollar stocks to its frontier markets index",
    "s": "NewZimbabwe · 13 Nov"
+  },
+  {
+   "k": "world",
+   "h": "Nvidia closes below $4tn in value for the first time since July 2025 as Huang quits",
+   "s": "CNBC · 13 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Swedfund and Proparco put $15m each into Lightrock's second Africa growth fund",
+   "s": "Business Tech Africa · 13 Nov"
+  },
+  {
+   "k": "sa",
+   "h": "Enza Capital reaches a $21m first close for its AI Africa fund",
+   "s": "Disrupt Africa · 13 Nov"
   },
   {
    "k": "air",
@@ -47,38 +72,13 @@
   },
   {
    "k": "sa",
-   "h": "Enza Capital reaches a $21m first close for its AI Africa fund",
-   "s": "Disrupt Africa · 13 Nov"
-  },
-  {
-   "k": "world",
-   "h": "Gold steadies near $3,890 after a 13-month low as markets price in a Fed hike",
-   "s": "Yahoo Finance · 13 Nov"
+   "h": "Nigeria's Raenest buys UK payments firm Remitise",
+   "s": "Disrupt Africa · 12 Nov"
   },
   {
    "k": "world",
    "h": "UK economy grows 0.7% in Q3, its fastest quarter in over two years",
    "s": "City AM · 12 Nov"
-  },
-  {
-   "k": "sa",
-   "h": "Google picks 10 African startups, including Smile ID and Termii, for its Applied AI Lab",
-   "s": "TechMoran · 11 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "Econet says its Shona 2.0 AI now handles 80% of customer queries",
-   "s": "Techzim · 11 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "Draft rules for inDrive and Bolt cap commission at 18% and add a per-trip ZINARA fee",
-   "s": "Techzim · 11 Nov"
-  },
-  {
-   "k": "sa",
-   "h": "Yoco closes a $100m credit facility to fund cash advances for its merchants",
-   "s": "Business Tech Africa · 10 Nov"
   },
   {
    "k": "air",
@@ -87,6 +87,10 @@
   }
  ],
  "radar": [
+  {
+   "h": "Young Zimbabwean artists use music, poetry and drama in a campaign against GBV",
+   "s": "allAfrica · 13 Nov"
+  },
   {
    "h": "Caine Prize confirms Simbarashe Kundizeza as 2026 winner after an AI review clears him",
    "s": "Brittle Paper · 11 Nov"
@@ -114,64 +118,60 @@
   {
    "h": "Nkanyeziyethu Malunga of GANU is bringing the forest into fashion",
    "s": "NewZimbabwe (from IOL) · 2 Nov"
-  },
-  {
-   "h": "Robots for chickens: 335 pupils take on Robotek’s challenge",
-   "s": "263Chat · 31 Oct"
   }
  ],
  "markets": {
-  "date": "12 Nov close (JSE 11 Nov)",
+  "date": "13 Nov close",
   "rows": [
    {
     "n": "FTSE 100",
-    "v": "10,863.09",
-    "c": 0.25
+    "v": "10,902.56",
+    "c": 0.36
    },
    {
     "n": "S&P 500",
-    "v": "7,592.40",
-    "c": -0.35
+    "v": "7,561.67",
+    "c": -0.4
    },
    {
     "n": "JSE All Share",
-    "v": "113,450",
-    "c": -1.08
+    "v": "112,388",
+    "c": -0.45
    },
    {
     "n": "Gold $/oz",
-    "v": "3,885.30",
-    "c": -2.88
+    "v": "3,878.82",
+    "c": 0.34
    },
    {
     "n": "Brent $/bbl",
-    "v": "95.82",
-    "c": 3.3
+    "v": "96.59",
+    "c": 3.27
    }
   ]
  },
  "fx": {
-  "date": "12 Nov",
+  "date": "13 Nov (GBP → ZAR 12 Nov)",
   "rows": [
    {
     "p": "GBP → ZAR",
-    "r": "22.04",
-    "c": null
+    "r": "22.19",
+    "c": 0.63
    },
    {
     "p": "GBP → USD",
-    "r": "1.3232",
-    "c": -0.36
+    "r": "1.3219",
+    "c": -0.11
    },
    {
     "p": "USD → ZAR",
-    "r": "16.59",
+    "r": "16.63",
     "c": null
    },
    {
     "p": "USD → ZiG",
-    "r": "26.54",
-    "c": null
+    "r": "26.59",
+    "c": 0.17
    }
   ]
  },
@@ -243,7 +243,7 @@
    "t": "Warriors",
    "s": "Drew 0–0 with Equatorial Guinea in Yaoundé (AFCON qualifier)",
    "n": "v Equatorial Guinea, Harare",
-   "w": "Mon 16 Nov"
+   "w": "Mon 16 Nov · 15:00"
   },
   {
    "t": "Zim players abroad",
@@ -278,6 +278,14 @@
    "comp": "NBA"
   },
   {
+   "label": "Zimbabwe",
+   "a": "Zimbabwe",
+   "b": "Equatorial Guinea",
+   "start": "2026-11-16T13:00:00Z",
+   "mins": 115,
+   "comp": "AFCON qualifier · Harare"
+  },
+  {
    "label": "Harlequins",
    "a": "Saracens",
    "b": "Harlequins",
@@ -292,14 +300,6 @@
    "start": "2026-11-21T17:30:00Z",
    "mins": 115,
    "comp": "Premier League · St James’ Park"
-  },
-  {
-   "label": "Arsenal",
-   "a": "Arsenal",
-   "b": "Man City",
-   "start": "2026-11-29T16:30:00Z",
-   "mins": 115,
-   "comp": "Premier League · Emirates"
   }
  ],
  "pl": [
@@ -351,12 +351,20 @@
    "title": "Funding this week",
    "items": [
     {
-     "tag": "Nigeria",
+     "tag": "Growth fund",
      "ph": "fund",
-     "mark": "$4k",
-     "h": "Eight Nigerian youth-led startups win $4,000 each at a Cascador pitch day",
-     "s": "Grants for early founders in Lagos, Abuja and Ilorin",
-     "m": "Disrupt Africa · 13 Nov"
+     "mark": "$30m",
+     "h": "Swedfund and Proparco commit $15m each to Lightrock Africa Growth Fund II",
+     "s": "Fund targets $150m to $200m for growth-stage tech in Kenya, Nigeria and SA",
+     "m": "Business Tech Africa · 13 Nov"
+    },
+    {
+     "tag": "AI fund",
+     "ph": "fund",
+     "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-7.png",
+     "h": "Enza Capital hits a $21m first close for its AI Africa Fund",
+     "s": "Targets $60m; cheques of $250k to $3m from pre-seed to Series B",
+     "m": "Launch Base Africa · 13 Nov"
     },
     {
      "tag": "Healthtech",
@@ -367,28 +375,20 @@
      "m": "StartupList Africa · 12 Nov"
     },
     {
-     "tag": "AI fund",
-     "ph": "fund",
-     "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-7.png",
-     "h": "Enza Capital hits a $21m first close for its AI Africa Fund",
-     "s": "Targets $60m; cheques of $250k to $3m from pre-seed to Series B",
-     "m": "Launch Base Africa · 11 Nov"
-    },
-    {
-     "tag": "Ranking",
-     "ph": "fund",
-     "mark": "$150m",
-     "h": "MNT-Halan tops October’s African funding table with $150m",
-     "s": "The top 10 deals raised $301.5m between them",
-     "m": "Nairametrics · 10 Nov"
-    },
-    {
      "tag": "South Africa",
      "ph": "fund",
      "img": "https://launchbaseafrica.com/wp-content/uploads/2026/11/image-6.png",
      "h": "Cape Town fintech Lumepay raises a $6m pre-seed",
      "s": "Building cross-border B2B payment rails, plus a $10m liquidity float",
      "m": "Launch Base Africa · 10 Nov"
+    },
+    {
+     "tag": "Nigeria",
+     "ph": "fund",
+     "mark": "$7m",
+     "h": "Okra Solar secures a $7m debt facility from BII",
+     "s": "To scale its off-grid solar mesh grids in Nigeria",
+     "m": "Disrupt Africa · 10 Nov"
     },
     {
      "tag": "Egypt",
@@ -404,6 +404,14 @@
    "title": "Zim founders",
    "items": [
     {
+     "tag": "AI",
+     "ph": "zim",
+     "mark": "Shona",
+     "h": "Strive Masiyiwa’s Econet launches Shona 2.0 to power its Yamurai support bot",
+     "s": "Handles Shona and mixed Shona-English queries; Econet claims 80% of queries",
+     "m": "Billionaires.Africa · 12 Nov"
+    },
+    {
      "tag": "Marketplace",
      "ph": "zim",
      "mark": "MaDeals",
@@ -418,14 +426,6 @@
      "h": "Louis Murerwa’s Ocular AI raises a $2m pre-seed",
      "s": "Led by Drive Capital with Y Combinator; builds voice data for frontier AI labs",
      "m": "Business Tech Africa · Oct"
-    },
-    {
-     "tag": "Healthtech",
-     "ph": "zim",
-     "mark": "MIS",
-     "h": "Dr Dudzai Mureyi’s WhatsApp medicine finder now lists 416 providers",
-     "s": "Helps patients find medicine and compare pharmacy prices; a bot launched this year",
-     "m": "Techzim · 5 Oct"
     }
    ]
   },
@@ -433,16 +433,16 @@
    "title": "AI and go-to-market",
    "stories": [
     {
-     "h": "United blocks AI agents from booking flights; customers must finish purchases",
-     "s": "The Neuron · 12 Nov"
+     "h": "ChatGPT Enterprise is now sold through AWS Marketplace on existing AWS bills",
+     "s": "Sam on AI · 13 Nov"
     },
     {
-     "h": "CoreWeave asks AI customers to prepay, expecting about $9bn in three months",
-     "s": "The Neuron · 12 Nov"
+     "h": "Anthropic’s amended IPO filing prices 825m shares at $70 to $78 each",
+     "s": "Sam on AI · 13 Nov"
     },
     {
-     "h": "Databricks previews an always-on Genie agent that works on longer tasks",
-     "s": "The Neuron · 12 Nov"
+     "h": "Nonprofits sue OpenAI, Google, Anthropic and Meta to halt frontier AI work",
+     "s": "Claims Journal · 13 Nov"
     }
    ],
    "tactics": [
@@ -518,6 +518,22 @@
    "title": "Watches and fragrance",
    "items": [
     {
+     "tag": "Hong Kong",
+     "ph": "auction",
+     "mark": "$42m+",
+     "h": "Christie’s Hong Kong offers 300+ watches with a low estimate above $42m",
+     "s": "Includes Patek Sky Moon Tourbillon 5002 and 6002 together",
+     "m": "Revolution · 25–26 Nov"
+    },
+    {
+     "tag": "Release",
+     "ph": "watch",
+     "mark": "VC",
+     "h": "Vacheron Constantin adds a Fiftysix Complete Calendar from €33,400",
+     "s": "Alongside a Fiftysix Self-Winding at about €14,200",
+     "m": "Design Scene · 13 Nov"
+    },
+    {
      "tag": "Geneva",
      "ph": "auction",
      "img": "https://usa.watchpro.com/cloud/2026/11/10/r_V1_Grey_JPEG-large.jpg",
@@ -534,14 +550,6 @@
      "m": "Christie’s Geneva · 9 Nov"
     },
     {
-     "tag": "Record",
-     "ph": "watch",
-     "mark": "Cartier",
-     "h": "Cartier Portico Mystery Clock No. 4 sells for CHF 4.8m",
-     "s": "A world auction record for a Cartier timepiece",
-     "m": "Phillips Geneva · 7–8 Nov"
-    },
-    {
      "tag": "Next",
      "ph": "watch",
      "mark": "HK",
@@ -556,14 +564,6 @@
      "h": "New fragrance house Máno × Mnrl launches eight scents at Harrods",
      "s": "Day and evening collections, £180 for 50ml",
      "m": "Beauty News Daily · 12 Nov"
-    },
-    {
-     "tag": "Fragrance",
-     "ph": "fragrance",
-     "img": "https://cdn.mos.cms.futurecdn.net/3muXiE4TqZioSbDAnoPZaP-1280-80.jpg",
-     "h": "Dior Sauvage Extrait",
-     "s": "Lavender, bergamot, patchouli, vetiver, cedarwood and oud",
-     "m": "T3 pick of the autumn launches"
     }
    ]
   },
