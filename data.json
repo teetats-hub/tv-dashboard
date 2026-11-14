@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-14T12:30:00Z",
+ "asOf": "2026-11-14T18:21:00Z",
  "weather": [
   {
    "city": "London",
@@ -35,6 +35,11 @@
   "quote": "“You don’t get what you want. You get what you work for.”"
  },
  "news": [
+  {
+   "k": "zim",
+   "h": "Mthuli Ncube says Zimbabwe's economy will grow 5% in 2028 after the El Niño slowdown",
+   "s": "NewZimbabwe · 13 Nov"
+  },
   {
    "k": "zim",
    "h": "Zimbabwe prepares to submit its formal application papers to join BRICS",
@@ -76,11 +81,6 @@
    "s": "AeroRoutes · from 15 Nov"
   },
   {
-   "k": "sa",
-   "h": "Nigeria's Raenest buys UK payments firm Remitise",
-   "s": "Disrupt Africa · 12 Nov"
-  },
-  {
    "k": "world",
    "h": "UK economy grows 0.7% in Q3, its fastest quarter in over two years",
    "s": "City AM · 12 Nov"
@@ -88,8 +88,8 @@
  ],
  "radar": [
   {
-   "h": "Brendan Taylor makes 119 as Zimbabwe reach 336/9 against Afghanistan in Sharjah",
-   "s": "Sports Tak · 14 Nov"
+   "h": "Taylor's 119 and three Muzarabani wickets put Zimbabwe on top in the Sharjah Test",
+   "s": "NewsBytes · 14 Nov"
   },
   {
    "h": "Young Zimbabwean artists use music, poetry and drama in a campaign against GBV",
@@ -217,7 +217,7 @@
   "after": "Arsenal v Man City · Sun 29 Nov"
  },
  "lakers": {
-  "pos": "1st in the West",
+  "pos": "2nd in the West",
   "rec": "11–2",
   "last": "Bucks 112–123 Lakers",
   "next": {
@@ -229,15 +229,15 @@
  "zim": [
   {
    "t": "Chevrons",
-   "s": "2nd Test day 2: 336/9, Taylor 119 and Kaia 96 in Sharjah",
+   "s": "Day 2: Zim 339 all out (Taylor 119); Afghanistan trail by 180 with 4 wickets left",
    "n": "2nd Test, Sharjah",
    "w": "to 17 Nov"
   },
   {
    "t": "Sables",
-   "s": "Lost 43–7 to Samoa in Wakefield",
-   "n": "v Uruguay, Ealing",
-   "w": "Sat 14 Nov · 15:00"
+   "s": "Lost 20–15 to Uruguay in Ealing despite tries from Mavesere and Muzanargwo",
+   "n": "v Chile, Nations Cup",
+   "w": "Sat 21 Nov · 17:15"
   },
   {
    "t": "Warriors",
@@ -253,22 +253,6 @@
   }
  ],
  "fixtures": [
-  {
-   "label": "Harlequins",
-   "a": "Newcastle Red Bulls",
-   "b": "Harlequins",
-   "start": "2026-11-14T14:30:00Z",
-   "mins": 100,
-   "comp": "Premiership Rugby Cup"
-  },
-  {
-   "label": "Zimbabwe",
-   "a": "Zimbabwe",
-   "b": "Uruguay",
-   "start": "2026-11-14T15:00:00Z",
-   "mins": 100,
-   "comp": "World Rugby Nations Cup · Ealing"
-  },
   {
    "label": "Lakers",
    "a": "Phoenix Suns",
@@ -292,6 +276,14 @@
    "start": "2026-11-21T12:00:00Z",
    "mins": 100,
    "comp": "Premiership Rugby Cup"
+  },
+  {
+   "label": "Zimbabwe",
+   "a": "Zimbabwe",
+   "b": "Chile",
+   "start": "2026-11-21T17:15:00Z",
+   "mins": 100,
+   "comp": "World Rugby Nations Cup"
   },
   {
    "label": "Arsenal",
