@@ -1,38 +1,38 @@
 {
- "asOf": "2026-11-15T06:40:00Z",
+ "asOf": "2026-11-15T12:40:00Z",
  "weather": [
   {
    "city": "London",
    "tz": "Europe/London",
-   "now": 6,
-   "hi": 8,
-   "lo": 1,
-   "cond": "Sunny",
-   "rain": 0
+   "now": 9,
+   "hi": 11,
+   "lo": 4,
+   "cond": "Showers",
+   "rain": 95
   },
   {
    "city": "Johannesburg",
    "tz": "Africa/Johannesburg",
-   "now": 29,
-   "hi": 31,
-   "lo": 17,
-   "cond": "Sunny",
-   "rain": 0
+   "now": 24,
+   "hi": 25,
+   "lo": 16,
+   "cond": "Thunder showers",
+   "rain": 90
   },
   {
    "city": "Harare",
    "tz": "Africa/Harare",
-   "now": 26,
-   "hi": 28,
-   "lo": 14,
-   "cond": "Cloudy",
-   "rain": 10
+   "now": 29,
+   "hi": 29,
+   "lo": 21,
+   "cond": "Partly cloudy",
+   "rain": 32
   }
  ],
  "standard": {
-  "date": "Sat 14 Nov",
-  "title": "Work for what you want",
-  "quote": "“You don’t get what you want. You get what you work for.”"
+  "date": "Sun 15 Nov",
+  "title": "Trust before you try",
+  "quote": "“Trust in Yahweh with all your heart, and don’t lean on your own understanding.” Proverbs 3:5"
  },
  "news": [
   {
@@ -42,13 +42,28 @@
   },
   {
    "k": "zim",
+   "h": "Zimbabwe's tobacco crop hits a record 359m kg but growers say pay stays low",
+   "s": "ZimEye · 14 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "Ncube sees growth slowing to 3.5% in 2027 before a 5% rebound in 2028",
+   "s": "NewZimbabwe · 13 Nov"
+  },
+  {
+   "k": "zim",
+   "h": "CBZ posts a ZWG1.12bn nine-month profit after tax",
+   "s": "NewZimbabwe · 13 Nov"
+  },
+  {
+   "k": "zim",
    "h": "Zimbabwe moves to rebuild its local bond market after the currency turmoil",
    "s": "Bloomberg · 13 Nov"
   },
   {
    "k": "world",
-   "h": "Oil heads for a second weekly fall as fears of renewed Iran fighting ease",
-   "s": "RTÉ/Reuters · 13 Nov"
+   "h": "FTSE 100 closes at a three-month high as investors rotate into defensives",
+   "s": "Reuters · 13 Nov"
   },
   {
    "k": "world",
@@ -57,39 +72,32 @@
   },
   {
    "k": "sa",
+   "h": "Kenya's financial centre plans a $500m fund with half for tech and AI startups",
+   "s": "iAfrica · 13 Nov"
+  },
+  {
+   "k": "sa",
    "h": "African startup M&A enters a harder, more disciplined phase",
    "s": "Launch Base Africa · 13 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "Lithium producers ask Treasury to cut the royalty on lithium salts from 7% to 3%",
-   "s": "SMM · 12 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "Hippo Valley jumps 15% as the ZSE gains while VFEX slips 1.1%",
-   "s": "The Zimbabwe Mail · 12 Nov"
-  },
-  {
-   "k": "zim",
-   "h": "Econet says its Shona AI chatbot now handles 80% of customer queries",
-   "s": "Techzim · 11 Nov"
   },
   {
    "k": "sa",
    "h": "Google's Africa AI lab picks 10 startups from more than 45 countries",
    "s": "3News · 11 Nov"
-  },
-  {
-   "k": "sa",
-   "h": "Cape Town fintech Lumepay raises a $6m pre-seed for its African payments network",
-   "s": "3News · 10 Nov"
   }
  ],
  "radar": [
   {
+   "h": "Masekesa's 4-54 bowls Afghanistan out for 217 as Zimbabwe lead by 122 in Sharjah",
+   "s": "NewsBytes · 15 Nov"
+  },
+  {
+   "h": "IOC president Kirsty Coventry closes Africa's first Olympic event in Dakar",
+   "s": "Xinhua · 14 Nov"
+  },
+  {
    "h": "Brendan Taylor's 119 puts Zimbabwe on top in the second Test in Sharjah",
-   "s": "NewsBytes · 14 Nov"
+   "s": "ESPNcricinfo · 14 Nov"
   },
   {
    "h": "Warriors hold Equatorial Guinea 0-0 away to stay in the AFCON qualifying race",
@@ -109,10 +117,6 @@
   },
   {
    "h": "Craig Ervine, 41, becomes Zimbabwe's oldest Test double centurion with 206 not out",
-   "s": "Outlook India · 9 Nov"
-  },
-  {
-   "h": "Zimbabwe become the first Test side to pass 500 in both innings of a match",
    "s": "Outlook India · 9 Nov"
   }
  ],
@@ -136,38 +140,38 @@
    },
    {
     "n": "Gold $/oz",
-    "v": "3,878.82",
-    "c": 0.34
+    "v": "3,879",
+    "c": 0.14
    },
    {
     "n": "Brent $/bbl",
-    "v": "96.59",
-    "c": 3.27
+    "v": "95.84",
+    "c": 0.02
    }
   ]
  },
  "fx": {
-  "date": "13 Nov (GBP → ZAR 12 Nov)",
+  "date": "13 Nov close",
   "rows": [
    {
     "p": "GBP → ZAR",
-    "r": "22.19",
-    "c": 0.63
+    "r": "22.37",
+    "c": 0.77
    },
    {
     "p": "GBP → USD",
-    "r": "1.3219",
-    "c": -0.11
+    "r": "1.3213",
+    "c": -0.17
    },
    {
     "p": "USD → ZAR",
-    "r": "16.63",
-    "c": null
+    "r": "16.92",
+    "c": 0.93
    },
    {
     "p": "USD → ZiG",
     "r": "26.59",
-    "c": 0.17
+    "c": null
    }
   ]
  },
@@ -181,7 +185,7 @@
   },
   {
    "b": "SARB repo",
-   "d": "Prime 10.75%",
+   "d": "Up 0.25 on 23 Sep · prime 10.75%",
    "v": "7.25%",
    "next": "2026-11-19T13:00:00Z",
    "nextLabel": "19 Nov"
@@ -213,37 +217,37 @@
   "after": "Arsenal v Man City · Sun 29 Nov"
  },
  "lakers": {
-  "pos": "2nd in the West",
+  "pos": "1st in the West",
   "rec": "11–2",
   "last": "Bucks 112–123 Lakers",
   "next": {
    "opp": "at Phoenix Suns",
    "when": "2026-11-15T21:00:00Z"
   },
-  "after": "v Charlotte Hornets · Tue 17 Nov"
+  "after": "v Charlotte Hornets · Wed 18 Nov 04:00 UK"
  },
  "zim": [
   {
    "t": "Chevrons",
-   "s": "Day 2: Zim 339 all out (Taylor 119); Afghanistan trail by 180 with 4 wickets left",
+   "s": "Day 3: Afghanistan 217 all out (Masekesa 4-54); Zim led by 122 on first innings",
    "n": "2nd Test, Sharjah",
    "w": "to 17 Nov"
   },
   {
    "t": "Sables",
    "s": "Lost 20–15 to Uruguay in Ealing despite tries from Mavesere and Muzanargwo",
-   "n": "v Chile, Nations Cup",
-   "w": "Sat 21 Nov · 17:15"
+   "n": "v Chile, Nations Cup, Angoulême",
+   "w": "Sat 21 Nov"
   },
   {
    "t": "Warriors",
    "s": "Drew 0–0 with Equatorial Guinea in Yaoundé (AFCON qualifier)",
    "n": "v Equatorial Guinea, Harare",
-   "w": "Mon 16 Nov · 15:00"
+   "w": "Mon 16 Nov · 13:00 UK"
   },
   {
    "t": "Zim players abroad",
-   "s": "Kadewere brace beat Nakamba’s Panetolikos; Young Warriors lost 3–0 to Mali",
+   "s": "Munetsi cleared a late shot off the line in the 0–0 in Yaoundé",
    "n": "club games resume",
    "w": "21 Nov"
   }
@@ -266,20 +270,20 @@
    "comp": "AFCON qualifier · Harare"
   },
   {
+   "label": "Lakers",
+   "a": "LA Lakers",
+   "b": "Charlotte Hornets",
+   "start": "2026-11-18T04:00:00Z",
+   "mins": 150,
+   "comp": "NBA"
+  },
+  {
    "label": "Harlequins",
    "a": "Saracens",
    "b": "Harlequins",
    "start": "2026-11-21T12:00:00Z",
    "mins": 100,
    "comp": "Premiership Rugby Cup"
-  },
-  {
-   "label": "Zimbabwe",
-   "a": "Zimbabwe",
-   "b": "Chile",
-   "start": "2026-11-21T17:15:00Z",
-   "mins": 100,
-   "comp": "World Rugby Nations Cup"
   },
   {
    "label": "Arsenal",
