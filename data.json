@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-15T18:10:00Z",
+  "asOf": "2026-11-16T06:45:00Z",
   "weather": [
     {
       "city": "London",
@@ -37,8 +37,13 @@
   "news": [
     {
       "k": "zim",
-      "h": "ZESA takes Hwange Units 7 and 8 offline for maintenance until January",
-      "s": "NewZimbabwe · 15 Nov"
+      "h": "Zimbabwe steps up its crackdown on smuggling and fake goods before the festive rush",
+      "s": "NewZimbabwe · 16 Nov"
+    },
+    {
+      "k": "world",
+      "h": "UK jobs and inflation data due as markets price an 82% chance of a December BoE hike",
+      "s": "MarketScreener · 16 Nov"
     },
     {
       "k": "air",
@@ -47,8 +52,8 @@
     },
     {
       "k": "zim",
-      "h": "Zimbabwe's tobacco crop hits a record 359m kg but growers say pay stays low",
-      "s": "ZimEye · 14 Nov"
+      "h": "ZESA takes Hwange Units 7 and 8 offline for maintenance until January",
+      "s": "NewZimbabwe · 15 Nov"
     },
     {
       "k": "zim",
@@ -61,34 +66,29 @@
       "s": "NewZimbabwe · 13 Nov"
     },
     {
-      "k": "zim",
-      "h": "Zimbabwe moves to rebuild its local bond market after the currency turmoil",
-      "s": "Bloomberg · 13 Nov"
-    },
-    {
-      "k": "world",
-      "h": "FTSE 100 closes at a three-month high as investors rotate into defensives",
-      "s": "Reuters · 13 Nov"
-    },
-    {
       "k": "world",
       "h": "Dollar hits its highest level since April 2025 as traders bet on a Fed rate hike",
       "s": "Investrade · 13 Nov"
     },
     {
       "k": "sa",
-      "h": "Yoco lands a $100m credit facility from Victory Park to grow merchant cash advances",
-      "s": "Techloy · 13 Nov"
+      "h": "Jumpstarter platform helps South African founders raise seed money from their communities",
+      "s": "Disrupt Africa · 13 Nov"
     },
     {
       "k": "sa",
-      "h": "Kenya's financial centre plans a $500m fund with half for tech and AI startups",
-      "s": "iAfrica · 13 Nov"
+      "h": "Google picks 10 African startups for its first Applied AI Lab",
+      "s": "Business Tech Africa · 12 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "Draft ride-hailing rules for inDrive and Bolt: drivers 21+, a per-trip ZINARA fee",
+      "s": "Techzim · 11 Nov"
     }
   ],
   "radar": [
     {
-      "h": "Masekesa's 4-54 bowls Afghanistan out for 217 as Zimbabwe lead by 122 in Sharjah",
+      "h": "Zimbabwe close day 3 in Sharjah 291 runs ahead of Afghanistan",
       "s": "NewsBytes · 15 Nov"
     },
     {
@@ -217,50 +217,42 @@
     "after": "Arsenal v Man City · Sun 29 Nov"
   },
   "lakers": {
-    "pos": "1st in the West",
-    "rec": "11–2",
-    "last": "Bucks 112–123 Lakers",
+    "pos": "Joint 1st in the West",
+    "rec": "12–2",
+    "last": "Lakers 131–123 Suns",
     "next": {
-      "opp": "at Phoenix Suns",
-      "when": "2026-11-15T21:00:00Z"
+      "opp": "v Charlotte Hornets",
+      "when": "2026-11-18T04:00:00Z"
     },
-    "after": "v Charlotte Hornets · Wed 18 Nov 04:00 UK"
+    "after": "v Utah Jazz · Thu 19 Nov 03:00 UK"
   },
   "zim": [
     {
       "t": "Chevrons",
-      "s": "Day 3: Afghanistan 217 all out (Masekesa 4-54); Zim led by 122 on first innings",
-      "n": "2nd Test, Sharjah",
-      "w": "to 17 Nov"
+      "s": "Stumps day 3: Zim 339 and 169-7 lead Afghanistan (217) by 291",
+      "n": "2nd Test day 4, Sharjah",
+      "w": "Mon 16 Nov · to 17 Nov"
     },
     {
       "t": "Sables",
-      "s": "Lost 20–15 to Uruguay in Ealing despite tries from Mavesere and Muzanargwo",
-      "n": "v Chile, Nations Cup, Angoulême",
-      "w": "Sat 21 Nov"
+      "s": "Lost 20–15 to Uruguay at Ealing in the Nations Cup",
+      "n": "v Chile, Stade Chanzy, Angoulême",
+      "w": "Sat 21 Nov · 17:15 UK"
     },
     {
       "t": "Warriors",
-      "s": "Drew 0–0 with Equatorial Guinea in Yaoundé (AFCON qualifier)",
-      "n": "v Equatorial Guinea, Harare",
+      "s": "First leg v Equatorial Guinea ended 0–0 in Yaoundé (AFCON qualifier)",
+      "n": "v Equatorial Guinea, National Sports Stadium, Harare",
       "w": "Mon 16 Nov · 13:00 UK"
     },
     {
       "t": "Zim players abroad",
-      "s": "Munetsi cleared a late shot off the line in the 0–0 in Yaoundé",
-      "n": "club games resume",
-      "w": "21 Nov"
+      "s": "Nakamba (captain), Zemura, Munetsi and Maswanhise all started in Yaoundé",
+      "n": "Return leg in Harare",
+      "w": "Mon 16 Nov · 13:00 UK"
     }
   ],
   "fixtures": [
-    {
-      "label": "Lakers",
-      "a": "Phoenix Suns",
-      "b": "LA Lakers",
-      "start": "2026-11-15T21:00:00Z",
-      "mins": 150,
-      "comp": "NBA"
-    },
     {
       "label": "Zimbabwe",
       "a": "Zimbabwe",
@@ -278,12 +270,28 @@
       "comp": "NBA"
     },
     {
+      "label": "Lakers",
+      "a": "LA Lakers",
+      "b": "Utah Jazz",
+      "start": "2026-11-19T03:00:00Z",
+      "mins": 150,
+      "comp": "NBA"
+    },
+    {
       "label": "Harlequins",
       "a": "Saracens",
       "b": "Harlequins",
       "start": "2026-11-21T12:00:00Z",
       "mins": 100,
       "comp": "Premiership Rugby Cup"
+    },
+    {
+      "label": "Zimbabwe",
+      "a": "Zimbabwe",
+      "b": "Chile",
+      "start": "2026-11-21T17:15:00Z",
+      "mins": 100,
+      "comp": "Rugby Nations Cup · Angoulême"
     },
     {
       "label": "Arsenal",
@@ -343,52 +351,52 @@
       "title": "Funding this week",
       "items": [
         {
+          "tag": "Kenya",
+          "ph": "fund",
+          "img": "https://i0.wp.com/disruptafrica.com/wp-content/uploads/2026/11/f147cf2f-ba85-485b-a422-3d3182cdf24a_800x533.jpg?fit=800%2C533&ssl=1",
+          "h": "Enza Capital hits a $21m first close for its new AI Africa fund",
+          "s": "Nairobi VC targets $60m to back AI startups from pre-seed to Series B",
+          "m": "Disrupt Africa · 13 Nov"
+        },
+        {
+          "tag": "Nigeria",
+          "ph": "fund",
+          "mark": "$4k",
+          "h": "Eight Nigerian youth founders win $4k each at FMYD and Cascador pitch day",
+          "s": "Non-dilutive grants after a four-week accelerator",
+          "m": "Disrupt Africa · 13 Nov"
+        },
+        {
           "tag": "South Africa",
           "ph": "fund",
-          "mark": "$100m",
-          "h": "Yoco lands a $100m credit line from Victory Park Capital",
-          "s": "US private credit to fund lending to its small-business merchants",
-          "m": "NextBillion · 11 Nov"
+          "img": "https://i0.wp.com/disruptafrica.com/wp-content/uploads/2026/11/image002.jpg?fit=752%2C502&ssl=1",
+          "h": "Lumepay raises a $6m pre-seed for stablecoin-powered B2B payments",
+          "s": "Cross-border payments firm also lines up a $10m capital float",
+          "m": "Disrupt Africa · 12 Nov"
         },
         {
-          "tag": "Sudan",
+          "tag": "South Africa",
           "ph": "fund",
-          "mark": "€600k",
-          "h": "Proparco makes its first Sudan bet with €600k for fintech Cashi",
-          "s": "Digital payments start-up founded in 2022 gets French DFI backing",
-          "m": "TechAfrica News · 11 Nov"
-        },
-        {
-          "tag": "Nigeria",
-          "ph": "tech",
-          "img": "https://weetracker.com/wp-content/uploads/2026/11/Weetracker_Raenest-300x180-1.jpg",
-          "h": "Raenest buys UK payments firm Remitise to gain an FCA footing",
-          "s": "Lagos fintech with 1.5m customers takes full ownership; terms undisclosed",
-          "m": "WeeTracker · 10 Nov"
+          "mark": "Knife",
+          "h": "Healthtech Alignd wins Knife Capital backing to grow value-based care",
+          "s": "Knife Fund III money takes Alignd into maternity and kidney care",
+          "m": "WeeTracker · 12 Nov"
         },
         {
           "tag": "Nigeria",
           "ph": "fund",
-          "img": "https://weetracker.com/wp-content/uploads/2026/11/koolboks.jpeg.webp",
-          "h": "Koolboks secures a TLG Capital credit facility for solar freezers",
-          "s": "Guarantee arranged with Morgan Stanley; 15,000+ units sold in 25 markets",
-          "m": "WeeTracker · 9 Nov"
+          "img": "https://i0.wp.com/disruptafrica.com/wp-content/uploads/2026/11/Okra-Solar.jpg?fit=960%2C639&ssl=1",
+          "h": "Okra Solar lands $7m BII debt to roll out mesh-grids in rural Nigeria",
+          "s": "Funds equipment for about 150,000 new connections",
+          "m": "Disrupt Africa · 10 Nov"
         },
         {
-          "tag": "Ethiopia",
+          "tag": "Egypt",
           "ph": "fund",
-          "mark": "IFC",
-          "h": "IFC invests in Kifiya to power AI-driven farm lending",
-          "s": "Addis Ababa fintech scores borrowers with alternative data; amount undisclosed",
-          "m": "WeeTracker · 9 Nov"
-        },
-        {
-          "tag": "Nigeria",
-          "ph": "tech",
-          "mark": "$2.5m",
-          "h": "Helium Health wins a $2.5m Google.org grant for maternal care AI",
-          "s": "Funds clinical AI tools in primary maternal healthcare across Nigeria",
-          "m": "Nairametrics · 4 Nov"
+          "img": "https://assets.thepaypers.com/news%20team/221%20article%20enza%20x%204dx%20ventures.jpg",
+          "h": "Payments infrastructure start-up enza raises a $6m Seed+ led by 4DX",
+          "s": "BII joins; enza links banks to cards, wallets and QR in 12 countries",
+          "m": "The Paypers · 6 Nov"
         }
       ]
     },
@@ -404,20 +412,20 @@
           "m": "Billionaires.Africa · 11 Nov"
         },
         {
-          "tag": "Marketplace",
+          "tag": "Mobile",
           "ph": "zim",
-          "mark": "$7k",
-          "h": "Map-based marketplace MaDeals wins $7,000 at the Innovation Expo",
-          "s": "30,000+ users and in talks with a bank about in-app payments",
-          "m": "Techzim · 16 Oct"
+          "img": "https://t3n9sm.c2.acecdn.net/wp-content/uploads/2026/10/gsm-zimbabwe-imei-checker-whatsapp.jpg",
+          "h": "GSM Zimbabwe launches a WhatsApp IMEI checker for second-hand phones",
+          "s": "Flags locks, refurbished status and warranty for $3 via EcoCash",
+          "m": "Techzim · 28 Oct"
         },
         {
-          "tag": "AI data",
+          "tag": "Ecosystem",
           "ph": "zim",
-          "mark": "$2m",
-          "h": "Zimbabwean-founded Ocular AI raises a $2m pre-seed led by Drive Capital",
-          "s": "Builds voice and video datasets for AI labs; Y Combinator also invested",
-          "m": "Business Tech Africa · 8 Oct"
+          "img": "https://www.businesstechafrica.co.za/og/1792486837700-3d442423.jpg",
+          "h": "Zimbabwe sets up an innovation centre to take local inventions to market",
+          "s": "POTRAZ and ITU-backed NIAC links founders to buyers and investors",
+          "m": "Business Tech Africa · 20 Oct"
         }
       ]
     },
@@ -425,16 +433,16 @@
       "title": "AI and go-to-market",
       "stories": [
         {
-          "h": "HubSpot brings back co-founder Brian Halligan as CEO as Yamini Rangan steps down",
-          "s": "HubSpot 8-K · 12 Nov"
+          "h": "LangChain raises a $300m Series C at a $3bn valuation to scale agent tooling",
+          "s": "AI Daily Insights · 13 Nov"
         },
         {
-          "h": "Genpact survey: 79% of firms run AI agents but only 15% tie the spend to P&L",
-          "s": "Agile Brand Guide · 12 Nov"
+          "h": "Voice AI firm Retell passes a $100m run rate on just $4.6m raised",
+          "s": "Forbes · 12 Nov"
         },
         {
-          "h": "IBM and Microsoft launch Imagine Enterprise, a platform for industry AI agents",
-          "s": "IBM Newsroom · 10 Nov"
+          "h": "Parloa and OpenAI expand their tie-up with joint enterprise sales in North America",
+          "s": "Agile Brand Guide · 11 Nov"
         }
       ],
       "tactics": [
@@ -457,12 +465,12 @@
       "title": "London this week",
       "items": [
         {
-          "tag": "Tech",
+          "tag": "AI",
           "ph": "tech",
-          "img": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/77/5f85eba4-4c90-4885-9628-5172bb52c142.png",
-          "h": "Solana Breakpoint brings three days of crypto builders and talks to Olympia",
-          "s": "Olympia, Hammersmith Road",
-          "m": "Sun 15–Tue 17 Nov"
+          "img": "https://secure.meetupstatic.com/photos/event/3/5/c/4/600_534913764.jpeg",
+          "h": "Mindstone's monthly London AI meetup returns to Clerkenwell",
+          "s": "Inspire St James · Clerkenwell EC1",
+          "m": "Tue 17 Nov · 18:00"
         },
         {
           "tag": "AI",
@@ -473,12 +481,12 @@
           "m": "Thu 19 Nov · 09:15"
         },
         {
-          "tag": "AI",
-          "ph": "tech",
-          "mark": "AI BIZ",
-          "h": "AI in Business Conference digs into enterprise AI",
-          "s": "Park Plaza Victoria, Vauxhall Bridge Road",
-          "m": "Thu 19 Nov · 08:15"
+          "tag": "SA music",
+          "ph": "zim",
+          "img": "https://s3.eu-west-2.amazonaws.com/s3.serious.org.uk/images/_1200x630_crop_center-center_82_none_ns/Bongeziwe-Mabandla-Chris-Saunders-Libambe-Lingatshon-1.jpg?mtime=1783937934",
+          "h": "South Africa's Bongeziwe Mabandla and Zola Marcelle at the London Jazz Festival",
+          "s": "Union Chapel · Islington N1",
+          "m": "Thu 19 Nov · 19:30"
         },
         {
           "tag": "Afrobeats",
@@ -512,34 +520,18 @@
         {
           "tag": "Results",
           "ph": "auction",
-          "img": "https://dist.phillips.com/content/web/press/images/image_19f39a90-c4c9-43c0-a4fa-cc2f20f2e38c.png",
-          "h": "Phillips Geneva XXIV sells all 217 lots for CHF 92m, led by a Journe Régence",
-          "s": "Régence CHF 8.68m; Patek 1436 split-seconds CHF 6.27m",
-          "m": "Phillips · 8 Nov"
+          "mark": "CHR",
+          "h": "Christie's Geneva hits CHF 47.8m, its highest watch sale total, 100% sold",
+          "s": "Journe Vagabondage trio made CHF 6.71m",
+          "m": "Haute Time · 13 Nov"
         },
         {
           "tag": "Results",
           "ph": "auction",
-          "img": "https://i0.wp.com/thewatchology.com/wp-content/uploads/2026/10/geneva-auction-week-2026-phillips-rostrum.jpg?fit=1600%2C1200&ssl=1",
-          "h": "Christie's Geneva sells the Journe Vagabondage trilogy for CHF 6.71m",
-          "s": "Rare Watches sale, bought by one private buyer",
-          "m": "The Watchology · 10 Nov"
-        },
-        {
-          "tag": "Fragrance",
-          "ph": "fragrance",
-          "img": "https://img.luxe.digital/2026/11/le-labo-cafe-32-vienna-city-exclusive-7c865355-16x9-1600.jpg",
-          "h": "Le Labo Café 32 arrives as the new Vienna city exclusive",
-          "s": "Rose and cedar with espresso, newspaper ink and leather",
-          "m": "Luxe Digital · 2 Nov"
-        },
-        {
-          "tag": "Fragrance",
-          "ph": "fragrance",
-          "img": "https://scentadvice.com/wp-content/uploads/2026/11/e42b337240d52f4ab1a5ae26153b295a_clipped_rev_1.jpg",
-          "h": "Armani Privé Jade returns in a numbered run of 2,000 bottles",
-          "s": "Green mandarin, peony and patchouli",
-          "m": "Scent Advice · 5 Nov"
+          "img": "https://www.hautetime.com/wp-content/uploads/2026/11/12135215/patek-philippe-sky-moon-tourbillon-5002.webp",
+          "h": "Sotheby's Geneva makes CHF 26.3m as a Patek Sky Moon leads at CHF 2.29m",
+          "s": "First-series Patek 3970 set a record at CHF 2.05m",
+          "m": "Haute Time · 13 Nov"
         },
         {
           "tag": "Auction",
@@ -550,12 +542,28 @@
           "m": "Sat 21–Sun 22 Nov"
         },
         {
-          "tag": "Auction",
+          "tag": "Release",
           "ph": "watch",
-          "img": "https://watchesbysjx.com/wp-content/uploads/2026/11/Christies-Hong-kong-iconic-40-header-3x2-v2.jpg",
-          "h": "Christie's marks 40 years in Asia with a 40-watch evening sale",
-          "s": "The Henderson, Hong Kong · 23 of the 40 are Patek",
-          "m": "Wed 25 Nov · 18:00 HKT"
+          "img": "https://www.fratellowatches.com/cdn-cgi/image/anim=false/wp-content/uploads/2026/11/Vacheron-Constantin-FiftySix_4600E-4000E_Duo_StillLife_Crop_16x9.jpg",
+          "h": "Vacheron Constantin adds two steel Fiftysix models with tuxedo dials",
+          "s": "40mm steel cases with grey sector dials",
+          "m": "Fratello · 10 Nov"
+        },
+        {
+          "tag": "Fragrance",
+          "ph": "fragrance",
+          "img": "https://evoke.ie/wp-content/uploads/2026/11/ch-pm-3.jpg",
+          "h": "Chanel's Paris St Moritz brings a winter scent to Les Eaux",
+          "s": "Pear, rose and musky amber; from €115 for 50ml",
+          "m": "Evoke · 14 Nov"
+        },
+        {
+          "tag": "Fragrance",
+          "ph": "fragrance",
+          "mark": "MEMO",
+          "h": "Memo Paris launches Odéon Sunset, a new take on its 2020 Odéon",
+          "s": "French niche house adds a flanker to a cult favourite",
+          "m": "Now Smell This · 14 Nov"
         }
       ]
     },
@@ -563,11 +571,27 @@
       "title": "Weekend plans",
       "items": [
         {
+          "tag": "Opening",
+          "ph": "event",
+          "mark": "NG",
+          "h": "Van Eyck: The Portraits opens with all ten surviving portraits together",
+          "s": "National Gallery, Trafalgar Square · £18",
+          "m": "Opens Sat 21 Nov"
+        },
+        {
+          "tag": "Opening",
+          "ph": "event",
+          "img": "https://d3ir5jsauc24hh.cloudfront.net/5DF7AC83-611C-4B72-853A66D617AEAACD/93652cd51f72c6027c3eed4db2eca828-md.jpg",
+          "h": "Peggy Guggenheim in London opens at the Royal Academy",
+          "s": "Royal Academy, Burlington House · Piccadilly W1",
+          "m": "Opens Sat 21 Nov"
+        },
+        {
           "tag": "Winter",
           "ph": "event",
-          "img": "https://media.timeout.com/images/106317577/image.jpg",
-          "h": "Winter Wonderland's first weekend, with a K-pop circus making its debut",
-          "s": "Hyde Park · advance entry from £1 off-peak",
+          "mark": "HYDE",
+          "h": "Winter Wonderland's first full weekend in Hyde Park",
+          "s": "Hyde Park · from 10:00",
           "m": "Sat 21–Sun 22 Nov"
         },
         {
@@ -575,24 +599,8 @@
           "ph": "event",
           "img": "https://media.timeout.com/images/106462133/image.jpg",
           "h": "Winter By The River market by the Thames at London Bridge City",
-          "s": "London Bridge City, SE1 · open until 3 Jan",
+          "s": "London Bridge City, SE1 · 11:00–22:00",
           "m": "Sat 21–Sun 22 Nov"
-        },
-        {
-          "tag": "Exhibition",
-          "ph": "event",
-          "mark": "TATE",
-          "h": "Frida: The Making of an Icon at Tate Modern",
-          "s": "Tate Modern, Bankside · £25 · until 3 Jan 2027",
-          "m": "Sat 21–Sun 22 Nov"
-        },
-        {
-          "tag": "Last chance",
-          "ph": "event",
-          "mark": "MOYC",
-          "h": "Final weekend for God Save The Queens at the Museum of Youth Culture",
-          "s": "Closes on Sunday",
-          "m": "Closes Sun 22 Nov"
         },
         {
           "tag": "Coffee",
@@ -605,9 +613,9 @@
         {
           "tag": "Coffee",
           "ph": "coffee",
-          "mark": "MONM",
-          "h": "Monmouth in Bermondsey for single-origin filter and espresso",
-          "s": "Dockley Road, SE16 · check hours",
+          "mark": "CH72",
+          "h": "Chapter 72 for specialty coffee on Bermondsey Street",
+          "s": "72 Bermondsey Street, SE1 · check hours",
           "m": "South London pick"
         }
       ]
