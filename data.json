@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-16T12:12:00Z",
+  "asOf": "2026-11-16T18:15:00Z",
   "weather": [
     {
       "city": "London",
@@ -36,6 +36,16 @@
   },
   "news": [
     {
+      "k": "zim",
+      "h": "PPC trading profit rises 32% as its Zimbabwe unit sells more cement",
+      "s": "TimesLIVE · 16 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "ZSE gains 0.6% as FML, Hippo and Tanganda lead; VFEX slips 0.17%",
+      "s": "The Zimbabwe Mail · 16 Nov"
+    },
+    {
       "k": "sa",
       "h": "Yoco secures a $100m credit line from Victory Park to grow merchant cash advances",
       "s": "Disrupt Africa · 16 Nov"
@@ -66,11 +76,6 @@
       "s": "NewZimbabwe · 13 Nov"
     },
     {
-      "k": "zim",
-      "h": "CBZ posts a ZWG1.12bn nine-month profit after tax",
-      "s": "NewZimbabwe · 13 Nov"
-    },
-    {
       "k": "world",
       "h": "Dollar hits its highest level since April 2025 as traders bet on a Fed rate hike",
       "s": "Investrade · 13 Nov"
@@ -79,16 +84,15 @@
       "k": "sa",
       "h": "Google picks 10 African startups for its first Applied AI Lab",
       "s": "Business Tech Africa · 12 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "Draft ride-hailing rules for inDrive and Bolt: drivers 21+, a per-trip ZINARA fee",
-      "s": "Techzim · 11 Nov"
     }
   ],
   "radar": [
     {
-      "h": "Cremer 50 not out and Muzarabani 59 help Zimbabwe set Afghanistan 418 in Sharjah",
+      "h": "Warriors beat Equatorial Guinea 3-0 in Harare to go second in AFCON qualifying",
+      "s": "NewZimbabwe · 16 Nov"
+    },
+    {
+      "h": "Chevrons five wickets from victory as Afghanistan close day 4 on 143-5 chasing 418",
       "s": "NewsBytes · 16 Nov"
     },
     {
@@ -98,10 +102,6 @@
     {
       "h": "Brendan Taylor's 119 puts Zimbabwe on top in the second Test in Sharjah",
       "s": "ESPNcricinfo · 14 Nov"
-    },
-    {
-      "h": "Warriors hold Equatorial Guinea 0-0 away to stay in the AFCON qualifying race",
-      "s": "Maravi Post · 12 Nov"
     },
     {
       "h": "Bulawayo Arts Awards announce their 9th-edition nominees across 38 categories",
@@ -217,7 +217,7 @@
     "after": "Arsenal v Man City · Sun 29 Nov"
   },
   "lakers": {
-    "pos": "Joint 1st in the West",
+    "pos": "2nd in the West",
     "rec": "12–2",
     "last": "Lakers 131–123 Suns",
     "next": {
@@ -229,7 +229,7 @@
   "zim": [
     {
       "t": "Chevrons",
-      "s": "Declared 295-9 on day 4, setting Afghanistan 418 to win",
+      "s": "Afghanistan 143-5 at stumps on day 4, needing 275 more",
       "n": "2nd Test, Sharjah, final day",
       "w": "Tue 17 Nov"
     },
@@ -241,26 +241,18 @@
     },
     {
       "t": "Warriors",
-      "s": "First leg v Equatorial Guinea ended 0–0 in Yaoundé (AFCON qualifier)",
-      "n": "v Equatorial Guinea, National Sports Stadium, Harare",
-      "w": "Mon 16 Nov · 13:00 UK"
+      "s": "Beat Equatorial Guinea 3–0 in Harare; 2nd in Group E on 7 points",
+      "n": "v Sierra Leone, AFCON qualifier",
+      "w": "Wed 24 Mar 2027"
     },
     {
       "t": "Zim players abroad",
-      "s": "Nakamba (captain), Zemura, Munetsi and Maswanhise all started in Yaoundé",
-      "n": "Return leg in Harare",
-      "w": "Mon 16 Nov · 13:00 UK"
+      "s": "Maswanhise came off the bench to score the third in the 3–0 win",
+      "n": "Warriors v Sierra Leone, AFCON qualifier",
+      "w": "Wed 24 Mar 2027"
     }
   ],
   "fixtures": [
-    {
-      "label": "Zimbabwe",
-      "a": "Zimbabwe",
-      "b": "Equatorial Guinea",
-      "start": "2026-11-16T13:00:00Z",
-      "mins": 115,
-      "comp": "AFCON qualifier · Harare"
-    },
     {
       "label": "Lakers",
       "a": "LA Lakers",
