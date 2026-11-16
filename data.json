@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-16T06:27:00Z",
+  "asOf": "2026-11-16T12:12:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,11 +30,16 @@
     }
   ],
   "standard": {
-    "date": "Sun 15 Nov",
-    "title": "Trust before you try",
-    "quote": "“Trust in Yahweh with all your heart, and don’t lean on your own understanding.” Proverbs 3:5"
+    "date": "Mon 16 Nov",
+    "title": "Small output compounds",
+    "quote": "“Small daily output compounds.” (your own rule)"
   },
   "news": [
+    {
+      "k": "sa",
+      "h": "Yoco secures a $100m credit line from Victory Park to grow merchant cash advances",
+      "s": "Disrupt Africa · 16 Nov"
+    },
     {
       "k": "zim",
       "h": "Zimbabwe steps up its crackdown on smuggling and fake goods before the festive rush",
@@ -72,11 +77,6 @@
     },
     {
       "k": "sa",
-      "h": "Jumpstarter platform helps South African founders raise seed money from their communities",
-      "s": "Disrupt Africa · 13 Nov"
-    },
-    {
-      "k": "sa",
       "h": "Google picks 10 African startups for its first Applied AI Lab",
       "s": "Business Tech Africa · 12 Nov"
     },
@@ -88,8 +88,8 @@
   ],
   "radar": [
     {
-      "h": "Zimbabwe close day 3 in Sharjah 291 runs ahead of Afghanistan",
-      "s": "NewsBytes · 15 Nov"
+      "h": "Cremer 50 not out and Muzarabani 59 help Zimbabwe set Afghanistan 418 in Sharjah",
+      "s": "NewsBytes · 16 Nov"
     },
     {
       "h": "IOC president Kirsty Coventry closes Africa's first Olympic event in Dakar",
@@ -229,9 +229,9 @@
   "zim": [
     {
       "t": "Chevrons",
-      "s": "Stumps day 3: Zim 339 and 169-7 lead Afghanistan (217) by 291",
-      "n": "2nd Test day 4, Sharjah",
-      "w": "Mon 16 Nov · to 17 Nov"
+      "s": "Declared 295-9 on day 4, setting Afghanistan 418 to win",
+      "n": "2nd Test, Sharjah, final day",
+      "w": "Tue 17 Nov"
     },
     {
       "t": "Sables",
