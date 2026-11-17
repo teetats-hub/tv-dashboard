@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-17T06:18:00Z",
+  "asOf": "2026-11-17T12:30:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,15 +30,20 @@
     }
   ],
   "standard": {
-    "date": "Mon 16 Nov",
-    "title": "Small output compounds",
-    "quote": "“Small daily output compounds.” (your own rule)"
+    "date": "Tue 17 Nov",
+    "title": "Late is not never",
+    "quote": "“Late is not never.” (your Standard, principle 8)"
   },
   "news": [
     {
       "k": "zim",
       "h": "Civil servants start receiving 13th cheque bonuses as festive spending picks up",
       "s": "The Herald · 17 Nov"
+    },
+    {
+      "k": "sa",
+      "h": "Sudanese fintech Cashi raises $660k from French lender Proparco",
+      "s": "Disrupt Africa · 17 Nov"
     },
     {
       "k": "zim",
@@ -56,9 +61,9 @@
       "s": "Trading Economics · 16 Nov"
     },
     {
-      "k": "world",
-      "h": "AI stock sell-off drags the Nasdaq down 2.5% and the S&P 500 almost 2%",
-      "s": "Capp Notes · 16 Nov"
+      "k": "zim",
+      "h": "Simbisa, owner of Chicken Inn, takes full control of its Kenyan delivery arm",
+      "s": "Techzim · 15 Nov"
     },
     {
       "k": "air",
@@ -66,23 +71,18 @@
       "s": "Getaway · 15 Nov"
     },
     {
+      "k": "world",
+      "h": "BoE's Huw Pill tells the FT more rate rises are likely in 2027",
+      "s": "FT · 14 Nov"
+    },
+    {
       "k": "sa",
       "h": "Enza Capital reaches a $21m first close for its AI Africa Fund",
       "s": "Disrupt Africa · 13 Nov"
     },
     {
-      "k": "sa",
-      "h": "South African fintech Lumepay raises a $6m pre-seed round",
-      "s": "Disrupt Africa · 12 Nov"
-    },
-    {
       "k": "zim",
       "h": "Econet says its Shona AI now understands 80% of customer queries",
-      "s": "Techzim · 11 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "Draft ride-hailing rules: drivers 21+, a ZINARA fee per trip, no cars over 10 years old",
       "s": "Techzim · 11 Nov"
     }
   ],
@@ -229,7 +229,7 @@
   "zim": [
     {
       "t": "Chevrons",
-      "s": "Afghanistan 143-5 at stumps on day 4 chasing 418; Zimbabwe five wickets from victory",
+      "s": "Day 5: Afghanistan 213-6 chasing 418; Zimbabwe four wickets from victory",
       "n": "2nd Test final day, then ODIs in India",
       "w": "Tue 17 Nov"
     },
