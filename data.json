@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-17T12:30:00Z",
+  "asOf": "2026-11-17T18:17:00Z",
   "weather": [
     {
       "city": "London",
@@ -36,6 +36,16 @@
   },
   "news": [
     {
+      "k": "sa",
+      "h": "Rand breaks through R17 to the dollar as messy coalition talks drag on",
+      "s": "News24 · 17 Nov"
+    },
+    {
+      "k": "world",
+      "h": "FTSE 100 drops 1.8% to 10,690 as a tech sell-off spreads before Nvidia results",
+      "s": "Yahoo Finance · 17 Nov"
+    },
+    {
       "k": "zim",
       "h": "Civil servants start receiving 13th cheque bonuses as festive spending picks up",
       "s": "The Herald · 17 Nov"
@@ -46,6 +56,11 @@
       "s": "Disrupt Africa · 17 Nov"
     },
     {
+      "k": "sa",
+      "h": "MTN opens talks to buy all of Telkom and weighs a cash offer",
+      "s": "TechCentral · 16 Nov"
+    },
+    {
       "k": "zim",
       "h": "Miners plan US$1.2bn on local beneficiation in 2027, Chamber of Mines says",
       "s": "The Herald · 16 Nov"
@@ -54,11 +69,6 @@
       "k": "zim",
       "h": "ZESA seeks an extra 235MW from Hwange as Kariba output is set to fall in 2027",
       "s": "The Herald · 16 Nov"
-    },
-    {
-      "k": "world",
-      "h": "Brent falls 3.5% to about $92 as the IEA flags a supply surplus",
-      "s": "Trading Economics · 16 Nov"
     },
     {
       "k": "zim",
@@ -74,22 +84,12 @@
       "k": "world",
       "h": "BoE's Huw Pill tells the FT more rate rises are likely in 2027",
       "s": "FT · 14 Nov"
-    },
-    {
-      "k": "sa",
-      "h": "Enza Capital reaches a $21m first close for its AI Africa Fund",
-      "s": "Disrupt Africa · 13 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "Econet says its Shona AI now understands 80% of customer queries",
-      "s": "Techzim · 11 Nov"
     }
   ],
   "radar": [
     {
-      "h": "Muzarabani and Cremer leave Zimbabwe five wickets from a Test win in Sharjah",
-      "s": "ESPNcricinfo · 16 Nov"
+      "h": "Zimbabwe beat Afghanistan by 57 runs in Sharjah to win the Test series 1-0",
+      "s": "Cricket World · 17 Nov"
     },
     {
       "h": "Warriors beat Equatorial Guinea 3-0 to boost their AFCON qualifying hopes",
@@ -121,12 +121,12 @@
     }
   ],
   "markets": {
-    "date": "16 Nov close",
+    "date": "17 Nov · S&P, JSE 16 Nov",
     "rows": [
       {
         "n": "FTSE 100",
-        "v": "10,881.55",
-        "c": -0.19
+        "v": "10,689.87",
+        "c": -1.76
       },
       {
         "n": "S&P 500",
@@ -140,13 +140,13 @@
       },
       {
         "n": "Gold $/oz",
-        "v": "3,864",
-        "c": -0.42
+        "v": "3,870",
+        "c": 0.15
       },
       {
         "n": "Brent $/bbl",
-        "v": "92.44",
-        "c": -3.55
+        "v": "93.20",
+        "c": 0.82
       }
     ]
   },
@@ -229,9 +229,9 @@
   "zim": [
     {
       "t": "Chevrons",
-      "s": "Day 5: Afghanistan 213-6 chasing 418; Zimbabwe four wickets from victory",
-      "n": "2nd Test final day, then ODIs in India",
-      "w": "Tue 17 Nov"
+      "s": "Beat Afghanistan by 57 runs in Sharjah to win the Test series 1-0",
+      "n": "1st ODI v India, Kolkata",
+      "w": "Sun 3 Jan 2027"
     },
     {
       "t": "Sables",
