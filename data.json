@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-18T06:26:00Z",
+  "asOf": "2026-11-18T12:15:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,20 +30,20 @@
     }
   ],
   "standard": {
-    "date": "Tue 17 Nov",
-    "title": "Late is not never",
-    "quote": "“Late is not never.” (your Standard, principle 8)"
+    "date": "Wed 18 Nov",
+    "title": "One shot, then finish",
+    "quote": "“One delusional shot for 30 days.” (Erifili Gounari, via @storieswithkiki)"
   },
   "news": [
     {
       "k": "world",
-      "h": "UK October inflation due at 7am, with forecasters expecting a rise to about 3.7%",
-      "s": "MoneyWeek · 17 Nov"
+      "h": "UK inflation rises to 3.6% in October, a one-year high but below the BoE's 3.7% forecast",
+      "s": "ONS · 18 Nov"
     },
     {
       "k": "world",
-      "h": "Nvidia beats and guides to $130bn as the S&P 500 hits its lowest close since July",
-      "s": "Wall Street Republic · 17 Nov"
+      "h": "Anthropic expected to price its record Nasdaq IPO today, with ANT trading from Thursday",
+      "s": "BigGo Finance · 18 Nov"
     },
     {
       "k": "zim",
@@ -52,17 +52,17 @@
     },
     {
       "k": "zim",
-      "h": "Zimbabwe moves to rebuild its local bond market after ZiG currency turmoil",
-      "s": "NewZimbabwe · 17 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "PPC advances plans for a 1.5m-tonne-a-year cement plant in Zimbabwe",
+      "h": "Treasury has released just 52.8% of the health budget, leaving the sector short",
       "s": "NewZimbabwe · 17 Nov"
     },
     {
       "k": "sa",
       "h": "Masiyiwa's Cassava deploys 12,000 Nvidia GPUs in a $720m African AI build-out",
+      "s": "NewZimbabwe · 17 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "Zimbabwe moves to rebuild its local bond market after ZiG currency turmoil",
       "s": "NewZimbabwe · 17 Nov"
     },
     {
@@ -79,6 +79,11 @@
       "k": "air",
       "h": "FlySafair adds a third daily Johannesburg to Harare flight for the festive rush",
       "s": "Lifestyle & Tech · 16 Nov"
+    },
+    {
+      "k": "air",
+      "h": "Airlink launches a three-times-weekly Lanseria to Harare service",
+      "s": "AeroRoutes · 15 Nov"
     }
   ],
   "radar": [
@@ -99,6 +104,10 @@
       "s": "Sport News Africa · 17 Nov"
     },
     {
+      "h": "Simbisa takes full ownership of its Kenyan delivery business for US$664,000",
+      "s": "Techzim · 15 Nov"
+    },
+    {
       "h": "Kirsty Coventry closes the Youth Olympic Games in Dakar",
       "s": "Xinhua · 14 Nov"
     },
@@ -109,10 +118,6 @@
     {
       "h": "Caine Prize clears Simbarashe Kundizeza after a review finds no AI use",
       "s": "NewZimbabwe · 12 Nov"
-    },
-    {
-      "h": "Zimbabwe-qualified auditors can now practise in the UK under a new FRC deal",
-      "s": "NewZimbabwe · 11 Nov"
     }
   ],
   "markets": {
@@ -146,22 +151,22 @@
     ]
   },
   "fx": {
-    "date": "16 Nov close",
+    "date": "17 Nov close",
     "rows": [
       {
         "p": "GBP → ZAR",
-        "r": "22.36",
-        "c": -0.33
+        "r": "22.34",
+        "c": -0.12
       },
       {
         "p": "GBP → USD",
-        "r": "1.3198",
-        "c": -0.22
+        "r": "1.3191",
+        "c": -0.05
       },
       {
         "p": "USD → ZAR",
-        "r": "16.94",
-        "c": -0.12
+        "r": "16.93",
+        "c": -0.06
       },
       {
         "p": "USD → ZiG",
@@ -209,12 +214,12 @@
       "opp": "Newcastle (away)",
       "when": "2026-11-21T17:30:00Z"
     },
-    "after": "Arsenal v Dortmund · Tue 24 Nov"
+    "after": "Arsenal v Dortmund · Tue 24 Nov 20:00 UK"
   },
   "lakers": {
-    "pos": "2nd in the West",
-    "rec": "12–2",
-    "last": "Suns 123–131 Lakers",
+    "pos": "1st in the West",
+    "rec": "13–2",
+    "last": "Lakers 118–114 Hornets (OT)",
     "next": {
       "opp": "v Utah Jazz",
       "when": "2026-11-19T03:00:00Z"
@@ -287,6 +292,14 @@
       "start": "2026-11-21T17:30:00Z",
       "mins": 115,
       "comp": "Premier League · St James’ Park"
+    },
+    {
+      "label": "Arsenal",
+      "a": "Arsenal",
+      "b": "Borussia Dortmund",
+      "start": "2026-11-24T20:00:00Z",
+      "mins": 115,
+      "comp": "Champions League · Emirates"
     }
   ],
   "pl": [
