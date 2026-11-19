@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-18T18:16:00Z",
+  "asOf": "2026-11-19T06:20:00Z",
   "weather": [
     {
       "city": "London",
@@ -36,9 +36,19 @@
   },
   "news": [
     {
+      "k": "zim",
+      "h": "RTG quarterly revenue jumps 31% to US$43.7m as hotel occupancy rises to 60%",
+      "s": "NewZimbabwe · 19 Nov"
+    },
+    {
       "k": "world",
-      "h": "FTSE 100 falls 1.3% to 10,551 as miners slide and gold drops below $3,800",
-      "s": "Yahoo Finance · 18 Nov"
+      "h": "UK inflation accelerates to 3.6% in October",
+      "s": "FT · 18 Nov"
+    },
+    {
+      "k": "world",
+      "h": "Gold falls below $3,800 an ounce and Brent slips to $91.86 as US crude stocks build",
+      "s": "Eurasia Business News · 18 Nov"
     },
     {
       "k": "sa",
@@ -47,46 +57,40 @@
     },
     {
       "k": "sa",
-      "h": "Rand slides 1.6% to R17.18 a dollar on the eve of the SARB rate decision",
-      "s": "The National · 18 Nov"
+      "h": "Saviu closes a €40m second fund, four times its first, to back African startups",
+      "s": "Business Tech Africa · 18 Nov"
     },
     {
-      "k": "world",
-      "h": "UK inflation rises to 3.6% in October, a one-year high but below the BoE's 3.7% forecast",
-      "s": "ONS · 18 Nov"
-    },
-    {
-      "k": "sa",
-      "h": "First Circle Capital closes a $26m fund to back African fintech startups",
-      "s": "TechCabal · 18 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "Mthuli Ncube to present the 2027 National Budget at Mt Hampden on Thursday",
-      "s": "Parliament of Zimbabwe · 17 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "PPC advances plans for a new 1.5m-tonne integrated cement plant in Zimbabwe",
-      "s": "NewZimbabwe · 17 Nov"
+      "k": "air",
+      "h": "SAA, FlySafair and Airlink all add Harare capacity for the festive peak",
+      "s": "Business Day · 18 Nov"
     },
     {
       "k": "sa",
-      "h": "Masiyiwa's Cassava deploys 12,000 Nvidia GPUs in a $720m African AI build-out",
+      "h": "Masiyiwa's Cassava seeks up to $1bn to buy Nvidia chips for African AI centres",
+      "s": "Billionaires.Africa · 17 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "PPC advances plans for a new 1.5m-tonne cement investment in Zimbabwe",
       "s": "NewZimbabwe · 17 Nov"
     },
     {
       "k": "air",
-      "h": "FlySafair adds a third daily Johannesburg to Harare flight for the festive rush",
-      "s": "Lifestyle & Tech · 16 Nov"
+      "h": "fastjet runs up to five daily Harare to Johannesburg flights for the festive season",
+      "s": "LARA · 16 Nov"
     },
     {
-      "k": "air",
-      "h": "Airlink launches a three-times-weekly Lanseria to Harare service",
-      "s": "AeroRoutes · 15 Nov"
+      "k": "zim",
+      "h": "Budget preview: Treasury eyes US$13.3bn spend as 2027 growth slows to 3.5%",
+      "s": "Herald via Zimbabwe Situation · 15 Nov"
     }
   ],
   "radar": [
+    {
+      "h": "Lady Chevrons beat the Netherlands by 33 runs as Kelis Ndhlovu smashes 74 off 45",
+      "s": "NewsDay · 18 Nov"
+    },
     {
       "h": "Parliament hails Ropafadzo Muzondo's historic Youth Olympic 200m gold",
       "s": "Zimbabwe Situation · 18 Nov"
@@ -101,7 +105,7 @@
     },
     {
       "h": "Warriors thrash Equatorial Guinea 3-0 to sit second in their AFCON qualifying group",
-      "s": "Sport News Africa · 17 Nov"
+      "s": "NewZimbabwe · 16 Nov"
     },
     {
       "h": "Simbisa takes full ownership of its Kenyan delivery business for US$664,000",
@@ -112,16 +116,12 @@
       "s": "Xinhua · 14 Nov"
     },
     {
-      "h": "Brendan Taylor hits 119 against Afghanistan in the Sharjah Test",
-      "s": "ESPNcricinfo · 14 Nov"
-    },
-    {
-      "h": "Caine Prize clears Simbarashe Kundizeza after a review finds no AI use",
-      "s": "NewZimbabwe · 12 Nov"
+      "h": "Econet's Shona-language AI now handles 80% of customer queries",
+      "s": "Techzim · 11 Nov"
     }
   ],
   "markets": {
-    "date": "18 Nov close · S&P, JSE 17 Nov",
+    "date": "18 Nov close",
     "rows": [
       {
         "n": "FTSE 100",
@@ -130,13 +130,13 @@
       },
       {
         "n": "S&P 500",
-        "v": "7,340.53",
-        "c": -1.03
+        "v": "7,323.63",
+        "c": -0.23
       },
       {
         "n": "JSE All Share",
-        "v": "110,616",
-        "c": -0.82
+        "v": "106,572",
+        "c": -3.66
       },
       {
         "n": "Gold $/oz",
@@ -145,8 +145,8 @@
       },
       {
         "n": "Brent $/bbl",
-        "v": "91.94",
-        "c": -1.35
+        "v": "91.95",
+        "c": -1.28
       }
     ]
   },
@@ -218,13 +218,13 @@
   },
   "lakers": {
     "pos": "1st in the West",
-    "rec": "13–2",
-    "last": "Lakers 118–114 Hornets (OT)",
+    "rec": "13–3",
+    "last": "Lakers 97–109 Jazz",
     "next": {
-      "opp": "v Utah Jazz",
-      "when": "2026-11-19T03:00:00Z"
+      "opp": "v Sacramento Kings",
+      "when": "2026-11-21T03:00:00Z"
     },
-    "after": "v Sacramento Kings · Sat 21 Nov 03:00 UK"
+    "after": "v Utah Jazz · Tue 24 Nov 03:00 UK"
   },
   "zim": [
     {
@@ -256,14 +256,6 @@
     {
       "label": "Lakers",
       "a": "LA Lakers",
-      "b": "Utah Jazz",
-      "start": "2026-11-19T03:00:00Z",
-      "mins": 150,
-      "comp": "NBA"
-    },
-    {
-      "label": "Lakers",
-      "a": "LA Lakers",
       "b": "Sacramento Kings",
       "start": "2026-11-21T03:00:00Z",
       "mins": 150,
@@ -292,6 +284,14 @@
       "start": "2026-11-21T17:30:00Z",
       "mins": 115,
       "comp": "Premier League · St James’ Park"
+    },
+    {
+      "label": "Lakers",
+      "a": "LA Lakers",
+      "b": "Utah Jazz",
+      "start": "2026-11-24T03:00:00Z",
+      "mins": 150,
+      "comp": "NBA"
     },
     {
       "label": "Arsenal",
@@ -351,52 +351,52 @@
       "title": "Funding this week",
       "items": [
         {
-          "tag": "Sudan",
-          "ph": "fund",
-          "img": "https://i0.wp.com/disruptafrica.com/wp-content/uploads/2026/11/Cashi.jpg?fit=900%2C471&ssl=1",
-          "h": "Sudanese payments startup Cashi raises $660k from Proparco",
-          "s": "Proparco's first deal in Sudan backs digital payments where banking is scarce",
-          "m": "Disrupt Africa · 17 Nov"
-        },
-        {
-          "tag": "South Africa",
-          "ph": "fund",
-          "img": "https://i0.wp.com/disruptafrica.com/wp-content/uploads/2026/05/Yoco.png?fit=1097%2C527&ssl=1",
-          "h": "Yoco lands a $100m credit facility from Victory Park Capital",
-          "s": "Debt line will scale its merchant cash advance product",
-          "m": "Disrupt Africa · 16 Nov"
-        },
-        {
-          "tag": "Ethiopia",
-          "ph": "fund",
-          "img": "https://techmoran.com/wp-content/uploads/2026/11/dodai.webp",
-          "h": "Dodai lifts its Series A to $16m with Tokyo Gas backing",
-          "s": "Extra $3m for e-motorcycles and battery swapping in Addis Ababa",
-          "m": "TechMoran · 16 Nov"
-        },
-        {
-          "tag": "South Africa",
-          "ph": "fund",
-          "mark": "ALIGND",
-          "h": "Knife Capital backs e-health startup Alignd",
-          "s": "Funding to expand its care model into maternity and kidney care",
-          "m": "Disrupt Africa · 16 Nov"
-        },
-        {
           "tag": "Pan-Africa",
           "ph": "fund",
-          "mark": "ENZA",
-          "h": "Enza Capital hits a $21m first close on its AI Africa Fund",
-          "s": "Targets $60m with cheques of $250k to $3m from pre-seed to Series B",
-          "m": "Disrupt Africa · 13 Nov"
+          "mark": "FCC",
+          "h": "First Circle Capital closes $26m fund for early-stage African fintechs",
+          "s": "LPs include IFC, Bpifrance and FSD Africa; backs pre-seed and seed fintechs",
+          "m": "TechMoran · 18 Nov"
         },
         {
           "tag": "Egypt",
           "ph": "fund",
-          "mark": "NOOR",
-          "h": "NoorNation raises a $1.05m seed round for solar irrigation",
-          "s": "Catalyst Fund and KBW Ventures back its push to cut farmers' diesel costs",
-          "m": "TechMoran · 13 Nov"
+          "mark": "SBK",
+          "h": "Egyptian digital gold platform Sabika raises an undisclosed round",
+          "s": "Funds tech and new gold and silver savings products; 120,000+ users",
+          "m": "Disrupt Africa · 18 Nov"
+        },
+        {
+          "tag": "Zambia",
+          "ph": "fund",
+          "mark": "QK",
+          "h": "Zambia's Qualikeeper wins a $75k Qualcomm grant for livestock monitoring",
+          "s": "Equity-free award at Africa Tech Festival to scale its StocKeeper platform",
+          "m": "Business Tech Africa · 19 Nov"
+        },
+        {
+          "tag": "Côte d'Ivoire",
+          "ph": "fund",
+          "mark": "SAVIU",
+          "h": "Saviu Ventures closes a €40m second fund for Francophone African startups",
+          "s": "AfDB commits €6.5m; Bpifrance, Proparco and Axian also back Saviu II",
+          "m": "The Condia · 17 Nov"
+        },
+        {
+          "tag": "Nigeria",
+          "ph": "fund",
+          "mark": "POD",
+          "h": "Chude Jideonwo's FourthMainland Fund backs storytelling app Storipod",
+          "s": "Undisclosed sum; Jideonwo joins Storipod as board chair",
+          "m": "The Condia · 17 Nov"
+        },
+        {
+          "tag": "Ethiopia",
+          "ph": "fund",
+          "mark": "DODAI",
+          "h": "Dodai extends its Series A to $16m with Tokyo Gas backing",
+          "s": "$3m extension from Acario and Kaneto Capital for electric mobility",
+          "m": "Business Tech Africa · 17 Nov"
         }
       ]
     },
@@ -433,16 +433,16 @@
       "title": "AI and go-to-market",
       "stories": [
         {
-          "h": "OpenAI launches ChatGPT for Sales with 30-plus CRM and partner plugins",
-          "s": "Unite.AI · 17 Nov"
+          "h": "Anthropic prices its IPO at $83 a share, valuing it at about $1.5trn",
+          "s": "TechCrunch · 18 Nov"
         },
         {
-          "h": "Microsoft and 40 firms launch an AI Transparency Initiative for enterprise agents",
-          "s": "Microsoft · 17 Nov"
+          "h": "Microsoft and Salesforce launch Copilotforce with 38-plus prebuilt sales skills",
+          "s": "Agile Brand Guide · 17 Nov"
         },
         {
-          "h": "Genpact unveils Onyx to build and govern AI agents across workflows",
-          "s": "AI Agents Directory · 17 Nov"
+          "h": "ZoomInfo launches a sales plugin for ChatGPT built on its GTM data",
+          "s": "Agile Brand Guide · 17 Nov"
         }
       ],
       "tactics": [
