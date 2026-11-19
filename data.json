@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-19T06:20:00Z",
+  "asOf": "2026-11-19T12:20:00Z",
   "weather": [
     {
       "city": "London",
@@ -35,6 +35,16 @@
     "quote": "“One delusional shot for 30 days.” (Erifili Gounari, via @storieswithkiki)"
   },
   "news": [
+    {
+      "k": "zim",
+      "h": "Mthuli Ncube presents Zimbabwe's 2027 National Budget to Parliament today",
+      "s": "Parliament of Zimbabwe · 19 Nov"
+    },
+    {
+      "k": "sa",
+      "h": "Rand slides to its weakest level this year at 17.35 to the dollar before SARB decision",
+      "s": "Reuters · 19 Nov"
+    },
     {
       "k": "zim",
       "h": "RTG quarterly revenue jumps 31% to US$43.7m as hotel occupancy rises to 60%",
@@ -74,22 +84,12 @@
       "k": "zim",
       "h": "PPC advances plans for a new 1.5m-tonne cement investment in Zimbabwe",
       "s": "NewZimbabwe · 17 Nov"
-    },
-    {
-      "k": "air",
-      "h": "fastjet runs up to five daily Harare to Johannesburg flights for the festive season",
-      "s": "LARA · 16 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "Budget preview: Treasury eyes US$13.3bn spend as 2027 growth slows to 3.5%",
-      "s": "Herald via Zimbabwe Situation · 15 Nov"
     }
   ],
   "radar": [
     {
-      "h": "Lady Chevrons beat the Netherlands by 33 runs as Kelis Ndhlovu smashes 74 off 45",
-      "s": "NewsDay · 18 Nov"
+      "h": "Lady Chevrons beat the Netherlands by 33 runs to reach the Emerging Nations Super Six",
+      "s": "Kawowo · 18 Nov"
     },
     {
       "h": "Parliament hails Ropafadzo Muzondo's historic Youth Olympic 200m gold",
