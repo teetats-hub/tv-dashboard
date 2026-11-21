@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-20T06:12:00Z",
+  "asOf": "2026-11-21T06:16:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,74 +30,74 @@
     }
   ],
   "standard": {
-    "date": "Wed 18 Nov",
-    "title": "One shot, then finish",
-    "quote": "“One delusional shot for 30 days.” (Erifili Gounari, via @storieswithkiki)"
+    "date": "Fri 20 Nov",
+    "title": "Set the frame, finish",
+    "quote": "“Set the frame before you deliver.” (Rob D Willis)"
   },
   "news": [
     {
       "k": "zim",
-      "h": "Mthuli Ncube presents Zimbabwe's 2027 National Budget to Parliament today",
-      "s": "Parliament of Zimbabwe · 19 Nov"
-    },
-    {
-      "k": "sa",
-      "h": "Rand slides to its weakest level this year at 17.35 to the dollar before SARB decision",
-      "s": "Reuters · 19 Nov"
+      "h": "Banks' nine-month profit falls to ZiG6.5bn (US$242m) as loans grow 48%",
+      "s": "NewZimbabwe · 20 Nov"
     },
     {
       "k": "zim",
-      "h": "RTG quarterly revenue jumps 31% to US$43.7m as hotel occupancy rises to 60%",
+      "h": "Ncube orders government and miners to buy 15% of supplies locally from 2027",
+      "s": "NewZimbabwe · 20 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "2027 Budget lifts the tax-free threshold to US$150 and cuts phone and EV duties",
       "s": "NewZimbabwe · 19 Nov"
     },
     {
-      "k": "world",
-      "h": "UK inflation accelerates to 3.6% in October",
-      "s": "FT · 18 Nov"
-    },
-    {
-      "k": "world",
-      "h": "Gold falls below $3,800 an ounce and Brent slips to $91.86 as US crude stocks build",
-      "s": "Eurasia Business News · 18 Nov"
+      "k": "zim",
+      "h": "Treasury wants Meta, Netflix, inDrive and Spotify to pay more tax on Zim users",
+      "s": "Techzim · 19 Nov"
     },
     {
       "k": "sa",
-      "h": "South African inflation jumps to 5.2% in October, up from 4.5%",
-      "s": "Joburg ETC · 18 Nov"
+      "h": "Reserve Bank holds at 7.25% on a 4-3 vote and warns it will hike if needed",
+      "s": "EWN · 19 Nov"
+    },
+    {
+      "k": "world",
+      "h": "UK inflation rises to 3.6% and the BoE expects a peak near 5% next spring",
+      "s": "ITV News · 18 Nov"
+    },
+    {
+      "k": "world",
+      "h": "Brent drops about 4% to near $89 as US crude stockpiles build",
+      "s": "Journalarta · 18 Nov"
     },
     {
       "k": "sa",
-      "h": "Saviu closes a €40m second fund, four times its first, to back African startups",
-      "s": "Business Tech Africa · 18 Nov"
+      "h": "First Circle closes a $26m fund for pre-seed and seed African fintechs",
+      "s": "Dealroom · 18 Nov"
     },
     {
       "k": "air",
-      "h": "SAA, FlySafair and Airlink all add Harare capacity for the festive peak",
-      "s": "Business Day · 18 Nov"
+      "h": "fastjet adds up to three daily A320 Harare-Johannesburg round trips for Christmas",
+      "s": "LARA · 16 Nov"
     },
     {
-      "k": "sa",
-      "h": "Masiyiwa's Cassava seeks up to $1bn to buy Nvidia chips for African AI centres",
-      "s": "Billionaires.Africa · 17 Nov"
-    },
-    {
-      "k": "zim",
-      "h": "PPC advances plans for a new 1.5m-tonne cement investment in Zimbabwe",
-      "s": "NewZimbabwe · 17 Nov"
+      "k": "air",
+      "h": "Airlink's new Lanseria to Harare route is due to start 15 Nov, three times a week",
+      "s": "BusinessTech · 15 Nov"
     }
   ],
   "radar": [
     {
-      "h": "Lady Chevrons beat the Netherlands by 33 runs to reach the Emerging Nations Super Six",
-      "s": "Kawowo · 18 Nov"
+      "h": "Lady Chevrons beat the Netherlands by 33 runs as Ndhlovu hits 74 to reach Super Six",
+      "s": "ICC · 18 Nov"
     },
     {
-      "h": "Parliament hails Ropafadzo Muzondo's historic Youth Olympic 200m gold",
-      "s": "Zimbabwe Situation · 18 Nov"
+      "h": "Parliament hails Ropafadzo Mzondo's historic Youth Olympic 200m gold",
+      "s": "Herald · 18 Nov"
     },
     {
       "h": "Chevrons beat Afghanistan by 57 runs for a first multi-Test series win since 2004",
-      "s": "ZimLive · 17 Nov"
+      "s": "NewZimbabwe · 18 Nov"
     },
     {
       "h": "Blessing Muzarabani named Player of the Match after six wickets and a fifty",
@@ -113,7 +113,7 @@
     },
     {
       "h": "Kirsty Coventry closes the Youth Olympic Games in Dakar",
-      "s": "Xinhua · 14 Nov"
+      "s": "CGTN · 14 Nov"
     },
     {
       "h": "Econet's Shona-language AI now handles 80% of customer queries",
@@ -187,8 +187,8 @@
       "b": "SARB repo",
       "d": "Held on 19 Nov · prime 10.75%",
       "v": "7.25%",
-      "next": "2026-11-19T13:00:00Z",
-      "nextLabel": "19 Nov"
+      "next": "2027-01-28T13:00:00Z",
+      "nextLabel": "28 Jan"
     },
     {
       "b": "US Fed",
@@ -217,14 +217,14 @@
     "after": "Arsenal v Dortmund · Tue 24 Nov 20:00 UK"
   },
   "lakers": {
-    "pos": "1st in the West",
-    "rec": "13–3",
-    "last": "Lakers 97–109 Jazz",
+    "pos": "Top of the West",
+    "rec": "14–3",
+    "last": "Lakers 106–104 Kings",
     "next": {
-      "opp": "v Sacramento Kings",
-      "when": "2026-11-21T03:00:00Z"
+      "opp": "v Utah Jazz",
+      "when": "2026-11-24T03:00:00Z"
     },
-    "after": "v Utah Jazz · Tue 24 Nov 03:00 UK"
+    "after": "at San Antonio Spurs · Sat 28 Nov 02:30 UK"
   },
   "zim": [
     {
@@ -253,14 +253,6 @@
     }
   ],
   "fixtures": [
-    {
-      "label": "Lakers",
-      "a": "LA Lakers",
-      "b": "Sacramento Kings",
-      "start": "2026-11-21T03:00:00Z",
-      "mins": 150,
-      "comp": "NBA"
-    },
     {
       "label": "Harlequins",
       "a": "Saracens",
@@ -300,6 +292,14 @@
       "start": "2026-11-24T20:00:00Z",
       "mins": 115,
       "comp": "Champions League · Emirates"
+    },
+    {
+      "label": "Lakers",
+      "a": "San Antonio Spurs",
+      "b": "LA Lakers",
+      "start": "2026-11-28T02:30:00Z",
+      "mins": 150,
+      "comp": "NBA"
     }
   ],
   "pl": [
@@ -351,52 +351,52 @@
       "title": "Funding this week",
       "items": [
         {
+          "tag": "Egypt",
+          "ph": "fund",
+          "mark": "CONNECT",
+          "h": "Egypt's Connect Money raises $3.5m pre-Series A to go regional",
+          "s": "Led by Mohamed Farouk with Algebra and DisrupTech; reported total funding $11.5m",
+          "m": "Launch Base Africa · 20 Nov"
+        },
+        {
           "tag": "Pan-Africa",
           "ph": "fund",
-          "mark": "FCC",
-          "h": "First Circle Capital closes $26m fund for early-stage African fintechs",
-          "s": "LPs include IFC, Bpifrance and FSD Africa; backs pre-seed and seed fintechs",
-          "m": "TechMoran · 18 Nov"
+          "mark": "MCP",
+          "h": "Mediterrania Capital launches a €50m venture fund for African AI startups",
+          "s": "MC Outlierz Ventures Fund I targets seed and pre-Series A in fintech and healthtech",
+          "m": "Launch Base Africa · 20 Nov"
         },
         {
           "tag": "Egypt",
           "ph": "fund",
-          "mark": "SBK",
-          "h": "Egyptian digital gold platform Sabika raises an undisclosed round",
-          "s": "Funds tech and new gold and silver savings products; 120,000+ users",
-          "m": "Disrupt Africa · 18 Nov"
+          "mark": "CHIP",
+          "h": "Egypt's Chipverse raises pre-seed funding to expand GPU capacity",
+          "s": "Undisclosed round from regional angels; plans AI dubbing and voice tools",
+          "m": "Tech in Africa · 20 Nov"
         },
         {
-          "tag": "Zambia",
+          "tag": "South Africa",
           "ph": "fund",
-          "mark": "QK",
-          "h": "Zambia's Qualikeeper wins a $75k Qualcomm grant for livestock monitoring",
-          "s": "Equity-free award at Africa Tech Festival to scale its StocKeeper platform",
-          "m": "Business Tech Africa · 19 Nov"
+          "mark": "CWOLF",
+          "h": "Terra Industries takes a stake in South Africa's Community Wolf",
+          "s": "Undisclosed seed; the AI crime-reporting tool began as a WhatsApp service",
+          "m": "Launch Base Africa · 19 Nov"
         },
         {
-          "tag": "Côte d'Ivoire",
+          "tag": "Sudan",
           "ph": "fund",
-          "mark": "SAVIU",
-          "h": "Saviu Ventures closes a €40m second fund for Francophone African startups",
-          "s": "AfDB commits €6.5m; Bpifrance, Proparco and Axian also back Saviu II",
-          "m": "The Condia · 17 Nov"
+          "mark": "CASHI",
+          "h": "Sudan's Cashi raises $660k from Proparco",
+          "s": "Proparco's first investment in Sudan; backs financial services in fragile markets",
+          "m": "Disrupt Africa · 17 Nov"
         },
         {
-          "tag": "Nigeria",
+          "tag": "South Africa",
           "ph": "fund",
-          "mark": "POD",
-          "h": "Chude Jideonwo's FourthMainland Fund backs storytelling app Storipod",
-          "s": "Undisclosed sum; Jideonwo joins Storipod as board chair",
-          "m": "The Condia · 17 Nov"
-        },
-        {
-          "tag": "Ethiopia",
-          "ph": "fund",
-          "mark": "DODAI",
-          "h": "Dodai extends its Series A to $16m with Tokyo Gas backing",
-          "s": "$3m extension from Acario and Kaneto Capital for electric mobility",
-          "m": "Business Tech Africa · 17 Nov"
+          "mark": "ALIGND",
+          "h": "Alignd raises Knife Capital funding for maternity and kidney care",
+          "s": "Undisclosed round from Knife Fund III; extends beyond palliative care",
+          "m": "Disrupt Africa · 16 Nov"
         }
       ]
     },
@@ -406,26 +406,26 @@
         {
           "tag": "Cassava",
           "ph": "zim",
-          "img": "https://storage.ghost.io/c/08/35/0835e1b0-0cd7-4c1a-8c28-d6f7bc4d9c84/content/images/2026/11/Strive-2.PNG",
-          "h": "Masiyiwa's Cassava seeks up to $1bn for Nvidia AI chips",
-          "s": "Talks with Middle East and US investors to fund African AI data centres",
-          "m": "Billionaires.Africa · 17 Nov"
+          "mark": "CSVA",
+          "h": "Masiyiwa's Cassava signs an AI deal with Mauritius Telecom",
+          "s": "MoU at Africa Tech Festival covers AI services and the myt Learn platform",
+          "m": "Billionaires.Africa · 19 Nov"
         },
         {
           "tag": "Cassava",
           "ph": "zim",
-          "mark": "CSVA",
-          "h": "Cassava to offer quantum-safe networks with Graphiant",
-          "s": "Masiyiwa-founded group plans the service across Africa from 2027",
+          "mark": "NVDA",
+          "h": "Cassava's 12,000 Nvidia chips anchor a $720m AI factory plan",
+          "s": "Plan spans five African countries; Jensen Huang has left the partnership",
           "m": "Billionaires.Africa · 16 Nov"
         },
         {
-          "tag": "Econet",
+          "tag": "Simbisa",
           "ph": "zim",
-          "mark": "SHONA",
-          "h": "Econet launches its Shona 2.0 AI model for Yamurai",
-          "s": "Upgraded local-language model powers its Yamurai assistant",
-          "m": "Techzim · 11 Nov"
+          "mark": "SIMB",
+          "h": "Simbisa takes full ownership of Kenyan delivery arm Kutuma for $664k",
+          "s": "Buys the last 25%; delivery was 27.4% of Kenyan turnover to June 2026",
+          "m": "Techzim · 15 Nov"
         }
       ]
     },
@@ -433,16 +433,16 @@
       "title": "AI and go-to-market",
       "stories": [
         {
-          "h": "Anthropic prices its IPO at $83 a share, valuing it at about $1.5trn",
-          "s": "TechCrunch · 18 Nov"
+          "h": "Anthropic shares trade near $111 on Nasdaq debut, 33% above IPO price",
+          "s": "TechCrunch · 19 Nov"
         },
         {
-          "h": "Microsoft and Salesforce launch Copilotforce with 38-plus prebuilt sales skills",
-          "s": "Agile Brand Guide · 17 Nov"
+          "h": "AI-native CRM Dreamteam raises $53m from Accel and Premji Invest",
+          "s": "Agile Brand Guide · 16 Nov"
         },
         {
-          "h": "ZoomInfo launches a sales plugin for ChatGPT built on its GTM data",
-          "s": "Agile Brand Guide · 17 Nov"
+          "h": "HubSpot brings back co-founder Brian Halligan as CEO",
+          "s": "Agile Brand Guide · 12 Nov"
         }
       ],
       "tactics": [
@@ -465,30 +465,6 @@
       "title": "London this week",
       "items": [
         {
-          "tag": "AI",
-          "ph": "tech",
-          "mark": "AI",
-          "h": "AI in Business Conference brings a day of enterprise AI talks to Victoria",
-          "s": "Park Plaza Victoria · Victoria",
-          "m": "Thu 19 Nov · 08:15"
-        },
-        {
-          "tag": "SA music",
-          "ph": "zim",
-          "img": "https://s3.eu-west-2.amazonaws.com/s3.serious.org.uk/images/_1200x630_crop_center-center_82_none_ns/Bongeziwe-Mabandla-Chris-Saunders-Libambe-Lingatshon-1.jpg?mtime=1783937934",
-          "h": "South African singer Bongeziwe Mabandla plays Union Chapel with Zola Marcelle",
-          "s": "Union Chapel · Islington · £36",
-          "m": "Thu 19 Nov · 19:30"
-        },
-        {
-          "tag": "Amapiano",
-          "ph": "afro",
-          "img": "https://static.designmynight.com/uploads/2026/11/iLoveIMG_Afrobeats-Meets-Amapiano-in-Shoreditch-optimised.png",
-          "h": "Afrobeats meets amapiano in Shoreditch, free entry before midnight",
-          "s": "The Cornershop · Shoreditch · free before 12, then £11",
-          "m": "Fri 20 Nov · 22:00"
-        },
-        {
           "tag": "Boks",
           "ph": "zim",
           "img": "https://static.designmynight.com/uploads/2026/09/The-nations-Championships12-optimised.png",
@@ -501,7 +477,7 @@
           "ph": "afro",
           "img": "https://media.beatstorapon.com/web-images/events/love-afrobeats-bashment-party-1793161970.jpg",
           "h": "Love Afrobeats and bashment party in a basement club near Aldgate",
-          "s": "Tunnel Club · Aldgate · prices on site",
+          "s": "Tunnel Club · Aldgate · prices on ticket page",
           "m": "Sat 21 Nov · 22:00"
         },
         {
@@ -511,6 +487,30 @@
           "h": "HackKings weekend hackathon from King's College London, free to enter",
           "s": "Bush House · Aldwych · free",
           "m": "Sat 21–Sun 22 Nov · 10:00"
+        },
+        {
+          "tag": "SA music",
+          "ph": "zim",
+          "mark": "JOY",
+          "h": "South African vocal group The Joy performs at the Barbican",
+          "s": "Barbican Hall · Silk Street · £31.50 to £41.50",
+          "m": "Sun 22 Nov · 19:30"
+        },
+        {
+          "tag": "AI",
+          "ph": "tech",
+          "mark": "AI",
+          "h": "AI World Congress fills two days with AI talks in Kensington",
+          "s": "Kensington Conference and Events Centre · Eventbrite tickets",
+          "m": "Wed 25–Thu 26 Nov · 09:00"
+        },
+        {
+          "tag": "Amapiano",
+          "ph": "afro",
+          "img": "https://static.designmynight.com/uploads/2026/10/Ampiano-London-Banner-1200x618-optimised.webp",
+          "h": "Amapiano x Afrobeats party at Big Chill King's Cross",
+          "s": "Big Chill King's Cross · Pentonville Road · £7.70 to £8.80",
+          "m": "Fri 27 Nov · 22:00"
         }
       ]
     },
@@ -521,49 +521,49 @@
           "tag": "Auction",
           "ph": "auction",
           "mark": "HK23",
-          "h": "Phillips Hong Kong XXIII is led by a first-series Patek 2499",
-          "s": "1952 yellow gold 2499 estimated at HK$12m to HK$24m in West Kowloon",
-          "m": "Sat 21–Sun 22 Nov"
+          "h": "Auffret Paris tops early Phillips Hong Kong XXIII results at HK$12.19m",
+          "s": "Estimate was HK$0.9m to HK$1.8m; Patek 2499 (HK$12m to HK$24m) still to sell",
+          "m": "Phillips · Sat 21 Nov"
         },
         {
           "tag": "Release",
           "ph": "watch",
-          "img": "https://monochrome-watches.com/app/uploads/2026/11/Kurono-Tokyo-Structure-Chronograph-S1-40mm-Sports-Chronograph-Automatic-1.jpg",
-          "h": "Kurono Tokyo unveils a sportier 40mm Structure Chronograph S1",
-          "s": "Automatic bi-compax at US$3,690; online orders open 19 Nov",
-          "m": "Monochrome · 16 Nov"
+          "img": "https://monochrome-watches.com/app/uploads/2026/11/Hublot-Big-Bang-Denim-collection-1.jpg",
+          "h": "Hublot adds a Big Bang Denim collection with hand-textured cases",
+          "s": "Four models from CHF 15,400 to CHF 22,400 with denim dials and straps",
+          "m": "Monochrome · 19 Nov"
+        },
+        {
+          "tag": "Release",
+          "ph": "watch",
+          "img": "https://monochrome-watches.com/app/uploads/2026/11/nomos-noir-series-tangente-ludwig-tertra-hand-wound-steel-or-gold-review-13.jpg",
+          "h": "Nomos goes black and gold with the new Noir Series",
+          "s": "Tangente, Ludwig and Tetra in steel from €1,940 or 18k gold",
+          "m": "Monochrome · 19 Nov"
+        },
+        {
+          "tag": "Release",
+          "ph": "watch",
+          "img": "https://monochrome-watches.com/app/uploads/2026/11/Seiko-Prospex-Marinemaster-1968-Heritage-Save-the-Ocean-Limited-Edition-HBF003-Green-Dial-review-4.jpg",
+          "h": "Seiko Marinemaster Save the Ocean HBF003 gets a green dial",
+          "s": "900 pieces at €3,800; on sale from 1 Dec with a 72-hour Calibre 8L45",
+          "m": "Monochrome · 20 Nov"
         },
         {
           "tag": "Fragrance",
           "ph": "fragrance",
-          "mark": "HEELEY",
-          "h": "Heeley releases its new fragrance Chiris",
-          "s": "Latest launch from the Paris-based niche house",
-          "m": "Now Smell This · 12 Nov"
+          "mark": "ARMANI",
+          "h": "Armani Privé Jade is a 2,000-bottle floral chypre at £600",
+          "s": "Les Éditions Couture limited edition by Marie Salamagne; 100ml at Harrods",
+          "m": "Now Smell This · 7 Nov"
         },
         {
           "tag": "Fragrance",
           "ph": "fragrance",
-          "mark": "LOEWE",
-          "h": "Loewe adds Moonlight to its fragrance line",
-          "s": "New Loewe Perfumes release for the season",
-          "m": "Now Smell This · 11 Nov"
-        },
-        {
-          "tag": "Fragrance",
-          "ph": "fragrance",
-          "mark": "MMR",
-          "h": "Maison Margiela launches Replica Greenwood Getaway",
-          "s": "New addition to the Replica collection",
-          "m": "Now Smell This · 10 Nov"
-        },
-        {
-          "tag": "Results",
-          "ph": "auction",
-          "img": "https://www.hautetime.com/wp-content/uploads/2026/11/09082319/phillips-geneva-watch-auction-xxiv-fp-journe-resonance-regence.webp",
-          "h": "Phillips Geneva XXIV makes CHF 92m with every lot sold",
-          "s": "F.P. Journe Résonance 'Régence' in platinum led at CHF 8.68m",
-          "m": "Haute Time · 8 Nov"
+          "mark": "CARNER",
+          "h": "Carner Barcelona releases the gourmand Choco Late for the holidays",
+          "s": "Limited-edition cocoa, warm milk and hazelnut cream scent in 10ml and 100ml",
+          "m": "Now Smell This · 7 Nov"
         }
       ]
     },
@@ -573,10 +573,10 @@
         {
           "tag": "Opening",
           "ph": "event",
-          "img": "https://www.nationalgallery.org.uk/media/ucclsxy4/van-eyck_15-primary_600-x-600.jpg?rxy=0.08974347795758929,0.510989010989011&width=800&height=800&v=1dd6174ff00dc50",
+          "mark": "EYCK",
           "h": "All ten surviving Van Eyck portraits reunite at the National Gallery",
-          "s": "National Gallery · Trafalgar Square · £18",
-          "m": "Opens Sat 21 Nov"
+          "s": "National Gallery · Trafalgar Square · from £18",
+          "m": "Opens Sat 21 Nov · this weekend"
         },
         {
           "tag": "Market",
@@ -584,7 +584,7 @@
           "mark": "XMAS",
           "h": "Winter By The River brings festive stalls to the Thames at London Bridge",
           "s": "London Bridge City · SE1 · free entry",
-          "m": "Sat 21–Sun 22 Nov · 11:00–22:00"
+          "m": "This weekend, Sat 21–Sun 22 Nov · 11:00–22:00"
         },
         {
           "tag": "Market",
@@ -592,31 +592,31 @@
           "mark": "SE10",
           "h": "Greenwich Market's Christmas season is open for gifts and street food",
           "s": "Greenwich Market · Greenwich · free entry",
-          "m": "Sat 21–Sun 22 Nov · 12:00–21:00"
-        },
-        {
-          "tag": "Coffee",
-          "ph": "coffee",
-          "mark": "CH72",
-          "h": "Chapter 72, a well-regarded specialty coffee bar on Bermondsey Street",
-          "s": "72 Bermondsey Street, SE1 · check hours",
-          "m": "South London pick"
+          "m": "This weekend, Sat 21–Sun 22 Nov · 12:00–21:00"
         },
         {
           "tag": "Coffee",
           "ph": "coffee",
           "mark": "WH",
-          "h": "WatchHouse on Maltby Street, handy for a Bermondsey weekend wander",
-          "s": "36 Maltby Street, SE1 · check hours",
-          "m": "South London pick"
+          "h": "WatchHouse on Bermondsey Street, a roaster-run cafe for a south London wander",
+          "s": "199 Bermondsey Street, SE1 · Sat and Sun 08:00–18:00",
+          "m": "This weekend · south London pick"
         },
         {
           "tag": "Coffee",
           "ph": "coffee",
           "mark": "CROL",
-          "h": "Crol & Co, a small independent specialty café near London Bridge",
-          "s": "9 Tanner Street, SE1 · check hours",
-          "m": "South London pick"
+          "h": "Crol & Co in Hatcher's Yard, a small independent cafe near London Bridge",
+          "s": "9 Tanner Street, SE1 · listed 09:00–21:00",
+          "m": "This weekend · south London pick"
+        },
+        {
+          "tag": "Coffee",
+          "ph": "coffee",
+          "mark": "CH72",
+          "h": "Chapter 72, a specialty coffee bar on Bermondsey Street",
+          "s": "72 Bermondsey Street, SE1 · check hours",
+          "m": "This weekend · south London pick"
         }
       ]
     }
