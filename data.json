@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-21T06:16:00Z",
+  "asOf": "2026-11-22T06:15:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,9 +30,9 @@
     }
   ],
   "standard": {
-    "date": "Fri 20 Nov",
-    "title": "Set the frame, finish",
-    "quote": "“Set the frame before you deliver.” (Rob D Willis)"
+    "date": "Sat 21 Nov",
+    "title": "A bad day is data",
+    "quote": "“A bad day is data, not a verdict.”"
   },
   "news": [
     {
@@ -253,30 +253,6 @@
     }
   ],
   "fixtures": [
-    {
-      "label": "Harlequins",
-      "a": "Saracens",
-      "b": "Harlequins",
-      "start": "2026-11-21T12:00:00Z",
-      "mins": 100,
-      "comp": "Premiership Rugby Cup"
-    },
-    {
-      "label": "Zimbabwe",
-      "a": "Zimbabwe",
-      "b": "Chile",
-      "start": "2026-11-21T17:15:00Z",
-      "mins": 100,
-      "comp": "Rugby Nations Cup · Angoulême"
-    },
-    {
-      "label": "Arsenal",
-      "a": "Newcastle",
-      "b": "Arsenal",
-      "start": "2026-11-21T17:30:00Z",
-      "mins": 115,
-      "comp": "Premier League · St James’ Park"
-    },
     {
       "label": "Lakers",
       "a": "LA Lakers",
