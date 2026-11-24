@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-23T06:20:00Z",
+  "asOf": "2026-11-24T06:20:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,9 +30,9 @@
     }
   ],
   "standard": {
-    "date": "Sun 22 Nov",
-    "title": "Steward what you owe",
-    "quote": "“Money is entrusted to you, so treat it like a promise: kept small, kept counted, kept on time.”"
+    "date": "Mon 23 Nov",
+    "title": "Finish the oldest first",
+    "quote": "“The list of what you started is not the list of what you did.”"
   },
   "news": [
     {
@@ -214,7 +214,7 @@
       "opp": "v Borussia Dortmund",
       "when": "2026-11-24T20:00:00Z"
     },
-    "after": "Next league game to be confirmed"
+    "after": "v Manchester City · Sat 28 Nov, time to be confirmed"
   },
   "lakers": {
     "pos": "Top of the West",
@@ -253,14 +253,6 @@
     }
   ],
   "fixtures": [
-    {
-      "label": "Lakers",
-      "a": "LA Lakers",
-      "b": "Utah Jazz",
-      "start": "2026-11-24T03:00:00Z",
-      "mins": 150,
-      "comp": "NBA"
-    },
     {
       "label": "Arsenal",
       "a": "Arsenal",
