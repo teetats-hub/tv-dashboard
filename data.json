@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-25T06:21:00Z",
+  "asOf": "2026-11-26T06:30:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,15 +30,20 @@
     }
   ],
   "standard": {
-    "date": "Tue 24 Nov",
-    "title": "One bold ask, then finish",
-    "quote": "“Nerve is a muscle: one slightly too big ask a day.”"
+    "date": "Wed 25 Nov",
+    "title": "Get back up today",
+    "quote": "“A bad day is data, not a verdict.”"
   },
   "news": [
     {
       "k": "air",
       "h": "Air Zimbabwe's London route in doubt as Spanish wet-lease partner faces cash crisis",
       "s": "NewZimbabwe · 25 Nov"
+    },
+    {
+      "k": "zim",
+      "h": "Budget 2027 gives low earners narrow relief as the tax threshold rises to US$150",
+      "s": "AllAfrica · 24 Nov"
     },
     {
       "k": "zim",
@@ -71,19 +76,14 @@
       "s": "EWN · 19 Nov"
     },
     {
+      "k": "air",
+      "h": "SAA plans five new African routes and adds more Harare flights in December",
+      "s": "ATTA · 19 Nov"
+    },
+    {
       "k": "world",
       "h": "UK inflation rises to 3.6% and the BoE expects a peak near 5% next spring",
       "s": "ITV News · 18 Nov"
-    },
-    {
-      "k": "sa",
-      "h": "First Circle closes a $26m fund for pre-seed and seed African fintechs",
-      "s": "Tech Africa News · 18 Nov"
-    },
-    {
-      "k": "air",
-      "h": "fastjet adds up to three daily A320 Harare-Johannesburg round trips for Christmas",
-      "s": "LARA · 16 Nov"
     }
   ],
   "radar": [
@@ -212,7 +212,7 @@
     "last": "Draw 1–1 v Dortmund",
     "next": {
       "opp": "v Manchester City",
-      "when": "2026-11-28T15:00:00Z"
+      "when": "2026-11-29T16:30:00Z"
     },
     "after": "Next league games to be confirmed"
   },
@@ -235,9 +235,9 @@
     },
     {
       "t": "Sables",
-      "s": "Lost 20–15 to Uruguay at Ealing in the Nations Cup",
-      "n": "v Chile, Stade Chanzy, Angoulême",
-      "w": "Sat 21 Nov · 17:15 UK"
+      "s": "Lost 29–34 to Chile at Stade Chanzy, Angoulême in the Nations Cup",
+      "n": "Next fixture to be confirmed",
+      "w": "Date to be confirmed"
     },
     {
       "t": "Warriors",
@@ -265,7 +265,7 @@
       "label": "Arsenal",
       "a": "Arsenal",
       "b": "Manchester City",
-      "start": "2026-11-28T15:00:00Z",
+      "start": "2026-11-29T16:30:00Z",
       "mins": 115,
       "comp": "Premier League · Emirates"
     },
@@ -284,6 +284,14 @@
       "start": "2026-12-12T13:00:00Z",
       "mins": 100,
       "comp": "Challenge Cup"
+    },
+    {
+      "label": "Harlequins",
+      "a": "Bristol Bears",
+      "b": "Harlequins",
+      "start": "2026-12-20T15:00:00Z",
+      "mins": 100,
+      "comp": "Gallagher Prem"
     }
   ],
   "pl": [
@@ -449,12 +457,12 @@
       "title": "London this week",
       "items": [
         {
-          "tag": "AI",
-          "ph": "tech",
-          "mark": "AI",
-          "h": "Knowledge and AI London, a free executive roundtable at Microsoft",
-          "s": "Microsoft London · 2 Kingdom Street · free",
-          "m": "Wed 25 Nov · 09:00"
+          "tag": "Amapiano",
+          "ph": "afro",
+          "mark": "PIANO",
+          "h": "Piano People: The Last Dance, an amapiano day party at Drumsheds",
+          "s": "Drumsheds · price not listed",
+          "m": "Sun 29 Nov · 13:00"
         },
         {
           "tag": "AI",
