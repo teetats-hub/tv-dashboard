@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-26T06:30:00Z",
+  "asOf": "2026-11-27T06:12:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,9 +30,9 @@
     }
   ],
   "standard": {
-    "date": "Wed 25 Nov",
-    "title": "Get back up today",
-    "quote": "“A bad day is data, not a verdict.”"
+    "date": "Thu 26 Nov",
+    "title": "Finish before you start",
+    "quote": "“One finished thing today beats five good ideas tomorrow.”"
   },
   "news": [
     {
@@ -463,14 +463,6 @@
           "h": "Piano People: The Last Dance, an amapiano day party at Drumsheds",
           "s": "Drumsheds · price not listed",
           "m": "Sun 29 Nov · 13:00"
-        },
-        {
-          "tag": "AI",
-          "ph": "tech",
-          "mark": "AIWC",
-          "h": "AI World Congress fills two days with AI talks in Kensington",
-          "s": "Kensington Conference and Events Centre · Eventbrite tickets",
-          "m": "Wed 25–Thu 26 Nov · 09:00"
         },
         {
           "tag": "Amapiano",
