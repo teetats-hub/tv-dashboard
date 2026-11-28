@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-27T06:12:00Z",
+  "asOf": "2026-11-28T06:20:00Z",
   "weather": [
     {
       "city": "London",
@@ -30,9 +30,9 @@
     }
   ],
   "standard": {
-    "date": "Thu 26 Nov",
-    "title": "Finish before you start",
-    "quote": "“One finished thing today beats five good ideas tomorrow.”"
+    "date": "Fri 27 Nov",
+    "title": "Get back up, then finish",
+    "quote": "“A setback is a place on the road, not the end of it.”"
   },
   "news": [
     {
@@ -253,14 +253,6 @@
     }
   ],
   "fixtures": [
-    {
-      "label": "Lakers",
-      "a": "San Antonio Spurs",
-      "b": "LA Lakers",
-      "start": "2026-11-28T02:30:00Z",
-      "mins": 150,
-      "comp": "NBA"
-    },
     {
       "label": "Arsenal",
       "a": "Arsenal",
